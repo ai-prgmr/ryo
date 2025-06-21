@@ -26,14 +26,14 @@ export default function Header() {
           title="Rolling Paper Co. Home"
         >
           <Image
-            src="/new-logo-removebg.png"
+            src="/ryo/new-logo-removebg.png"
             alt="Rolling Paper Co. Logo"
             width={100}
             height={100}
             className="" // Optional: Add rounded corners to the logo
           />
           <Image
-            src="/new-gify2-unscreen.gif"
+            src="/ryo/new-gify2-unscreen.gif"
             alt="Rolling Paper Co. Logo"
             width={100}
             height={100}

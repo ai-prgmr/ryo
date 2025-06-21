@@ -42,7 +42,7 @@ function ContactPage() {
           </div>
           <div className="bg-white p-6 rounded-2xl border border-gray-700 shadow-lg flex flex-col items-center">
             <Image
-              src="/Digital_Glyph_Green.svg"
+              src="/ryo/Digital_Glyph_Green.svg"
               alt="WhatsApp"
               width={48}
               height={48}

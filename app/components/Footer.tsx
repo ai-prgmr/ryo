@@ -21,11 +21,11 @@ function Footer() {
           className="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
         >
           <Image
-            src="/new-logo-removebg.png"
+            src="/ryo/new-logo-removebg.png"
             alt="RYO Papers Logo"
             width={100}
             height={100}
-            className="mr-2 bg-amber-400 rounded-lg  shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            className="mr-2 bg-green-600 rounded-lg  shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
           />
         </Link>
         <p className="my-6 text-gray-500 dark:text-gray-400">

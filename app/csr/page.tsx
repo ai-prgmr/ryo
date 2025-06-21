@@ -25,7 +25,7 @@ const CSR = () => {
             <div className="flex-shrink-0 w-full md:w-1/3">
               {/* Replace with your Popsy.co image for farmland */}
               <Image
-                src="/CSR-1.jpeg"
+                src="/ryo/CSR-1.jpeg"
                 width={300}
                 height={300}
                 alt="Illustration of a thriving farmland"
@@ -54,7 +54,7 @@ const CSR = () => {
           <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-8 bg-gray-50 p-6 rounded-xl shadow-sm">
             <div className="flex-shrink-0 w-full md:w-1/3">
               <Image
-                src="/CSR-2.jpeg"
+                src="/ryo/CSR-2.jpeg"
                 width={300}
                 height={300}
                 alt="Illustration of elderly people being cared for"
@@ -84,7 +84,7 @@ const CSR = () => {
             <div className="flex-shrink-0 w-full md:w-1/3">
               {/* Replace with your Popsy.co image for orphanage/children */}
               <Image
-                src="/CSR-3.jpeg"
+                src="/ryo/CSR-3.jpeg"
                 width={300}
                 height={300}
                 alt="Illustration of children in a supportive environment"

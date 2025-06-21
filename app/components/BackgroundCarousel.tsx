@@ -4,7 +4,11 @@ import React, { useState, useEffect } from "react";
 
 import Image from "next/image";
 const BackgroundCarousel: React.FC = () => {
-  const images = ["/Carousel-1.png", "/Carousel-3.png", "/Carousel-9.png"];
+  const images = [
+    "/ryo/Carousel-1.png",
+    "/ryo/Carousel-3.png",
+    "/ryo/Carousel-9.png",
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 

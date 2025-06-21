@@ -14,7 +14,7 @@ const AboutUs = () => {
               <div className="bg-gray-100 p-4">
                 {/* <Dna size={28} className="text-gray-700" /> */}
                 <Image
-                  src="/6-socrates.jpeg"
+                  src="/ryo/6-socrates.jpeg"
                   alt="Rolling Paper Co. Logo"
                   width={300}
                   height={300}
@@ -73,7 +73,7 @@ const AboutUs = () => {
               <div className="bg-gray-100 p-4 rounded-full">
                 {/* <PencilRuler size={28} className="text-gray-700" /> */}
                 <Image
-                  src="/man-riding-a-rocket.svg"
+                  src="/ryo/man-riding-a-rocket.svg"
                   alt="Rolling Paper Co. Logo"
                   width={300}
                   height={300}
