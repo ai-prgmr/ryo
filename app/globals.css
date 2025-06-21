@@ -1,26 +1,42 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap");
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tailwind CSS base, components, and utilities are assumed to be available */
+/* for the Canvas environment and thus not explicitly imported here with @tailwind directives. */
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1f2937; /* bg-gray-800 */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #4b5563; /* bg-gray-600 */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280; /* bg-gray-500 */
+}
+/* Define your custom colors using the @theme directive */
+@theme {
+  --color-brown-50: #fdf8f6;
+  --color-brown-100: #f2e8e2;
+  --color-brown-200: #eaddd7;
+  --color-brown-300: #d7c4be;
+  --color-brown-400: #bca19a;
+  --color-brown-500: #a18072; /* Your main brown */
+  --color-brown-600: #8a6b5e;
+  --color-brown-700: #755b4e;
+  --color-brown-800: #624d40;
+  --color-brown-900: #4e3f34;
+  --color-brown-950: #2a201c;
 }
