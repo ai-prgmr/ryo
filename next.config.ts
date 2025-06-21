@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
   basePath: "/ryo",
+  images: { unoptimized: true },
 };
 
 export default nextConfig;

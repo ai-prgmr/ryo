@@ -1,6 +1,6 @@
 import { products, Product } from "@/app/lib/data";
 import ProductCard from "@/app/components/ProductCard";
-function RollingPaperCategoryPage({}: { params: { categorySlug: string } }) {
+function RollingPaperCategoryPage() {
   // `params.categorySlug` would be 'rolling-paper' in this case due to file structure.
   const filteredProducts = products.filter(
     (product: Product) => product.categorySlug === "rolling-paper" // Directly filter for 'rolling-paper'

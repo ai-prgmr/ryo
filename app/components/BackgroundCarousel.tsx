@@ -2,8 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 
-import Image from "next/image"; // Ensure you have next/image installed
-
+import Image from "next/image";
 const BackgroundCarousel: React.FC = () => {
   const images = ["/Carousel-1.png", "/Carousel-3.png", "/Carousel-9.png"];
 
@@ -29,7 +28,7 @@ const BackgroundCarousel: React.FC = () => {
 
     // Clean up the interval on component unmount
     return () => clearInterval(interval);
-  }, [currentIndex]); // Re-run effect if currentIndex changes to restart timer
+  }); // Re-run effect if currentIndex changes to restart timer
 
   return (
     <div className="relative w-full h-[900px] overflow-hidden rounded-b-3xl shadow-xl z-10">
