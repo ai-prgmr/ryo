@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fproducts\u002Frolling-paper\u002F[productSlug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
