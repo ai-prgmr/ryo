@@ -3,7 +3,7 @@ import { Award, FlaskConical, Blend, Handshake } from "lucide-react";
 function ContractManufacturingPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className=" rounded-3xl shadow-xl p-6 md:p-10 border border-gray-700 text-center">
+      <div className=" rounded-3xl shadow-xl p-6 md:p-10 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-amber-300 mb-6">
           Contract Manufacturing for the Tobacco Industry
         </h1>

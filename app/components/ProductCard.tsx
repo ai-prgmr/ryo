@@ -12,7 +12,7 @@ function ProductCard({ product }: ProductCardProps) {
       href={`/products/${product.categorySlug}/${product.slug}`}
       className="block"
     >
-      <div className="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border-3 border-amber-200 hover:border-amber-400 transform hover:-translate-y-1">
+      <div className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border-3 border-amber-200 hover:border-amber-400 transform hover:-translate-y-1">
         <div className="p-4">
           <h3 className="text-xl font-semibold text-gray-700 mb-2 truncate text-center">
             {product.name}

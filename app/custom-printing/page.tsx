@@ -7,11 +7,25 @@ import {
   Lightbulb,
   TrendingUp,
 } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Custom Printing & Contract Manufacturing | Rolling Paper Co.",
+  description:
+    "Explore our custom printing services for rolling papers and contract manufacturing solutions tailored for the tobacco industry.",
+  keywords: [
+    "King Size Slim",
+    "1 1/4",
+    "Rolling Papers Booklets",
+    "Crease-free papers",
+    "Tips/Filters",
+  ],
+};
 
 function CustomPrintingPage() {
   return (
-    <div className="container mx-auto px-4 py-16">
-      <div className=" rounded-3xl shadow-xl p-6 md:p-10 text-center">
+    <div className="container mx-auto px-4 py-16 bg-white">
+      <div className="  p-6 md:p-10 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-amber-300 mb-6">
           Custom Printing: Launch Your Own Paper
         </h1>
@@ -23,7 +37,7 @@ function CustomPrintingPage() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div className=" p-6 rounded-2xl border border-gray-700 shadow-lg">
+          <div className=" p-6">
             <Paintbrush size={48} className="text-amber-400 mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-gray-500 mb-3">
               Your Vision, Our Expertise
@@ -34,7 +48,7 @@ function CustomPrintingPage() {
               replicated on the finest rolling paper.
             </p>
           </div>
-          <div className=" p-6 rounded-2xl border border-gray-700 shadow-lg">
+          <div className=" p-6 rounded-2xl">
             <Palette size={48} className="text-amber-400 mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-gray-500 mb-3">
               Material & Finish Options
@@ -47,7 +61,7 @@ function CustomPrintingPage() {
             </p>
           </div>
         </div>
-        <div className=" rounded-3xl shadow-xl p-6 md:p-10 border border-gray-700 text-center mb-5">
+        <div className="p-6 md:p-10 text-center mb-5">
           <h1 className="text-4xl md:text-5xl font-extrabold text-amber-300 mb-6">
             Contract Manufacturing
           </h1>
@@ -60,7 +74,7 @@ function CustomPrintingPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className=" p-6 rounded-2xl border border-gray-700 shadow-lg">
+            <div className=" p-6 rounded-2xl">
               <Award size={48} className="text-amber-400 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-500 mb-3">
                 Uncompromising Quality
@@ -71,7 +85,7 @@ function CustomPrintingPage() {
                 every batch of your product.
               </p>
             </div>
-            <div className=" p-6 rounded-2xl border border-gray-700 shadow-lg">
+            <div className=" p-6 rounded-2xl">
               <FlaskConical size={48} className="text-amber-400 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-500 mb-3">
                 Advanced Capabilities
@@ -82,7 +96,7 @@ function CustomPrintingPage() {
                 and precision.
               </p>
             </div>
-            <div className=" p-6 rounded-2xl border border-gray-700 shadow-lg">
+            <div className=" p-6 rounded-2xl">
               <Blend size={48} className="text-amber-400 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-500 mb-3">
                 Custom Formulation & Production
@@ -93,7 +107,7 @@ function CustomPrintingPage() {
                 requirements.
               </p>
             </div>
-            <div className=" p-6 rounded-2xl border border-gray-700 shadow-lg">
+            <div className=" p-6 rounded-2xl">
               <Handshake size={48} className="text-amber-400 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-500 mb-3">
                 Confidential Partnership
@@ -113,7 +127,7 @@ function CustomPrintingPage() {
 
           <Link
             href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-amber-600 text-white rounded-full text-xl font-semibold shadow-xl hover:bg-amber-700 transition-all duration-300 transform hover:scale-105"
+            className="inline-flex items-center px-8 py-4 bg-amber-600 text-white rounded-lg text-xl font-semibold shadow-xl hover:bg-amber-700 transition-all duration-300 transform hover:scale-105"
           >
             Discuss Your Manufacturing Needs
           </Link>
@@ -156,7 +170,7 @@ function CustomPrintingPage() {
 
         <Link
           href="/contact"
-          className="inline-flex items-center px-8 py-4 bg-amber-600 text-white rounded-full text-xl font-semibold shadow-xl hover:bg-amber-700 transition-all duration-300 transform hover:scale-105"
+          className="inline-flex items-center px-8 py-4 bg-amber-600 text-white rounded-lg text-xl font-semibold shadow-xl hover:bg-amber-700 transition-all duration-300 transform hover:scale-105"
         >
           Get a Custom Printing Quote
         </Link>

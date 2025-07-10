@@ -32,20 +32,15 @@ const HeroCard: React.FC = () => {
         "
         >
           <span className="block text-green-200">
-            R – <span className="text-white">Responsible</span>
+            R – <span className="text-white">Respect</span>
           </span>
           <span className="block text-green-200">
-            Y – <span className="text-white">Year-Round</span>
+            Y – <span className="text-white">Your</span>
           </span>
           <span className="block text-green-200">
-            O – <span className="text-white">Organic</span>
+            O – <span className="text-white">Origin</span>
           </span>
         </h1>
-
-        {/* Secondary tagline or main brand statement */}
-        <p className="text-2xl md:text-3xl font-semibold text-gray-100 mb-6 drop-shadow-md">
-          Discreet. Distinct. Designed for You.
-        </p>
 
         {/* Main content */}
         <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto">

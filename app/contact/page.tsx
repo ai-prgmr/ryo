@@ -3,7 +3,7 @@ import { Mail } from "lucide-react";
 function ContactPage() {
   return (
     <div className="bg-white container mx-auto px-4 py-8">
-      <div className="bg-transparent rounded-3xl shadow-xl p-6 md:p-10 text-center">
+      <div className="bg-transparent p-6 md:p-10 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-amber-300 mb-6">
           Get in Touch
         </h1>
@@ -26,7 +26,7 @@ function ContactPage() {
               </a>
             </p>
           </div> */}
-          <div className="bg-white p-6 rounded-2xl border border-gray-700 shadow-lg flex flex-col items-center">
+          <div className="bg-white p-6  border border-amber-300 shadow-lg flex flex-col items-center">
             <Mail size={48} className="text-amber-400 mb-4" />
             <h3 className="text-2xl font-bold text-gray-400 mb-3">Email Us</h3>
             <p className="text-gray-700 leading-relaxed">
@@ -36,11 +36,10 @@ function ContactPage() {
               >
                 info@ryopapers.com
               </a>
-              <br />
-              We typically respond within 12 hours.
+              <br />{" "}
             </p>
           </div>
-          <div className="bg-white p-6 rounded-2xl border border-gray-700 shadow-lg flex flex-col items-center">
+          <div className="bg-white p-6 border border-amber-300 shadow-lg flex flex-col items-center">
             <Image
               src="/ryo/Digital_Glyph_Green.svg"
               alt="WhatsApp"

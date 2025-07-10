@@ -8,7 +8,7 @@ function RollingPaperCategoryPage() {
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-extrabold text-amber-600 mb-10 text-center capitalize">
+      <h1 className="text-4xl font-extrabold text-yellow-500 mb-10 text-center capitalize">
         Premium Rolling Papers
       </h1>
 
