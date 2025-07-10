@@ -3,7 +3,7 @@ import { PlayCircle, PauseCircle } from "lucide-react";
 const RADIO_STREAM = "https://direct.fipradio.fr/live/fip-webradio8.mp3";
 
 export default function WorldMusicRadioPlayer() {
-  const audioRef = useRef(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
