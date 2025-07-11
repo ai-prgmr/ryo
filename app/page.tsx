@@ -28,7 +28,7 @@ export default function Home() {
           alt="Rolling Your Own Hero Image"
           width={1920}
           height={1080}
-          className="w-full h-full object-cover"
+          className="w-full h-auto object-contain"
         />
       </section>
 
