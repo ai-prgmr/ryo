@@ -56,12 +56,6 @@ const ConsentManager: React.FC<AgeVerificationModalProps> = ({
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
       <div className="bg-gray-800 rounded-lg shadow-2xl p-8 max-w-md w-full text-center relative">
-        {/*
-          Removed the 'X' close button.
-          For age gates, the primary interactions are 'Yes' or 'No'.
-          An 'X' could allow bypassing without a clear age confirmation.
-        */}
-
         {/* Logo Image */}
         <div className="">
           <Image

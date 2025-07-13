@@ -51,7 +51,7 @@ export default function Header() {
         /> */}
         {/* Hamburger/Close Button for Mobile */}
         <button
-          className="sm:hidden text-white focus:outline-none z-50" // Hidden on sm screens and up
+          className="sm:hidden text-white focus:outline-none z-60" // Hidden on sm screens and up
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={
             isMenuOpen ? "Close navigation menu" : "Open navigation menu"
@@ -81,6 +81,7 @@ export default function Header() {
     z-50
           `}
         >
+          {" "}
           <NavLink
             href="/"
             icon={Home}
