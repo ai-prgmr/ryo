@@ -12,9 +12,9 @@ const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
   children,
 }) => {
   const images = [
-    "/ryo/carousel-1.png",
-    "/ryo/carousel-3.png",
-    "/ryo/carousel-9.png",
+    "/ryo/Carousel-1.png",
+    "/ryo/Carousel-3.png",
+    "/ryo/Carousel-9.png",
     "/ryo/vecteezy.jpg",
   ];
 
