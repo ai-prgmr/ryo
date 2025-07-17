@@ -17,7 +17,7 @@ const SampleBoxOffer: React.FC = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className=" shadow-2xl p-8 md:p-12 max-w-4xl mx-auto my-12 border border-amber-600 animate-fade-in bg-white">
+    <section className=" shadow-2xl p-8 md:p-12 max-w-4xl mx-auto my-12 animate-fade-in bg-[#CCFF00]">
       <div className="text-center mb-10">
         <GiftIcon
           size={64}

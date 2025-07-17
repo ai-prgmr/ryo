@@ -4,7 +4,7 @@ import { Sprout, Home, Heart, HandHeart } from "lucide-react";
 
 const CSR = () => {
   return (
-    <div className=" text-gray-800 bg-black font-sans py-16 sm:py-24">
+    <div className=" text-gray-800 bg-white font-sans py-16 sm:py-24">
       <div className="bg-white container mx-auto px-6 py-4 lg:px-8  rounded-2xl shadow-lg">
         {/* Main Heading & Introduction */}
         <div className="text-center mb-20 p-4">

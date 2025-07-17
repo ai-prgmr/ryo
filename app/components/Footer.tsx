@@ -5,7 +5,7 @@ import Link from "next/link";
 import WorldMusicRadioPlayer from "./WorldMusicRadioPlayer";
 function Footer() {
   return (
-    <footer className="p-4 md:p-8 lg:p-10 ">
+    <footer className="p-4 md:p-8 lg:p-10 mt-4 bg-black">
       <div className="mx-auto max-w-screen-xl text-center">
         <Link
           href="/"

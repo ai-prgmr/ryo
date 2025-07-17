@@ -3,15 +3,18 @@
 import React, { useState, useEffect } from "react";
 
 import Image from "next/image";
-const BackgroundCarousel: React.FC = () => {
+
+interface BackgroundCarouselProps {
+  children?: React.ReactNode; // Add this prop
+}
+
+const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
+  children,
+}) => {
   const images = [
-    // "/images/3-pack-carousel.png",
-    // "/images/k-1.jpeg",
-    // "/images/k-2.jpeg",
-    // "/images/k-3.jpeg",
-    // "/images/k-4.jpeg",
-    // "/images/k-5.jpeg",
-    // "/images/k-6.jpeg",
+    "/ryo/carousel-1.png",
+    "/ryo/carousel-3.png",
+    "/ryo/carousel-9.png",
     "/ryo/vecteezy.jpg",
   ];
 
@@ -48,12 +51,12 @@ const BackgroundCarousel: React.FC = () => {
         layout="fill"
         objectFit="cover"
         sizes="100vw"
-        className="transition-opacity duration-1000 ease-in-out" // Smooth transition
-        priority={true} // Prioritize loading for LCP on homepage
+        className="transition-opacity duration-1000 ease-in-out "
+        priority={true}
       />
 
       {/* Dark Overlay for Text Readability */}
-      <div className="absolute inset-0"></div>
+      <div className="absolute inset-0 bg-black opacity-70"></div>
 
       {/* Navigation Arrows */}
       {/* <button
@@ -112,7 +115,11 @@ const BackgroundCarousel: React.FC = () => {
       </div>
 
       {/* Content for the hero section (optional, can be passed as children) */}
-      <div className="absolute inset-0 flex items-center justify-center text-center z-0 p-6 text-5xl text-gray-700 font-bold "></div>
+      <div className="absolute inset-0 flex items-center justify-center text-center z-20 p-6">
+        {" "}
+        {/* Increased z-index for content */}
+        {children}
+      </div>
     </div>
   );
 };

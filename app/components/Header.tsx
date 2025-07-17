@@ -69,7 +69,7 @@ export default function Header() {
             flex-col sm:flex-row
     fixed sm:relative
     top-0 left-0 w-full h-full sm:h-auto
-    bg-gradient-to-r from-teal-400 to-blue-500
+    bg-[black]
     sm:bg-none sm:shadow-none
     pb-4 sm:pb-0 pt-2 sm:pt-0
     shadow-lg
@@ -149,7 +149,7 @@ function NavLink({
   href,
   icon: Icon,
   label,
-  textColor = "text-gray-100",
+  //textColor = "text-gray-100",
   hoverColor = "hover:text-blue-100",
   onClick, // Destructure the onClick prop
 }: NavLinkProps) {
@@ -163,8 +163,8 @@ function NavLink({
     <Link
       href={href}
       className={`flex flex-col items-center p-2 rounded-lg transition-colors duration-200
-        ${isActive ? "bg-teal-400 bg-opacity-20" : ""}
-        ${textColor} ${hoverColor}`}
+        ${isActive ? "bg-[#e1ffac] text-black bg-opacity-20" : "text-white"}
+         ${hoverColor}`}
       onClick={onClick} // Pass the onClick prop to the Link
     >
       <Icon size={20} />

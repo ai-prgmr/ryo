@@ -1,6 +1,9 @@
 import Link from "next/link";
-import { Award, FlaskConical, Blend, Handshake } from "lucide-react";
 import {
+  Award,
+  FlaskConical,
+  Blend,
+  Handshake,
   Paintbrush,
   Palette,
   Factory,
