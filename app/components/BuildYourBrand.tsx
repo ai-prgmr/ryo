@@ -1,6 +1,9 @@
 "use client";
-import { useState, useEffect } from "react"; // Import useState and useEffect
+import { useState, useEffect } from "react";
 import { Lightbulb, Factory, TrendingUp } from "lucide-react";
+import { motion } from "framer-motion";
+
+// (stepsData and backgroundColors definitions remain the same)
 const stepsData = [
   {
     icon: Lightbulb,
@@ -32,42 +35,52 @@ const stepsData = [
   },
 ];
 
-// Define the array of background colors
 const backgroundColors = ["#63E6BE", "#74C0FC", "#FFD43B", "#E599F7"];
 
 export default function BuildyourBrand() {
-  // Renamed to be a functional component
-  const [currentStartIndex, setCurrentStartIndex] = useState(0);
+  const [currentStartIndex, setCurrentStartIndex] = useState(0); // For color rotation
 
+  // Effect for color rotation (this part remains the same)
   useEffect(() => {
-    // Set up an interval to change the starting color index every 2 seconds
     const interval = setInterval(() => {
       setCurrentStartIndex(
         (prevIndex) => (prevIndex + 1) % backgroundColors.length
       );
-    }, 2000); // 2000 milliseconds = 2 seconds
+    }, 2000); // Rotate colors every 2 seconds
 
-    // Cleanup function: clear the interval when the component unmounts
+    // Cleanup function for color interval
     return () => clearInterval(interval);
-  }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
+  }, []);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6">
       {stepsData.map((step, index) => {
         const IconComponent = step.icon;
-        // Calculate the background color using the currentStartIndex
         const bgColor =
           backgroundColors[
             (index + currentStartIndex) % backgroundColors.length
           ];
+
         return (
-          <div
+          <motion.div // <--- Changed from `div` to `motion.div`
             key={index}
-            className="flex flex-col items-center p-6  w-full min-h-[180px]
-                    duration-500 ease-in-out"
+            // Define the initial state (before animation)
+            initial={{ opacity: 0, x: -150 }} // Starts transparent and 50px below its final position
+            // Define the animated state (after animation)
+            whileInView={{ opacity: 1, x: 0 }} // Ends fully opaque and at its original y-position
+            // Define the animation transition properties
+            transition={{
+              duration: 1, // How long the animation for each item takes (0.5 seconds)
+              delay: index * 0.15, // Stagger delay: Each item starts its animation 0.15s after the previous one
+              ease: "easeOut", // Easing function for a smoother finish
+            }}
+            className={`
+              flex flex-col items-center p-6 w-full min-h-[180px]
+              rounded-xl shadow-md
+              transition-colors duration-500 ease-in-out /* Keep for color transition */
+            `}
             style={{ backgroundColor: bgColor }}
           >
-            {" "}
             <IconComponent size={40} className="text-gray-800 mb-3" />
             <span className="font-bold text-lg text-gray-900 mb-1">
               {step.title}
@@ -75,7 +88,7 @@ export default function BuildyourBrand() {
             <p className="text-sm mt-1 text-center font-semibold text-[#173153]">
               {step.description}
             </p>
-          </div>
+          </motion.div>
         );
       })}
     </div>
