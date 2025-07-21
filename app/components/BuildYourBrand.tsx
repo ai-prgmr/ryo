@@ -71,7 +71,7 @@ export default function BuildyourBrand() {
             // Define the animation transition properties
             transition={{
               duration: 1, // How long the animation for each item takes (0.5 seconds)
-              delay: index * 0.15, // Stagger delay: Each item starts its animation 0.15s after the previous one
+              delay: index * 1.5, // Stagger delay: Each item starts its animation 0.15s after the previous one
               ease: "easeOut", // Easing function for a smoother finish
             }}
             className={`
