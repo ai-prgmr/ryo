@@ -43,7 +43,7 @@ const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
   }); // Re-run effect if currentIndex changes to restart timer
 
   return (
-    <div className="relative w-[100vw] h-[500px] overflow-hidden rounded-b-3xl shadow-xl z-10">
+    <div className="relative w-[100vw] h-[500px] overflow-hidden shadow-xl z-10">
       {/* Background Image */}
       <Image
         src={images[currentIndex]}
