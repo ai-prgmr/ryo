@@ -17,7 +17,7 @@ const SampleBoxOffer: React.FC = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className=" shadow-2xl p-8 md:p-12 max-w-4xl mx-auto my-12 animate-fade-in bg-[#CCFF00]">
+    <section className=" shadow-2xl p-8 md:p-12 max-w-4xl mx-auto my-12 animate-fade-in  bg-[#e1ffac]">
       <div className="text-center mb-10">
         <GiftIcon
           size={64}
@@ -77,7 +77,7 @@ const SampleBoxOffer: React.FC = () => {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-10 py-4  text-green-500 rounded-full text-xl font-bold shadow-xl transition-all duration-300 transform hover:scale-105 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-75"
+          className="inline-flex items-center justify-center px-10 py-4  text-white text-xl font-bold  transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-75"
         >
           <Image
             src="/ryo/Digital_Glyph_Green.svg" // Ensure you have this icon in your public folder
