@@ -4,13 +4,12 @@ import {
   FlaskConical,
   Blend,
   Handshake,
-  Paintbrush,
-  Palette,
   Factory,
   Lightbulb,
   TrendingUp,
 } from "lucide-react";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Custom Printing & Contract Manufacturing | Rolling Paper Co.",
@@ -24,22 +23,62 @@ export const metadata: Metadata = {
     "Tips/Filters",
   ],
 };
+import { products, Product } from "@/app/lib/data";
+import ProductCard from "@/app/components/ProductCard";
 
 function CustomPrintingPage() {
+  const filteredProducts = products.filter(
+    (product: Product) => product.categorySlug === "rolling-paper" // Directly filter for 'rolling-paper'
+  );
   return (
-    <div className="container mx-auto px-4 py-16 bg-white">
-      <div className="  p-6 md:p-10 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-amber-300 mb-6">
-          Custom Printing: Launch Your Own Paper
-        </h1>
-        <p className="text-lg text-gray-800 max-w-4xl mx-auto mb-10 leading-relaxed">
-          Unleash your creativity and establish your brand with our premium
-          custom printing services for rolling papers. We bring your unique
-          designs to life, ensuring exceptional quality and a distinctive
-          identity for your product.
-        </p>
+    <div className="container mx-auto px-4 py-4 bg-white">
+      <div className="p-6 md:p-10 text-center">
+        <div className="relative py-20 px-4 md:px-8 overflow-hidden /* Add a height if content is too short */ min-h-[400px]">
+          {/* Background Image */}
+          <Image
+            src="/ryo/customize.jpeg" // <-- Replace with your actual image path
+            alt="Custom Printing Services Background"
+            layout="fill"
+            objectFit="cover"
+            sizes="100vw"
+            className="transition-opacity duration-1000 ease-in-out z-[0] "
+            priority={true}
+          />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          {/* Semi-transparent Overlay (Highly Recommended for Text Readability) */}
+          <div className="absolute inset-0 bg-black/80 opacity-90 z-[1]"></div>
+
+          {/* Content Wrapper with higher z-index to appear on top */}
+          <div className="relative z-10 text-center">
+            <h1 className="text-4xl md:text-5xl uppercase font-extrabold text-[#146EBE] mb-6 ">
+              Launch Your Brand
+            </h1>
+            <p className="text-lg text-gray-200 max-w-5xl mx-auto mb-10 leading-relaxed ">
+              Unleash your creativity and establish your brand with our premium
+              custom printing services for rolling papers. We bring your unique
+              designs to life, ensuring exceptional quality and a distinctive
+              identity for your product.
+            </p>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 py-8">
+          <h1 className="text-4xl font-extrabold text-yellow-500 mb-10 text-center capitalize">
+            Choose your Rolling Paper
+          </h1>
+
+          {filteredProducts.length === 0 ? (
+            <p className="text-center text-gray-400 text-lg">
+              No products found in this category.
+            </p>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+              {filteredProducts.map((product: Product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          )}
+        </div>
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className=" p-6">
             <Paintbrush size={48} className="text-amber-400 mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-gray-500 mb-3">
@@ -63,7 +102,7 @@ function CustomPrintingPage() {
               aesthetic.
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="p-6 md:p-10 text-center mb-5">
           <h1 className="text-4xl md:text-5xl font-extrabold text-amber-300 mb-6">
             Contract Manufacturing

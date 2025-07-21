@@ -1,5 +1,6 @@
 import { GiftIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 const SampleBoxOffer: React.FC = () => {
   const sampleItems = [
     "King Size + Filters",
@@ -17,7 +18,7 @@ const SampleBoxOffer: React.FC = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className=" shadow-2xl p-8 md:p-12 max-w-4xl mx-auto my-12 animate-fade-in  bg-[#e1ffac]">
+    <section className=" p-4 max-w-4xl mx-auto animate-fade-in  bg-[#e1ffac]">
       <div className="text-center mb-10">
         <GiftIcon
           size={64}
@@ -42,28 +43,30 @@ const SampleBoxOffer: React.FC = () => {
             (Includes Shipping!)
           </span> */}
         </p>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-black text-lg md:text-lg list-none p-0 font-bold text-center">
+        <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
           {sampleItems.map((item, index) => (
-            <li
+            <Link
               key={index}
-              className="flex items-center justify-center bg-transparent p-3 rounded-lg shadow-sm hover:shadow-lg"
+              href="/products/rolling-paper/king-size-slim-plus-filters"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-check text-green-500 mr-3 flex-shrink-0"
+              <li
+                key={index}
+                // Ensure it's a perfect square and content is centered
+                className="flex flex-col items-center justify-center text-center /* Centering content */
+                 bg-gradient-to-r from-yellow-300 to-lime-400 rounded-full /* Make it circular */
+                 shadow-sm hover:shadow-lg /* Visuals */
+                 text-gray-800 font-bold text-lg /* Text styling */
+                 w-24 h-24 md:w-30 md:h-30
+                 p-8 /* Increased padding to give content more space */
+                 overflow-hidden"
+                style={{ flexShrink: 0 }} /* Prevent shrinking */
               >
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-              <span>{item}</span>
-            </li>
+                {/* SVG Icon */}
+
+                {/* Text content */}
+                <span className="leading-tight">{item}</span>
+              </li>
+            </Link>
           ))}
         </ul>
       </div>

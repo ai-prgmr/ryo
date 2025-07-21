@@ -4,7 +4,7 @@ import { Lightbulb, Factory, TrendingUp } from "lucide-react";
 const stepsData = [
   {
     icon: Lightbulb,
-    title: "Choose your Products",
+    title: "Choose Rolling Paper",
     description:
       "Rolling papers, cones, tips, or full sets — pick what fits your brand best.",
   },
@@ -52,7 +52,7 @@ export default function BuildyourBrand() {
   }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6 mb-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6">
       {stepsData.map((step, index) => {
         const IconComponent = step.icon;
         // Calculate the background color using the currentStartIndex
@@ -63,7 +63,7 @@ export default function BuildyourBrand() {
         return (
           <div
             key={index}
-            className="flex flex-col items-center p-6 rounded-xl shadow-md w-full min-h-[180px]
+            className="flex flex-col items-center p-6  w-full min-h-[180px]
                     duration-500 ease-in-out"
             style={{ backgroundColor: bgColor }}
           >
@@ -72,7 +72,7 @@ export default function BuildyourBrand() {
             <span className="font-bold text-lg text-gray-900 mb-1">
               {step.title}
             </span>
-            <p className="text-sm mt-1 text-center font-semibold text-gray-700">
+            <p className="text-sm mt-1 text-center font-semibold text-[#173153]">
               {step.description}
             </p>
           </div>

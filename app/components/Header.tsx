@@ -101,7 +101,7 @@ export default function Header() {
           <NavLink
             href="/custom-printing"
             icon={Printer}
-            label="Roll your own"
+            label="Customize"
             textColor="text-white"
             hoverColor="hover:text-gray-200"
             onClick={closeMenu}

@@ -5,19 +5,19 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 interface BackgroundCarouselProps {
-  children?: React.ReactNode; // Add this prop
+  children?: React.ReactNode;
+  images: string[];
+  width: string;
+  inset: string;
 }
 
 const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
   children,
+  images,
+  width,
+  inset,
 }) => {
-  const images = [
-    "/ryo/Carousel-1.png",
-    "/ryo/Carousel-3.png",
-    "/ryo/Carousel-9.png",
-    "/ryo/vecteezy.jpg",
-  ];
-
+  images = images;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Function to go to the next image
@@ -36,14 +36,14 @@ const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
   useEffect(() => {
     const interval = setInterval(() => {
       nextImage();
-    }, 5000); // Change image every 5 seconds
+    }, 1500); // Change image every 5 seconds
 
     // Clean up the interval on component unmount
     return () => clearInterval(interval);
   }); // Re-run effect if currentIndex changes to restart timer
 
   return (
-    <div className="relative w-[100vw] h-[500px] overflow-hidden shadow-xl z-10">
+    <div className={`relative overflow-hidden shadow-xl z-10 ${width}`}>
       {/* Background Image */}
       <Image
         src={images[currentIndex]}
@@ -56,7 +56,11 @@ const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
       />
 
       {/* Dark Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-black opacity-70"></div>
+      {inset === "true" ? (
+        <div className="absolute inset-0 bg-black opacity-70"></div>
+      ) : (
+        ""
+      )}
 
       {/* Navigation Arrows */}
       {/* <button

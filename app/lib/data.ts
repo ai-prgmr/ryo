@@ -31,7 +31,7 @@ export const products: Product[] = [
     longDescription:
       "Experience the ultimate convenience with our King Size Slim papers bundled with premium filters. This combo ensures a smooth draw and prevents unwanted particles, providing a cleaner and more enjoyable smoking experience. Perfect for those who value both quality and practicality in their rolling essentials.",
     availablePaperTypes: ["UNBLEACHED CLASSIC", "WHITE", "FLAVOURED"],
-    image: "/ryo/images/king-size-slim.png",
+    image: "/ryo/kss-filters.png",
     features: ["Integrated Filters", "Easy to Roll", "Smooth Draw"],
   },
   {
@@ -44,7 +44,7 @@ export const products: Product[] = [
     longDescription:
       "Simplify your rolling process with our 1 ¼ papers, complete with high-quality filters. This all-in-one pack ensures you have everything you need for a perfect roll, providing a clean and enjoyable draw every time. Ideal for smokers who value convenience without compromising on quality.",
     availablePaperTypes: ["WHITE", "BAMBOO", "FLAVOURED"],
-    image: "/ryo/images/king-size-slim.png",
+    image: "/ryo/1-14.png",
     features: ["All-in-One Pack", "Clean Draw", "Effortless Rolling"],
   },
   {
@@ -57,7 +57,7 @@ export const products: Product[] = [
     longDescription:
       "Our Block of King Size provides a generous supply of our popular papers in a convenient block format. Ideal for regular smokers, this pack ensures you always have a high-quality, paper ready for your next roll. Enjoy consistency and value with every sheet.",
     availablePaperTypes: ["UNBLEACHED ORGANIC HEMP", "UNBLEACHED CLASSIC"],
-    image: "/ryo/images/king-size-slim.png",
+    image: "/ryo/kss.png",
     features: ["Bulk Pack", "Economical", "Consistent Slim"],
   },
   {

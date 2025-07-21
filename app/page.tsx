@@ -23,27 +23,38 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const sampleItems = [
-    "King Size Slim",
-    "King Size Slim + Filters",
-    "1 ¼",
-    "1 ¼ + Filters",
-    "Block King Size",
-    "Block 1 ¼",
-    "Pre-rolled cones",
+  const images = [
+    "/ryo/Carousel-1.png",
+    "/ryo/Carousel-3.png",
+    "/ryo/Carousel-9.png",
+    "/ryo/vecteezy.jpg",
+    "/ryo/Vandana-kaki.png",
   ];
-
+  const customImages = [
+    "/ryo/custom-papers.png",
+    "/ryo/your_vibe.png",
+    "/ryo/custom.png",
+    "/ryo/ship.png",
+  ];
   return (
     <div className="flex flex-col items-center justify-center min-h-screen  text-gray-200">
       {/* Hero Section */}
       <section className="relative w-full flex items-center justify-center text-center overflow-hidden shadow-xl">
-        <BackgroundCarousel>
+        <BackgroundCarousel
+          images={images}
+          width="w-[100vw] h-[500px]"
+          inset="true"
+        >
           <section className="text-center mb-16 p-8">
             <h2 className="text-5xl md:text-7xl font-bold text-[#CCFF00] uppercase mb-6">
               Roll Your Own
             </h2>
             <p className="text-3xl md:text-3xl text-white font-extrabold w-full mb-4">
               Your Vibe. Your Logo. Your Brand.
+            </p>
+            <p className="text-3xl  md:text-3xl text-white font-extrabold w-full mt-4">
+              <span className="text-[#CCFF00]">!! </span>Low MOQ at better price
+              <span className="text-[#CCFF00]"> !! </span>
             </p>
           </section>
         </BackgroundCarousel>
@@ -52,69 +63,36 @@ export default function Home() {
       {/* Main Content Sections */}
       <div className=" py-4 md:py-8 ">
         {/* Build your own Section */}
-        <div className="min-h-screen bg-white text-white font-sans flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen bg-white text-white flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 gap-y-4">
           {/* Hero Section */}
-          <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 mb-20">
+          <h3 className="text-4xl sm:text-5xl text-[#146EBE] lg:text-6xl text-center font-extrabold leading-tight mb-6 rounded-lg">
+            Build Your Brand
+          </h3>
+          <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
             {/* Left Content Area */}
+
             <div className="flex-1 text-center lg:text-left">
-              <h3 className="text-4xl sm:text-5xl text-[#146EBE] lg:text-6xl text-center font-extrabold leading-tight mb-6 rounded-lg">
-                Build Your Brand
-              </h3>
               <BuildyourBrand />
-              <button className="mt-6 px-6 py-3 border-1 border-b-4 border-b-[#146EBE] text-[#146EBE] rounded-lg shadow-md text-lg font-bold hover:text-xl transition-colors duration-200 flex mx-auto">
-                <Link
-                  href="/products/rolling-paper"
-                  className="flex items-center justify-center"
-                >
-                  <FontAwesomeIcon icon={faBoxOpen} className="mr-2" />
-                  Explore our Catalogue
-                </Link>
-              </button>
             </div>
 
-            {/* Right Video Placeholder */}
-            <div className="flex-1 w-full lg:w-auto relative rounded-2xl shadow-2xl aspect-video max-w-full lg:max-w-2xl">
-              <Image
-                src="/ryo/product-collage.png"
-                alt="Hero Video Placeholder"
-                width={200}
-                height={200}
-                layout="responsive"
-                priority
-                className="rounded-2xl"
+            {/* Right Image Placeholder */}
+            <div className="flex-1 w-full lg:w-auto relative rounded-2xl shadow-2xl max-w-full lg:max-w-2xl">
+              <BackgroundCarousel
+                images={customImages}
+                width="w-full h-100"
+                inset="false"
               />
             </div>
           </section>
-
-          {/* Logos Section */}
-          {/* Placeholder for company logos */}
-          <ul className="flex flex-row flex-wrap justify-center items-center gap-x-8 gap-y-4">
-            {sampleItems.map((item, index) => (
-              <Link
-                key={index}
-                href="/products/rolling-paper/king-size-slim-plus-filters"
-              >
-                <li
-                  key={index}
-                  // Ensure it's a perfect square and content is centered
-                  className="flex flex-col items-center justify-center text-center /* Centering content */
-                 bg-gradient-to-r from-yellow-300 to-lime-400 rounded-full /* Make it circular */
-                 shadow-sm hover:shadow-lg /* Visuals */
-                 text-gray-800 font-bold text-lg /* Text styling */
-                 w-24 h-24 md:w-30 md:h-30
-                 p-6 /* Increased padding to give content more space */
-                 overflow-hidden 
-                 transition-all duration-200 transform hover:scale-150"
-                  style={{ flexShrink: 0 }} /* Prevent shrinking */
-                >
-                  {/* SVG Icon */}
-
-                  {/* Text content */}
-                  <span className="leading-tight">{item}</span>
-                </li>
-              </Link>
-            ))}
-          </ul>
+          <button className="mt-6 px-6 py-3 border-1 border-b-4 border-b-[#146EBE] text-[#146EBE] rounded-lg shadow-md text-lg font-bold hover:text-xl transition-colors duration-200 flex mx-auto">
+            <Link
+              href="/custom-printing"
+              className="flex items-center justify-center"
+            >
+              <FontAwesomeIcon icon={faBoxOpen} className="mr-2" />
+              Start Building
+            </Link>
+          </button>
         </div>
         <SampleBoxOffer />
         {/* BrandWithUs Section */}
