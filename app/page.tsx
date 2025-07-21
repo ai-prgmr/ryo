@@ -5,7 +5,7 @@ import SampleBoxOffer from "./components/SampleBoxOffer";
 import { Metadata } from "next";
 import BackgroundCarousel from "./components/BackgroundCarousel";
 import BrandwithUs from "./components/BrandWithUs";
-import { Factory, Lightbulb, TrendingUp } from "lucide-react";
+import BuildyourBrand from "./components/BuildYourBrand";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBoxOpen } from "@fortawesome/free-solid-svg-icons";
 export const metadata: Metadata = {
@@ -32,6 +32,7 @@ export default function Home() {
     "Block 1 ¼",
     "Pre-rolled cones",
   ];
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen  text-gray-200">
       {/* Hero Section */}
@@ -59,50 +60,7 @@ export default function Home() {
               <h3 className="text-4xl sm:text-5xl text-[#146EBE] lg:text-6xl text-center font-extrabold leading-tight mb-6 rounded-lg">
                 Build Your Brand
               </h3>
-              <div className="grid grid-cols-2 justify-center gap-6 mb-12 text-gray-100">
-                <div className="flex flex-col bg-[#63E6BE] items-center p-4  rounded-xl shadow-md w-full h-50">
-                  <Lightbulb size={40} className="text-blue-400 mb-3" />
-                  <span className="font-bold text-black">
-                    1. Choose your Products
-                  </span>
-                  <p className="text-sm mt-1 text-center text-[#183153] font-semibold">
-                    Rolling papers, cones, tips, or full sets — pick what fits
-                    your brand best.{" "}
-                  </p>
-                </div>
-                <div className="flex flex-col bg-[#74C0FC] items-center p-4  rounded-xl border border-gray-700 shadow-md w-full h-50">
-                  <Factory size={40} className="text-green-400 mb-3" />
-                  <span className="font-bold text-[#183153]">
-                    2. Share Your Vibe
-                  </span>
-                  <p className="text-sm mt-1 text-center  font-semibold">
-                    <span className="text-yellow-700">
-                      Send us your design — or
-                    </span>
-                    <br></br>
-                    <b className="uppercase text-black">
-                      Our team designs it all.
-                    </b>
-                  </p>
-                </div>
-                <div className="flex flex-col bg-[#FFD43B] items-center p-4  rounded-xl border border-gray-700 shadow-md w-full h-50">
-                  <TrendingUp size={40} className="text-purple-400 mb-3" />
-                  <span className="font-bold text-[#183153]">
-                    3. We Custom-Make It
-                  </span>
-                  <p className="text-sm mt-1 text-center text-yellow-700 font-semibold">
-                    Premium materials. Flawless finish. 100% tailored to your
-                    brand.
-                  </p>
-                </div>
-                <div className="flex flex-col bg-[#E599F7] items-center p-4  rounded-xl border border-gray-700 shadow-md w-full h-50">
-                  <TrendingUp size={40} className="text-purple-400 mb-3" />
-                  <span className="font-bold text-black">4. We Ship it !</span>
-                  <p className="text-sm mt-1 text-center text-yellow-700 font-semibold">
-                    No middlemen, No hidden costs, No hassle.
-                  </p>
-                </div>
-              </div>
+              <BuildyourBrand />
               <button className="mt-6 px-6 py-3 border-1 border-b-4 border-b-[#146EBE] text-[#146EBE] rounded-lg shadow-md text-lg font-bold hover:text-xl transition-colors duration-200 flex mx-auto">
                 <Link
                   href="/products/rolling-paper"
