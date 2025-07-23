@@ -1,6 +1,7 @@
 //import { GiftIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
 const SampleBoxOffer: React.FC = () => {
   // const sampleItems = [
   //   "King Size + Filters",
@@ -18,37 +19,40 @@ const SampleBoxOffer: React.FC = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className=" p-4 max-w-full mx-auto animate-fade-in bg-gradient-to-b from-[#bdc9c3] to-[#A1D8D2] rounded-2xl shadow-lg">
+    <section
+      id="sampleBox"
+      className=" p-8 max-w-full mx-auto animate-fade-in bg-gradient-to-b from-[#bdc9c3] to-[#A1D8D2] rounded-2xl shadow-lg"
+    >
       <div className="text-center mb-4">
         {/* <GiftIcon
           size={64}
           className="text-purple-800 mx-auto mb-6 drop-shadow-md"
         /> */}
-        <Image
+        {/* <Image
           src="/ryo/images/gift_icon.png"
           alt="gift icon"
           width={100}
           height={100}
           className="mb-3 rounded-lg justify-center mx-auto"
-        />
+        /> */}
         <h2 className="text-4xl md:text-6xl font-extrabold text-[#146EBE] leading-tight">
-          Discover Our Sample
+          Discover Our Sample Pack
         </h2>
       </div>
 
       <div className=" px-6 md:px-8 rounded-2xl mb-8">
-        <h3 className="md:text-5xl text-3xl font-extrabold text-[#146EBE] mb-4 text-center italic">
+        <h3 className="md:text-5xl text-3xl font-extrabold text-[#146EBE] text-center italic">
           Just $30 USD
           <Image
             src="/ryo/images/free-shipping.png"
             alt="free shipping icon"
             width={200}
             height={200}
-            className="mb-3 rounded-lg justify-center mx-auto"
+            className=" rounded-lg justify-center mx-auto"
           />
         </h3>
         <p className="text-white text-2xl font-bold text-center mb-12">
-          See What&apos;s Included in Your Sample Box
+          See What&apos;s Included
         </p>
         <Image
           src="/ryo/Sample-Box-removebg.png"

@@ -34,7 +34,7 @@ const stepsData = [
   {
     icon: TrendingUp,
     image: "/ryo/images/delivery.png",
-    title: "We Ship it !",
+    title: "We Ship it",
     description: "No middlemen, No hidden costs, No hassle.",
   },
 ];
