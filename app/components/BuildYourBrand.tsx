@@ -2,17 +2,19 @@
 import { useState, useEffect } from "react";
 import { Lightbulb, Factory, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 // (stepsData and backgroundColors definitions remain the same)
 const stepsData = [
   {
     icon: Lightbulb,
     title: "Choose Rolling Paper",
+    image: "/ryo/images/choose.png",
     description:
       "Rolling papers, cones, tips, or full sets — pick what fits your brand best.",
   },
   {
     icon: Factory,
+    image: "/ryo/images/vibe.png",
     title: "Share Your Vibe",
     description: (
       <>
@@ -25,11 +27,13 @@ const stepsData = [
   {
     icon: TrendingUp,
     title: "We Custom-Make It",
+    image: "/ryo/images/processing.png",
     description:
       "Premium materials. Flawless finish. 100% tailored to your brand.",
   },
   {
     icon: TrendingUp,
+    image: "/ryo/images/delivery.png",
     title: "We Ship it !",
     description: "No middlemen, No hidden costs, No hassle.",
   },
@@ -55,7 +59,7 @@ export default function BuildyourBrand() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6">
       {stepsData.map((step, index) => {
-        const IconComponent = step.icon;
+        //const IconComponent = step.icon;
         const bgColor =
           backgroundColors[
             (index + currentStartIndex) % backgroundColors.length
@@ -71,17 +75,24 @@ export default function BuildyourBrand() {
             // Define the animation transition properties
             transition={{
               duration: 1, // How long the animation for each item takes (0.5 seconds)
-              delay: index * 1.5, // Stagger delay: Each item starts its animation 0.15s after the previous one
+              delay: index * 0.15, // Stagger delay: Each item starts its animation 0.15s after the previous one
               ease: "easeOut", // Easing function for a smoother finish
             }}
             className={`
               flex flex-col items-center p-6 w-full min-h-[180px]
               rounded-xl shadow-md
-              transition-colors duration-500 ease-in-out /* Keep for color transition */
+              duration-500 ease-in-out /* Keep for color transition */
             `}
             style={{ backgroundColor: bgColor }}
           >
-            <IconComponent size={40} className="text-gray-800 mb-3" />
+            <Image
+              src={step.image}
+              alt={step.title}
+              width={100}
+              height={100}
+              className="mb-3 rounded-lg"
+            />
+            {/* <IconComponent size={40} className="text-gray-800 mb-3" /> */}
             <span className="font-bold text-lg text-gray-900 mb-1">
               {step.title}
             </span>

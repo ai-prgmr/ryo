@@ -39,6 +39,7 @@ export default function Header() {
             alt="RYO Papers Logo"
             width={100}
             height={100}
+            priority
             className="transform scale-125" // Optional: Add rounded corners to the logo
           />
         </Link>
