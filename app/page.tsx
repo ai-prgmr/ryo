@@ -99,7 +99,7 @@ export default function Home() {
         <SampleBoxOffer />
         {/* BrandWithUs Section */}
         <section className="text-center mb-16 bg-white p-8">
-          <h3 className="text-3xl md:text-5xl font-extrabold bg-[#CCFF00] text-black mb-6 text-center flex justify-center items-center p-4 rounded-lg">
+          <h3 className="text-3xl md:text-5xl font-extrabold text-[#1D4ED8] mb-6 text-center flex justify-center items-center p-4 rounded-lg">
             Why Brands roll with us?
           </h3>
           {/* <p className="text-lg md:text-xl text-gray-700 font-extrabold w-full mx-auto mb-4">

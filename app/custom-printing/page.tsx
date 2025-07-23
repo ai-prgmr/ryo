@@ -25,11 +25,20 @@ export const metadata: Metadata = {
 };
 import { products, Product } from "@/app/lib/data";
 import ProductCard from "@/app/components/ProductCard";
+import SampleBoxOffer from "../components/SampleBoxOffer";
 
 function CustomPrintingPage() {
   const filteredProducts = products.filter(
     (product: Product) => product.categorySlug === "rolling-paper" // Directly filter for 'rolling-paper'
   );
+  const backgroundColors = [
+    "#63E6BE", // Original green/teal
+    "#74C0FC", // Original light blue
+    "#FFD43B", // Original yellow
+    "#E599F7", // Original light purple/pink
+    "#FFFACD", // New: Light Pastel Yellow (Lemon Chiffon)
+    "#FFC0CB", // New: Light Pink (Pink)
+  ];
   return (
     <div className="container mx-auto px-4 py-4 bg-white">
       <div className="p-6 md:p-10 text-center">
@@ -50,10 +59,10 @@ function CustomPrintingPage() {
 
           {/* Content Wrapper with higher z-index to appear on top */}
           <div className="relative z-10 text-center">
-            <h1 className="text-4xl md:text-5xl uppercase font-extrabold text-[#146EBE] mb-6 ">
+            <h1 className="text-4xl md:text-5xl uppercase font-extrabold text-[#CCFF00] mb-6 ">
               Launch Your Brand
             </h1>
-            <p className="text-lg text-gray-200 max-w-5xl mx-auto mb-10 leading-relaxed ">
+            <p className="text-xl text-gray-200 max-w-5xl mx-auto mb-10 leading-relaxed font-extrabold">
               Unleash your creativity and establish your brand with our premium
               custom printing services for rolling papers. We bring your unique
               designs to life, ensuring exceptional quality and a distinctive
@@ -62,8 +71,8 @@ function CustomPrintingPage() {
           </div>
         </div>
         <div className="container mx-auto px-4 py-8">
-          <h1 className="text-4xl font-extrabold text-yellow-500 mb-10 text-center capitalize">
-            Choose your Rolling Paper
+          <h1 className="text-4xl sm:text-5xl text-[#146EBE] lg:text-6xl font-bold mb-10 text-center capitalize">
+            Our Products
           </h1>
 
           {filteredProducts.length === 0 ? (
@@ -72,9 +81,18 @@ function CustomPrintingPage() {
             </p>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-              {filteredProducts.map((product: Product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
+              {filteredProducts.map((product: Product, index: number) => {
+                const bgColor =
+                  backgroundColors[index % backgroundColors.length];
+                return (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    index={index}
+                    bgColor={bgColor}
+                  />
+                );
+              })}
             </div>
           )}
         </div>
@@ -104,68 +122,11 @@ function CustomPrintingPage() {
           </div>
         </div> */}
         <div className="p-6 md:p-10 text-center mb-5">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-amber-300 mb-6">
-            Contract Manufacturing
-          </h1>
-          <p className="text-2xl text-gray-800 max-w-4xl mx-auto mb-10 leading-relaxed">
-            As a trusted partner, we offer comprehensive contract manufacturing
-            solutions specifically designed for the tobacco industry. Leveraging
-            our cutting-edge facilities and stringent quality controls, we
-            ensure your products meet the highest standards of excellence and
-            compliance.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className=" p-6 rounded-2xl">
-              <Award size={48} className="text-amber-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-gray-500 mb-3">
-                Uncompromising Quality
-              </h3>
-              <p className="text-gray-800 leading-relaxed">
-                Our manufacturing processes adhere to the strictest industry
-                standards, guaranteeing consistency and superior quality for
-                every batch of your product.
-              </p>
-            </div>
-            <div className=" p-6 rounded-2xl">
-              <FlaskConical size={48} className="text-amber-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-gray-500 mb-3">
-                Advanced Capabilities
-              </h3>
-              <p className="text-gray-800 leading-relaxed">
-                Equipped with state-of-the-art machinery and skilled
-                technicians, we handle projects of all scales with efficiency
-                and precision.
-              </p>
-            </div>
-            <div className=" p-6 rounded-2xl">
-              <Blend size={48} className="text-amber-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-gray-500 mb-3">
-                Custom Formulation & Production
-              </h3>
-              <p className="text-gray-800 leading-relaxed">
-                Whether it&unquot;s specific blends, unique paper types, or
-                specialized packaging, we adapt to your exact manufacturing
-                requirements.
-              </p>
-            </div>
-            <div className=" p-6 rounded-2xl">
-              <Handshake size={48} className="text-amber-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-gray-500 mb-3">
-                Confidential Partnership
-              </h3>
-              <p className="text-gray-800 leading-relaxed">
-                We operate with utmost discretion and confidentiality,
-                protecting your intellectual property and business interests
-                throughout the process.
-              </p>
-            </div>
-          </div>
-
-          <p className="text-xl text-gray-800 max-w-3xl mx-auto mb-8">
+          <SampleBoxOffer />
+          <h3 className="text-4xl md:text-5xl font-extrabold text-amber-300 mb-6">
             Partner with us for reliable, high-volume manufacturing that scales
             with your business needs.
-          </p>
+          </h3>
 
           <Link
             href="/contact"
