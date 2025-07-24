@@ -8,19 +8,15 @@ import TestimonialCard from "./TestimonialCard"; // Adjust path if TestimonialCa
 const testimonialsData = [
   {
     quote:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
-    authorName: "Micheal Gough",
-    authorTitle: "CEO at Google",
-    authorImg:
-      "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png",
+      "What impresses us most about RYOPAPERS is their dedication to the raw materials. They don't just talk about pure fibers; you can actually feel it in their papers. Their manufacturing process clearly prioritizes cleanliness and precision, resulting in a product we're genuinely proud to put our name on.",
+    authorName: "Bryan Willis ",
+    authorTitle: "Vietnam",
   },
   {
     quote:
       "This service transformed our workflow. The components are intuitive and the documentation is clear. Highly recommend for any modern web project.",
     authorName: "Sarah Johnson",
     authorTitle: "CTO at Tech Innovations",
-    authorImg:
-      "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png",
   },
   {
     quote:

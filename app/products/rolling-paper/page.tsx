@@ -5,6 +5,14 @@ function RollingPaperCategoryPage() {
   const filteredProducts = products.filter(
     (product: Product) => product.categorySlug === "rolling-paper" // Directly filter for 'rolling-paper'
   );
+  const backgroundColors = [
+    "#63E6BE", // Original green/teal
+    "#74C0FC", // Original light blue
+    "#FFD43B", // Original yellow
+    "#E599F7", // Original light purple/pink
+    "#FFFACD", // New: Light Pastel Yellow (Lemon Chiffon)
+    "#FFC0CB", // New: Light Pink (Pink)
+  ];
 
   return (
     <div className="container mx-auto px-4 py-16">
@@ -18,9 +26,17 @@ function RollingPaperCategoryPage() {
         </p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-          {filteredProducts.map((product: Product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+          {filteredProducts.map((product: Product, index: number) => {
+            const bgColor = backgroundColors[index % backgroundColors.length];
+            return (
+              <ProductCard
+                key={product.id}
+                product={product}
+                index={index}
+                bgColor={bgColor}
+              />
+            );
+          })}
         </div>
       )}
     </div>

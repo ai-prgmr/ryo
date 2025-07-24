@@ -3,7 +3,15 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Home, Printer, Mail, X, Leaf, AlignRightIcon } from "lucide-react"; // Import Menu and X icons
+import {
+  Package,
+  Home,
+  Printer,
+  Mail,
+  X,
+  Leaf,
+  AlignRightIcon,
+} from "lucide-react"; // Import Menu and X icons
 import { useState } from "react"; // Import useState hook
 import { usePathname } from "next/navigation";
 
@@ -83,14 +91,14 @@ export default function Header() {
             hoverColor="hover:text-black"
             onClick={closeMenu}
           />
-          {/* <NavLink
+          <NavLink
             href="/products/rolling-paper"
             icon={Package}
             label="Products"
             textColor="text-white"
             hoverColor="hover:text-gray-200"
             onClick={closeMenu}
-          /> */}
+          />
           <NavLink
             href="/custom-printing"
             icon={Printer}
@@ -102,7 +110,7 @@ export default function Header() {
           <NavLink
             href="/#sampleBox"
             icon={Printer}
-            label="Sample Box"
+            label="Samples"
             textColor="text-gray-300"
             hoverColor="hover:text-black"
             onClick={closeMenu}

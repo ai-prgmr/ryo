@@ -4,13 +4,11 @@ interface TestimonialCardProps {
   quote: string;
   authorName: string;
   authorTitle: string;
-  authorImg: string;
 }
 export default function TestimonialCard({
   quote,
   authorName,
   authorTitle,
-  authorImg,
 }: TestimonialCardProps) {
   return (
     <figure className="max-w-screen-md mx-auto h-full flex flex-col justify-between">
@@ -33,11 +31,6 @@ export default function TestimonialCard({
         </p>
       </blockquote>
       <figcaption className="flex items-center justify-center mt-6 space-x-3">
-        <img
-          className="w-6 h-6 rounded-full"
-          src={authorImg}
-          alt={`${authorName} profile picture`}
-        />
         <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
           <div className="pr-3 font-medium text-gray-900 dark:text-white">
             {authorName}

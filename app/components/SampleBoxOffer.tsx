@@ -1,6 +1,7 @@
 //import { GiftIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import CircularFeatureGrid from "./CircularFeatureGrid";
 
 const SampleBoxOffer: React.FC = () => {
   // const sampleItems = [
@@ -54,13 +55,14 @@ const SampleBoxOffer: React.FC = () => {
         <p className="text-white text-2xl font-bold text-center mb-12">
           See What&apos;s Included
         </p>
-        <Image
+        {/* <Image
           src="/ryo/Sample-Box-removebg.png"
           alt="Sample Box Contents"
           width={500}
           height={300}
           className="justify-center mx-auto"
-        />
+        /> */}
+        <CircularFeatureGrid />
       </div>
 
       <div className="text-center">
