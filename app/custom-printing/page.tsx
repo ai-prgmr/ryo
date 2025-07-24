@@ -1,15 +1,8 @@
 import Link from "next/link";
-import {
-  Award,
-  FlaskConical,
-  Blend,
-  Handshake,
-  Factory,
-  Lightbulb,
-  TrendingUp,
-} from "lucide-react";
+import { Factory, Lightbulb, TrendingUp } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
+import CustomDesign from "../components/CustomDesign";
 
 export const metadata: Metadata = {
   title: "Custom Printing & Contract Manufacturing | Rolling Paper Co.",
@@ -25,7 +18,6 @@ export const metadata: Metadata = {
 };
 import { products, Product } from "@/app/lib/data";
 import ProductCard from "@/app/components/ProductCard";
-import SampleBoxOffer from "../components/SampleBoxOffer";
 
 function CustomPrintingPage() {
   const filteredProducts = products.filter(
@@ -41,8 +33,8 @@ function CustomPrintingPage() {
   ];
   return (
     <div className="container mx-auto px-4 py-4 bg-white">
-      <div className="p-6 md:p-10 text-center">
-        <div className="relative py-20 px-4 md:px-8 overflow-hidden /* Add a height if content is too short */ min-h-[400px]">
+      <div className="p-1 text-center">
+        <div className="relative py-20 px-4 overflow-hidden min-h-[400px]">
           {/* Background Image */}
           <Image
             src="/ryo/customize.jpeg" // <-- Replace with your actual image path
@@ -70,10 +62,10 @@ function CustomPrintingPage() {
             </p>
           </div>
         </div>
-        <div className="container mx-auto px-4 py-8">
-          <h1 className="text-4xl sm:text-5xl text-[#146EBE] lg:text-6xl font-bold mb-10 text-center capitalize">
+        <div className="container mx-auto py-8">
+          {/* <h1 className="text-4xl sm:text-5xl text-[#146EBE] lg:text-6xl font-bold mb-10 text-center capitalize">
             Our Products
-          </h1>
+          </h1> */}
 
           {filteredProducts.length === 0 ? (
             <p className="text-center text-gray-400 text-lg">
@@ -96,33 +88,8 @@ function CustomPrintingPage() {
             </div>
           )}
         </div>
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div className=" p-6">
-            <Paintbrush size={48} className="text-amber-400 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-gray-500 mb-3">
-              Your Vision, Our Expertise
-            </h3>
-            <p className="text-gray-800 leading-relaxed">
-              From intricate logos to vibrant patterns, our advanced printing
-              technology ensures every detail of your design is perfectly
-              replicated on the finest rolling paper.
-            </p>
-          </div>
-          <div className=" p-6 rounded-2xl">
-            <Palette size={48} className="text-amber-400 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-gray-500 mb-3">
-              Material & Finish Options
-            </h3>
-            <p className="text-gray-800 leading-relaxed">
-              Choose from our wide range of paper types – Unbleached Organic,
-              Hemp, Unbleached Classic, white, AlfaAlfa, Bamboo, Verge,
-              Flavoured, Coloured – to match your brand&quot;s ethos and
-              aesthetic.
-            </p>
-          </div>
-        </div> */}
-        <div className="p-6 md:p-10 text-center mb-5">
-          <SampleBoxOffer />
+        <div className="py-2 text-center mb-5">
+          <CustomDesign />
           <h3 className="text-4xl md:text-5xl font-extrabold text-amber-300 mb-6">
             Partner with us for reliable, high-volume manufacturing that scales
             with your business needs.

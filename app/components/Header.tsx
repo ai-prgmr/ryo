@@ -14,14 +14,14 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="bg-gradient-to-r from-[#0b0b0a] to-[#080a07] text-white shadow-xl fixed w-full z-50 border-b-16 border-b-[#CCFF00]">
+    <header className="bg-white text-white shadow-xl fixed w-full z-50 border-b-8 border-b-[#CCFF00]">
       <div className="container mx-auto md:ml-20 flex justify-between items-center px-4">
         {" "}
         {/* Added relative for absolute positioning of nav */}
         {/* Logo/Brand */}
         <Link
           href="/"
-          className="flex items-center space-x-2 text-2xl font-bold text-white hover:text-blue-100 transition-colors duration-200 p-2 rounded-2xl"
+          className="flex items-center space-x-2 text-2xl font-bold transition-colors duration-200 p-2 rounded-2xl"
           onClick={closeMenu} // Close menu if logo is clicked
           aria-label="Rolling Paper Co. Home"
           title="Rolling Paper Co. Home"
@@ -44,7 +44,7 @@ export default function Header() {
         /> */}
         {/* Hamburger/Close Button for Mobile */}
         <button
-          className="sm:hidden text-white focus:outline-none z-60" // Hidden on sm screens and up
+          className="sm:hidden text-blue-500 focus:outline-none z-60" // Hidden on sm screens and up
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={
             isMenuOpen ? "Close navigation menu" : "Open navigation menu"
@@ -62,7 +62,7 @@ export default function Header() {
             flex-col sm:flex-row
     fixed sm:relative
     top-0 left-0 w-full h-full sm:h-auto
-    bg-[black]
+    bg-white
     sm:bg-none sm:shadow-none
     pb-4 sm:pb-0 pt-2 sm:pt-0
     shadow-lg
@@ -79,8 +79,8 @@ export default function Header() {
             href="/"
             icon={Home}
             label="Home"
-            textColor="text-white"
-            hoverColor="hover:text-gray-200"
+            textColor="text-gray-300"
+            hoverColor="hover:text-black"
             onClick={closeMenu}
           />
           {/* <NavLink
@@ -95,16 +95,16 @@ export default function Header() {
             href="/custom-printing"
             icon={Printer}
             label="Customize"
-            textColor="text-white"
-            hoverColor="hover:text-gray-200"
+            textColor="text-gray-300"
+            hoverColor="hover:text-black"
             onClick={closeMenu}
           />
           <NavLink
             href="/#sampleBox"
             icon={Printer}
             label="Sample Box"
-            textColor="text-white"
-            hoverColor="hover:text-gray-200"
+            textColor="text-gray-300"
+            hoverColor="hover:text-black"
             onClick={closeMenu}
           />
           {/* <NavLink
@@ -119,16 +119,16 @@ export default function Header() {
             href="/about-us"
             icon={Leaf}
             label="About Us"
-            textColor="text-white"
-            hoverColor="hover:text-gray-200"
+            textColor="text-gray-300"
+            hoverColor="hover:text-black"
             onClick={closeMenu}
           />
           <NavLink
             href="/contact"
             icon={Mail}
             label="Contact"
-            textColor="text-white"
-            hoverColor="hover:text-gray-200"
+            textColor="text-gray-300"
+            hoverColor="hover:text-black"
             onClick={closeMenu}
           />
         </nav>
@@ -164,9 +164,9 @@ function NavLink({
     <Link
       href={href}
       className={`flex flex-col items-center p-2 rounded-lg transition-colors duration-200
-        ${isActive ? "bg-[#e1ffac] text-black bg-opacity-20" : "text-white"}
+        ${isActive ? "bg-[#e1ffac] text-black bg-opacity-20" : "text-gray-600"}
          ${hoverColor}`}
-      onClick={onClick} // Pass the onClick prop to the Link
+      onClick={onClick}
     >
       <Icon size={20} />
       <span className="text-md mt-1 whitespace-nowrap">{label}</span>
