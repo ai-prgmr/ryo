@@ -4,15 +4,6 @@ import Link from "next/link";
 import CircularFeatureGrid from "./CircularFeatureGrid";
 
 const SampleBoxOffer: React.FC = () => {
-  // const sampleItems = [
-  //   "King Size + Filters",
-  //   "King Size Slim + Filters",
-  //   "1 ¼ + Filters",
-  //   "Block King Size",
-  //   "Block 1 ¼",
-  //   "Pre-rolled cones",
-  // ];
-
   const whatsappNumber = "+919009111088"; // Replace with your actual WhatsApp number
   const whatsappMessage = encodeURIComponent(
     `Hello! I'm interested in ordering the Sample Box for $30 USD (includes shipping). Please provide details on how to proceed. Thank you!`
@@ -52,16 +43,6 @@ const SampleBoxOffer: React.FC = () => {
             className=" rounded-lg justify-center mx-auto"
           />
         </h3>
-        <p className="text-white text-2xl font-bold text-center mb-12">
-          See What&apos;s Included
-        </p>
-        {/* <Image
-          src="/ryo/Sample-Box-removebg.png"
-          alt="Sample Box Contents"
-          width={500}
-          height={300}
-          className="justify-center mx-auto"
-        /> */}
         <CircularFeatureGrid />
       </div>
 

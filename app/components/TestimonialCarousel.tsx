@@ -10,45 +10,37 @@ const testimonialsData = [
     quote:
       "What impresses us most about RYOPAPERS is their dedication to the raw materials. They don't just talk about pure fibers; you can actually feel it in their papers. Their manufacturing process clearly prioritizes cleanliness and precision, resulting in a product we're genuinely proud to put our name on.",
     authorName: "Bryan Willis ",
-    authorTitle: "Vietnam",
+    authorTitle: "Organic Rolls, Vietnam",
   },
   {
     quote:
-      "This service transformed our workflow. The components are intuitive and the documentation is clear. Highly recommend for any modern web project.",
-    authorName: "Sarah Johnson",
-    authorTitle: "CTO at Tech Innovations",
+      "When you're dealing with the volumes we do, reliability is non-negotiable. RYOPAPERS has never missed a beat. Their team really understands the nuances of paper production, and it shows in their ability to deliver top-tier rolling papers, consistently and efficiently. They're true experts in their field.",
+    authorName: "Anna Jónsdóttir",
+    authorTitle: "Global Smoking Accessories, ICELAND",
   },
   {
     quote:
-      "Unbelievable efficiency boost! The pre-built elements saved us countless hours of development time. Truly a game-changer for our startup.",
-    authorName: "David Lee",
-    authorTitle: "Lead Developer, Alpha Corp",
-    authorImg:
-      "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png",
+      "Partnering with RYOPAPERS for our custom rolling papers has been a game-changer. They made the entire customization process seamless, from our specific paper blends to branded packaging. But what truly set them apart was their flexible approach to MOQs (Minimum Order Quantities). It allowed us to launch our unique branded papers without a huge upfront commitment, letting us test the market effectively. Their manufacturing precision means the final product always looks and performs exactly as we envisioned, giving us a real edge over competitors.",
+    authorName: "Sarah J.",
+    authorTitle: "The Green Leaf Emporium, USA",
   },
   {
     quote:
-      "The attention to detail and customization options are fantastic. Our brand really shines through, and the support team is top-notch.",
-    authorName: "Emily Chen",
-    authorTitle: "Marketing Director, Global Brands",
-    authorImg:
-      "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png",
+      "Working with RYOPAPERS has been a real blessing for us at NaijaRollers, no lie. From day one, they made the whole custom paper thing easy — the blend, the branding, everything correct. The best part? Their low MOQ. We didn’t need to break bank to start our own line. Plus, their shipping and dropshipping dey on point — our customers get their papers sharp-sharp, no wahala at all. Good people, good service, top quality — RYOPAPERS get am!",
+    authorName: "Chinedu Okafor",
+    authorTitle: "NaijaRollers, Lagos, Nigeria",
   },
   {
     quote:
-      "A seamless experience from start to finish. The flexibility of the components allowed us to implement complex features with ease.",
-    authorName: "Mark Sulliver",
-    authorTitle: "Product Manager, Creative Solutions",
-    authorImg:
-      "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-goad.png",
+      "Trabajar con RYOPAPERS fue un acierto total para nosotros en RollingChile. Desde el primer día nos ayudaron a crear un diseño único para nuestra marca, con opciones de papel y empaques que aquí en Chile no se encuentran fácil. Otra cosa buena fue el precio justo y las cantidades flexibles — pudimos empezar chico y crecer paso a paso sin quedarnos sin stock. Además, siempre tienen buena comunicación y nos mandan muestras para probar nuevas ideas antes de producir en grande. El envío llega sin problemas y rápido, incluso para nosotros acá en Santiago. Con RYOPAPERS ganamos calidad, respaldo y un socio confiable. ¡Los recomiendo sin dudar!",
+    authorName: "Juan González",
+    authorTitle: "RollingChile, Santiago, Chile",
   },
   {
     quote:
-      "Absolutely blown away by the quality and speed. This platform is now an indispensable part of our development stack.",
-    authorName: "Lisa Wong",
-    authorTitle: "Founder, Innovate Labs",
-    authorImg:
-      "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png",
+      "Bringing RYOPAPERS on board made everything so much smoother for us at Volute. We wanted genuine French paper with premium quality, and they handled every detail, no fuss at all. The best part? Our customers can’t tell the difference — whether it’s made here or through RYOPAPERS, the quality and finish are spot on. No stress over big order sizes either — we stay stocked without overcommitting. They’re reliable, quick, and always ready to help. No drama — RYOPAPERS just gets it right.",
+    authorName: "Marie Martin",
+    authorTitle: "Volute, France",
   },
 ];
 

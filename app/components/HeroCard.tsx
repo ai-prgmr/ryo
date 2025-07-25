@@ -6,8 +6,8 @@ const HeroCard: React.FC = () => {
   return (
     <div
       className="
-      bg-gradient-to-b from-green-900 to-green-700
-      text-gray-100 py-8 md:py-8 mb-16
+      bg-gradient-to-b from-[#bdc9c3] to-[#A1D8D2]
+      text-gray-100 py-8 md:py-8 mb-8
       border border-green-600
        mx-auto
       overflow-hidden relative
@@ -25,30 +25,23 @@ const HeroCard: React.FC = () => {
 
       <div className="relative z-10 text-center">
         {/* Main H1 featuring the R-Y-O breakdown */}
-        <h1
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold  leading-tight mb-4
-          drop-shadow-lg bg-clip-text text-transparent
-          bg-gradient-to-r from-amber-300 via-amber-100 to-amber-300
-        "
-        >
-          <span className="block text-green-200">
-            R – <span className="text-white">Respect</span>
-          </span>
-          <span className="block text-green-200">
-            Y – <span className="text-white">Your</span>
-          </span>
-          <span className="block text-green-200">
-            O – <span className="text-white">Origin</span>
-          </span>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold  leading-tight mb-4 bg-gradient-to-r from-emerald-500 via-zinc-700 to-sky-600 bg-clip-text text-transparent">
+          Where your story meets our paper
         </h1>
 
         {/* Main content */}
-        <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
-          <strong className="text-green-200">RYOPAPERS</strong> is a rolling
-          paper manufacturer for those who value thoughtful design, quiet
-          craftsmanship, and the freedom to build something uniquely their own.
-          We blend precision manufacturing with environmentally conscious
-          practices to offer brands a refined, flexible foundation for growth.
+        <p className="text-lg md:text-xl text-[#173153] leading-relaxed max-w-3xl mx-auto">
+          At<strong className="text-sky-600"> RYO Papers,</strong> we believe
+          every great idea deserves a chance — no matter how small it starts.
+          That’s why, since 2017, we’ve been helping people around the world
+          create their own line of custom rolling papers, with low minimum
+          orders, fast turnaround, and personal attention every step of the way.
+        </p>
+        <p className="text-lg md:text-xl text-[#173153] leading-relaxed max-w-3xl mx-auto mt-4">
+          We’re a white-label company, but our approach is anything but generic.
+          Every client, every brand, every design — it matters to us. We
+          understand that your product isn’t just a product. It’s your story,
+          your roots, your identity. And we take that seriously.
         </p>
       </div>
     </div>

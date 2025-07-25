@@ -50,10 +50,10 @@ const backgroundColors = [
 
 export default function CircularFeatureGrid() {
   return (
-    <section className="py-12 bg-transparent">
+    <section className="bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Grid Container */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {featuresData.map((feature, index) => (
             <motion.div
               key={index} // Unique key for each item

@@ -23,7 +23,7 @@ function Footer() {
           Roll Your Own Paper – Crafted with care, designed for you.
         </p>
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 my-5 mb-10">
-          © 2024-2025{" "}
+          © 2017-2025{" "}
           <a href="#" className="hover:underline">
             RYO Papers
           </a>

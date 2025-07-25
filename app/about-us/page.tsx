@@ -1,132 +1,130 @@
-import { Leaf, Wind, Users } from "lucide-react";
+"use client";
 import Image from "next/image";
 import HeroCard from "../components/HeroCard";
 import { Sprout, Home, Heart, HandHeart } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+// Import specific Font Awesome icons for the benefits
+import {
+  faBoxes,
+  faHeadset,
+  faStar,
+  faLeaf,
+} from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion"; // For animating the benefit cards
+library.add(faBoxes, faHeadset, faStar, faLeaf);
 
-const AboutUs = () => {
+const benefitColors = [
+  "#63E6BE", // Light green/teal
+  "#74C0FC", // Light blue
+  "#FFD43B", // Yellow
+  "#E599F7", // Light purple/pink
+  "#FFFACD", // Pastel Yellow
+  "#FFC0CB", // Light Pink
+];
+
+// Define data for the benefit cards
+const benefitsData = [
+  {
+    icon: faBoxes,
+    title: "Low Order Quantities",
+    description:
+      "Every brand starts somewhere – we support your growth journey.",
+  },
+  {
+    icon: faHeadset,
+    title: "Real Human Support",
+    description:
+      "Talk to people, not bots, for genuine guidance and assistance.",
+  },
+  {
+    icon: faStar,
+    title: "Premium Finish",
+    description: "Beautiful, high-quality packaging with a professional touch.",
+  },
+  {
+    icon: faLeaf,
+    title: "Eco-Friendly Promise",
+    description: "Committed to sustainability, true to your brand's vibe.",
+  },
+];
+
+export default function AboutUs() {
+  const textColor = "text-[#173153]";
   return (
     <div className=" font-sans mt-2">
       <div className="container mx-auto px-12 lg:px-8">
         {/* Main Heading & Introduction */}
         <HeroCard />
-        <div className="gap-y-7 bg-white p-4 shadow-lg mt-8">
-          {/* Section: Our Philosophy */}
-          <div className="flex flex-col md:flex-row items-start gap-8 ">
-            <div className="flex-shrink-0">
-              <div className="bg-gray-100 p-4">
-                {/* <Dna size={28} className="text-gray-700" /> */}
-                <Image
-                  src="/ryo/6-socrates.jpeg"
-                  alt="Rolling Paper Co. Logo"
-                  width={300}
-                  height={300}
-                  className="" // Optional: Add rounded corners to the logo
-                />
-              </div>
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-                Our Philosophy
-              </h2>
-              <p className="text-base text-gray-600 leading-relaxed">
-                Rooted in a deep understanding of the RYO (Roll Your Own)
-                culture, our work is guided by deliberate intention. We believe
-                the process of creation is as important as the final product.
-                It&apos;s not just about what is made, but how it is made—and at
-                RYOPAPERS, the process is as considered as the paper itself.
+        <section className=" bg-gradient-to-br from-gray-50 to-blue-50">
+          <div className="w-full mx-auto px-6 lg:px-8">
+            <div className="p-8 sm:p-10 lg:p-12 border border-gray-100 dark:border-gray-700">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 text-center">
+                Work With Us
+              </h3>
+              <p
+                className={`${textColor} dark:text-gray-300 text-lg md:text-xl leading-relaxed text-center mb-6 mx-auto`}
+              >
+                Working with RYO Papers feels more like a collaboration than a
+                transaction.
               </p>
-            </div>
-          </div>
 
-          {/* Section: Our Facility */}
-          <div className="flex flex-col md:flex-row-reverse items-start gap-8">
-            <div className="flex-shrink-0">
-              <div className="bg-gray-100 p-4 rounded-full">
-                <Wind
-                  size={150}
-                  className="text-gray-700 bg-white rounded-full"
-                />
-                {/* <Image
-                  src="/presentation.svg"
-                  alt="Rolling Paper Co. Logo"
-                  width={100}
-                  height={100}
-                  className="transform scale-125" // Optional: Add rounded corners to the logo
-                /> */}
-              </div>
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-                A Space for Harmony
-              </h2>
-              <p className="text-base text-gray-600 leading-relaxed">
-                Our facility itself is a reflection of our values—open,
-                naturally ventilated, and surrounded by green space to promote
-                harmony between production and the environment. Every detail,
-                from layout to logistics, has been considered with intention,
-                enabling smooth, scalable, and clean operations.
+              <p
+                className={`${textColor} dark:text-gray-300 text-lg md:text-xl leading-relaxed mb-8 mx-auto`}
+              >
+                We know what it’s like to have an idea and not know where to
+                start. That’s why we’ve made the process simple, flexible, and
+                friendly. Whether you want 500 packs or 50,000 — we’ve got you.
               </p>
-            </div>
-          </div>
 
-          {/* Section: Crafted For Your Brand */}
-          <div className="flex flex-col md:flex-row items-start gap-8">
-            <div className="flex-shrink-0">
-              <div className="bg-gray-100 p-4 rounded-full">
-                {/* <PencilRuler size={28} className="text-gray-700" /> */}
-                <Image
-                  src="/ryo/man-riding-a-rocket.svg"
-                  alt="Rolling Paper Co. Logo"
-                  width={150}
-                  height={150}
-                  className="transform scale-125" // Optional: Add rounded corners to the logo
-                />
+              {/* New Grid for Benefits */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                {benefitsData.map((benefit, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 30 }} // Animation: start slightly below and transparent
+                    whileInView={{ opacity: 1, y: 0 }} // Animate to full visibility
+                    viewport={{ once: true, amount: 0.5 }} // Trigger once when 50% in view
+                    transition={{
+                      duration: 0.5,
+                      delay: index * 0.1,
+                      ease: "easeOut",
+                    }} // Staggered animation
+                    className="p-6 rounded-lg flex flex-col items-center text-center shadow-md transition-shadow hover:shadow-lg"
+                    style={{
+                      backgroundColor:
+                        benefitColors[index % benefitColors.length],
+                    }} // Dynamic background color
+                  >
+                    <FontAwesomeIcon
+                      icon={benefit.icon}
+                      className="text-4xl text-gray-800 mb-3"
+                    />
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">
+                      {benefit.title}
+                    </h4>
+                    <p className="text-md text-gray-700 leading-snug">
+                      {benefit.description}
+                    </p>
+                  </motion.div>
+                ))}
               </div>
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-                Crafted for Your Brand
-              </h2>
-              <p className="text-base text-gray-600 leading-relaxed">
-                At our core is the ability to craft custom-made and white-label
-                rolling paper products that meet the evolving needs of today’s
-                consumers. Whether you&apos;re building a boutique lifestyle
-                brand or expanding an established line, we offer tailored
-                solutions—papers, filter tips, booklets, and packaging—all
-                designed to reflect your identity with subtle elegance and
-                technical precision.
-              </p>
-            </div>
-          </div>
 
-          {/* Section: Commitment to Sustainability */}
-          <div className="flex flex-col md:flex-row-reverse items-start gap-8">
-            <div className="flex-shrink-0">
-              <div className="bg-gray-100 p-4 rounded-full">
-                <Leaf size={150} className="text-green-700" />
-              </div>
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-                Commitment to Sustainability
-              </h2>
-              <p className="text-base text-gray-600 leading-relaxed">
-                Materials are responsibly sourced, packaging is biodegradable,
-                and inks are vegetable-based—ensuring a low-impact footprint
-                without compromising on quality or aesthetics. Each product
-                undergoes careful attention to ensure it burns cleanly, feels
-                premium to the touch, and delivers a consistent, satisfying user
-                experience.
+              <p
+                className={`${textColor} dark:text-gray-300 text-lg md:text-xl leading-relaxed text-center max-w-2xl mx-auto`}
+              >
+                We respect where you come from and where you’re going. If you’re
+                ready to build something meaningful — let’s roll together.
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* CSR Section */}
-        <div className=" text-gray-800 bg-white font-sans py-16 sm:py-24">
+        <div className=" text-gray-800 bg-white font-sans">
           <div className="bg-white container mx-auto px-6 py-4 lg:px-8  shadow-lg">
             {/* Main Heading & Introduction */}
-            <div className="text-center mb-20 p-4">
+            <div className="text-center mb-10 p-4">
               <h1 className="text-3xl md:text-5xl font-bold text-yellow-500  tracking-tight mb-12">
                 Our Commitment to Social Responsibility
               </h1>
@@ -138,7 +136,7 @@ const AboutUs = () => {
               </p>
             </div>
 
-            <div className="space-y-16">
+            <div className="space-y-8">
               {/* Initiative 1: Maintaining a Farmland */}
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-gray-50 p-6 rounded-xl shadow-sm">
                 <div className="flex-shrink-0 w-full md:w-1/3">
@@ -148,7 +146,7 @@ const AboutUs = () => {
                     width={300}
                     height={300}
                     alt="Illustration of a thriving farmland"
-                    className="w-full h-auto rounded-lg object-cover"
+                    className=" rounded-lg object-cover"
                   />
                 </div>
                 <div className="flex-grow text-center md:text-left">
@@ -177,7 +175,7 @@ const AboutUs = () => {
                     width={300}
                     height={300}
                     alt="Illustration of elderly people being cared for"
-                    className="w-full h-auto rounded-lg object-cover"
+                    className="rounded-lg object-cover"
                   />
                 </div>
                 <div className="flex-grow text-center md:text-right">
@@ -207,7 +205,7 @@ const AboutUs = () => {
                     width={300}
                     height={300}
                     alt="Illustration of children in a supportive environment"
-                    className="w-full h-auto rounded-lg object-cover"
+                    className="rounded-lg object-cover"
                   />
                 </div>
                 <div className="flex-grow text-center md:text-left">
@@ -231,7 +229,7 @@ const AboutUs = () => {
             </div>
 
             {/* Concluding Section */}
-            <div className="text-center mt-20 pt-10 border-t border-gray-200">
+            <div className="text-center mt-10">
               <div className="inline-block bg-blue-100 p-4 rounded-full mb-4">
                 <Heart size={32} className="text-blue-700" />
               </div>
@@ -247,25 +245,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-
-        {/* Concluding Section */}
-        <div className="text-center mt-20 pt-10 border-t border-gray-200">
-          <div className="inline-block bg-gray-100 p-4 rounded-full mb-4">
-            <Users size={32} className="text-gray-700" />
-          </div>
-          <h3 className="text-2xl font-semibold text-gray-200 mb-3">
-            Built for Creators
-          </h3>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            RYOPAPERS was built for creators, curators, and connoisseurs—those
-            who see rolling papers not just as accessories, but as extensions of
-            their brand story. Discreet in presence, distinct in character, and
-            always designed with purpose.
-          </p>
-        </div>
       </div>
     </div>
   );
-};
-
-export default AboutUs;
+}
