@@ -25,7 +25,7 @@ function ProductCard({ product, index, bgColor }: ProductCardProps) {
         href={`/products/${product.categorySlug}/${product.slug}`}
         className="block"
       >
-        <div className="shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border-3 border-amber-200 hover:border-amber-400 transform hover:-translate-y-1">
+        <div className="hover:shadow-2xl transition-all duration-300 overflow-hidden hover:border-3 border-gray-100 shadow-xl hover:border-gray-200 transform hover:-translate-y-1">
           <div className="relative w-full h-48 flex items-center justify-center overflow-hidden rounded-t-xl">
             {" "}
             {/* Fixed height for consistency */}
