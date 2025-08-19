@@ -133,7 +133,8 @@ export default function Home() {
                       icon={benefit.icon}
                       className="text-7xl mb-3 text-gray-400"
                     />
-                    <h4 className="text-5xl font-extrabold text-[#A2D230] mb-2 text-center">
+
+                    <h4 className="text-2xl font-extrabold text-[#A2D230] mb-2 text-center">
                       {benefit.title}
                     </h4>
                     <p className="text-md text-gray-700 leading-snug text-center">
