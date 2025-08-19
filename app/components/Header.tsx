@@ -22,8 +22,8 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="bg-white text-white shadow-xl fixed w-full z-50 border-b-8 border-b-[#CCFF00]">
-      <div className="container mx-auto md:ml-20 flex justify-between items-center px-4">
+    <header className="bg-[#05014a] text-gray-50 shadow-xl fixed w-full z-50 border-b-4 border-b-[#CCFF00]">
+      <div className="max-w-5xl mx-auto flex justify-between items-center px-4">
         {" "}
         {/* Added relative for absolute positioning of nav */}
         {/* Logo/Brand */}
@@ -64,13 +64,11 @@ export default function Header() {
         {/* Navigation - Desktop & Mobile */}
         <nav
           className={`
-            ${
-              isMenuOpen ? "flex" : "hidden"
-            }  // Show/hide based on isMenuOpen state
+            ${isMenuOpen ? "flex" : "hidden"}
             flex-col sm:flex-row
     fixed sm:relative
     top-0 left-0 w-full h-full sm:h-auto
-    bg-white
+    bg-[#05014a]
     sm:bg-none sm:shadow-none
     pb-4 sm:pb-0 pt-2 sm:pt-0
     shadow-lg
@@ -88,7 +86,7 @@ export default function Header() {
             icon={Home}
             label="Home"
             textColor="text-gray-300"
-            hoverColor="hover:text-black"
+            hoverColor="hover:text-gray-600"
             onClick={closeMenu}
           />
           <NavLink
@@ -103,18 +101,18 @@ export default function Header() {
             href="/custom-printing"
             icon={Printer}
             label="Customize"
-            textColor="text-gray-300"
-            hoverColor="hover:text-black"
+            textColor="text-gray-100"
+            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
-          <NavLink
+          {/* <NavLink
             href="/#sampleBox"
             icon={Printer}
             label="Samples"
-            textColor="text-gray-300"
-            hoverColor="hover:text-black"
+            textColor="text-gray-100"
+            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
-          />
+          /> */}
           {/* <NavLink
             href="/csr"
             icon={Leaf}
@@ -127,16 +125,16 @@ export default function Header() {
             href="/about-us"
             icon={Leaf}
             label="About Us"
-            textColor="text-gray-300"
-            hoverColor="hover:text-black"
+            textColor="text-gray-100"
+            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
           <NavLink
             href="/contact"
             icon={Mail}
             label="Contact"
-            textColor="text-gray-300"
-            hoverColor="hover:text-black"
+            textColor="text-gray-100"
+            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
         </nav>
@@ -158,7 +156,6 @@ function NavLink({
   href,
   icon: Icon,
   label,
-  //textColor = "text-gray-100",
   hoverColor = "hover:text-blue-100",
   onClick, // Destructure the onClick prop
 }: NavLinkProps) {
@@ -172,7 +169,7 @@ function NavLink({
     <Link
       href={href}
       className={`flex flex-col items-center p-2 rounded-lg transition-colors duration-200
-        ${isActive ? "bg-[#e1ffac] text-black bg-opacity-20" : "text-gray-600"}
+        ${isActive ? "bg-[#e1ffac] text-black bg-opacity-20" : "text-gray-200"}
          ${hoverColor}`}
       onClick={onClick}
     >

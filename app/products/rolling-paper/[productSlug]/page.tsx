@@ -22,5 +22,5 @@ export default async function ProductDetailPage({
     notFound();
   }
 
-  return <_ProductDetailClientPage product={product} />;
+  return <_ProductDetailClientPage productSlug={productSlug} />;
 }

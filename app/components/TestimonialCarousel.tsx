@@ -84,10 +84,13 @@ export default function TestimonialsCarousel() {
   const desktopTestimonialsToRender = getDisplayTestimonials();
 
   return (
-    <section className="bg-white dark:bg-gray-900 py-8 lg:py-16">
+    <section className="bg-white py-8 lg:py-16">
       <div className="max-w-screen-xl px-4 mx-auto text-center lg:px-6">
-        <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">
-          What Our Clients Say
+        <h2 className="text-3xl font-extralight text-gray-500 mb-8">
+          What Our Clients Say <br />
+          <span className="text-[#A2D22E] font-extrabold text-6xl uppercase">
+            Reviews
+          </span>
         </h2>
 
         {/* Mobile View: Shows 1 testimonial at a time */}

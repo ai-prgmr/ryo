@@ -1,5 +1,4 @@
 "use client";
-import { useState, useEffect } from "react";
 import { Lightbulb, Factory, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -8,13 +7,13 @@ const stepsData = [
   {
     icon: Lightbulb,
     title: "Choose Rolling Paper",
-    image: "/ryo/images/choose.png",
+    image: "/ryo/01.png",
     description:
       "Rolling papers, cones, tips, or full sets — pick what fits your brand best.",
   },
   {
     icon: Factory,
-    image: "/ryo/images/vibe.png",
+    image: "/ryo/02.png",
     title: "Share Your Vibe",
     description: (
       <>
@@ -27,43 +26,23 @@ const stepsData = [
   {
     icon: TrendingUp,
     title: "We Custom-Make It",
-    image: "/ryo/images/processing.png",
+    image: "/ryo/03.png",
     description:
       "Premium materials. Flawless finish. 100% tailored to your brand.",
   },
   {
     icon: TrendingUp,
-    image: "/ryo/images/delivery.png",
+    image: "/ryo/04.png",
     title: "We Ship it",
     description: "No middlemen, No hidden costs, No hassle.",
   },
 ];
 
-const backgroundColors = ["#63E6BE", "#74C0FC", "#FFD43B", "#E599F7"];
-
 export default function BuildyourBrand() {
-  const [currentStartIndex, setCurrentStartIndex] = useState(0); // For color rotation
-
-  // Effect for color rotation (this part remains the same)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentStartIndex(
-        (prevIndex) => (prevIndex + 1) % backgroundColors.length
-      );
-    }, 2000); // Rotate colors every 2 seconds
-
-    // Cleanup function for color interval
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6">
+    <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-2">
       {stepsData.map((step, index) => {
         //const IconComponent = step.icon;
-        const bgColor =
-          backgroundColors[
-            (index + currentStartIndex) % backgroundColors.length
-          ];
 
         return (
           <motion.div // <--- Changed from `div` to `motion.div`
@@ -79,17 +58,15 @@ export default function BuildyourBrand() {
               ease: "easeOut", // Easing function for a smoother finish
             }}
             className={`
-              flex flex-col items-center p-6 w-full min-h-[180px]
-              rounded-xl shadow-md
-              duration-500 ease-in-out /* Keep for color transition */
+              flex flex-col items-center w-full min-h-[180px]
+              duration-500 ease-in-out
             `}
-            style={{ backgroundColor: bgColor }}
           >
             <Image
               src={step.image}
               alt={step.title}
-              width={100}
-              height={100}
+              width={75}
+              height={75}
               className="mb-3 rounded-lg"
             />
             {/* <IconComponent size={40} className="text-gray-800 mb-3" /> */}

@@ -4,24 +4,13 @@ import HeroCard from "../components/HeroCard";
 import { Sprout, Home, Heart, HandHeart } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-// Import specific Font Awesome icons for the benefits
 import {
   faBoxes,
   faHeadset,
   faStar,
   faLeaf,
 } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion"; // For animating the benefit cards
 library.add(faBoxes, faHeadset, faStar, faLeaf);
-
-const benefitColors = [
-  "#63E6BE", // Light green/teal
-  "#74C0FC", // Light blue
-  "#FFD43B", // Yellow
-  "#E599F7", // Light purple/pink
-  "#FFFACD", // Pastel Yellow
-  "#FFC0CB", // Light Pink
-];
 
 // Define data for the benefit cards
 const benefitsData = [
@@ -53,72 +42,65 @@ export default function AboutUs() {
   const textColor = "text-[#173153]";
   return (
     <div className=" font-sans mt-2">
-      <div className="container mx-auto px-12 lg:px-8">
+      <div className="max-w-5xl mx-auto px-12 lg:px-8">
         {/* Main Heading & Introduction */}
-        <HeroCard />
-        <section className=" bg-gradient-to-br from-gray-50 to-blue-50">
-          <div className="w-full mx-auto px-6 lg:px-8">
-            <div className="p-8 sm:p-10 lg:p-12 border border-gray-100 dark:border-gray-700">
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 text-center">
-                Work With Us
-              </h3>
-              <p
-                className={`${textColor} dark:text-gray-300 text-lg md:text-xl leading-relaxed text-center mb-6 mx-auto`}
-              >
-                Working with RYO Papers feels more like a collaboration than a
-                transaction.
-              </p>
-
-              <p
-                className={`${textColor} dark:text-gray-300 text-lg md:text-xl leading-relaxed mb-8 mx-auto`}
-              >
-                We know what it’s like to have an idea and not know where to
-                start. That’s why we’ve made the process simple, flexible, and
-                friendly. Whether you want 500 packs or 50,000 — we’ve got you.
-              </p>
-
-              {/* New Grid for Benefits */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                {benefitsData.map((benefit, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 30 }} // Animation: start slightly below and transparent
-                    whileInView={{ opacity: 1, y: 0 }} // Animate to full visibility
-                    viewport={{ once: true, amount: 0.5 }} // Trigger once when 50% in view
-                    transition={{
-                      duration: 0.5,
-                      delay: index * 0.1,
-                      ease: "easeOut",
-                    }} // Staggered animation
-                    className="p-6 rounded-lg flex flex-col items-center text-center shadow-md transition-shadow hover:shadow-lg"
-                    style={{
-                      backgroundColor:
-                        benefitColors[index % benefitColors.length],
-                    }} // Dynamic background color
-                  >
-                    <FontAwesomeIcon
-                      icon={benefit.icon}
-                      className="text-4xl text-gray-800 mb-3"
-                    />
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">
-                      {benefit.title}
-                    </h4>
-                    <p className="text-md text-gray-700 leading-snug">
-                      {benefit.description}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-
-              <p
-                className={`${textColor} dark:text-gray-300 text-lg md:text-xl leading-relaxed text-center max-w-2xl mx-auto`}
-              >
-                We respect where you come from and where you’re going. If you’re
-                ready to build something meaningful — let’s roll together.
-              </p>
-            </div>
+        <div className="max-w-5xl mx-auto px-12 lg:px-8">
+          {/* Main Heading & Introduction */}
+          <HeroCard />
+          <div className="flex justify-center items-center mb-8">
+            <Image
+              src="/ryo/branding-cutout.png"
+              alt="RYO-branding"
+              width={600}
+              sizes="100vw"
+              className="object-fit contain"
+              height={400}
+            />
           </div>
-        </section>
+
+          <section className="">
+            <div className="max-w-3xl mx-auto">
+              <div className="mt-10">
+                <h3 className="text-lg sm:text-xl md:text-2xl text-gray-900 mb-6 text-center">
+                  Work With Us
+                </h3>
+                <p
+                  className={`${textColor} dark:text-gray-900 text-lg md:text-xl leading-relaxed text-center mb-6 mx-auto`}
+                >
+                  Working with RYO Papers feels more like a collaboration than a
+                  transaction.
+                </p>
+
+                <p
+                  className={`${textColor} text-lg md:text-xl leading-relaxed mb-8 mx-auto text-center`}
+                >
+                  We know what it’s like to have an idea and not know where to
+                  start. That’s why we’ve made the process simple, flexible, and
+                  friendly. Whether you want 500 packs or 50,000 — we’ve got
+                  you.
+                </p>
+
+                {/* New Grid for Benefits */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-center">
+                  {benefitsData.map((benefit, index) => (
+                    <span key={index}>
+                      <FontAwesomeIcon
+                        icon={benefit.icon}
+                        className="text-7xl mb-3 text-gray-400"
+                      />
+                      <h4 className="text-5xl font-extrabold text-[#A2D230] mb-2 text-center">
+                        {benefit.title}
+                      </h4>
+                      <p className="text-md text-gray-700 leading-snug text-center">
+                        {benefit.description}
+                      </p>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
 
         {/* CSR Section */}
         <div className=" text-gray-800 bg-white font-sans">

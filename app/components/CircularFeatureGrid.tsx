@@ -7,32 +7,32 @@ import { motion } from "framer-motion"; // For animation
 
 const featuresData = [
   {
-    imageSrc: "/ryo/sample/king-size.jpeg", // Example: /public/sample/feature-fast-shipping.png
+    imageSrc: "/ryo/sample/king-size-bg.png", // Example: /public/sample/feature-fast-shipping.png
     altText: "Fast Shipping Icon",
     text: "King Size + Filters",
   },
   {
-    imageSrc: "/ryo/sample/king-size.jpeg",
+    imageSrc: "/ryo/sample/king-size-bg.png",
     altText: "Eco-Friendly Icon",
     text: "King Size",
   },
   {
-    imageSrc: "/ryo/sample/king-size.jpeg",
+    imageSrc: "/ryo/sample/king-size-bg.png",
     altText: "Custom Design Icon",
     text: "1 ¼ + Filters",
   },
   {
-    imageSrc: "/ryo/sample/king-size.jpeg",
+    imageSrc: "/ryo/sample/king-size-bg.png",
     altText: "Low MOQ Icon",
     text: "1 ¼",
   },
   {
-    imageSrc: "/ryo/sample/rolling-cone.jpeg",
+    imageSrc: "/ryo/sample/rolling-cone-bg.png",
     altText: "Quality Guaranteed Icon",
     text: "Pre-rolled cones",
   },
   {
-    imageSrc: "/ryo/sample/king-size.jpeg",
+    imageSrc: "/ryo/sample/king-size-bg.png",
     altText: "Competitive Pricing Icon",
     text: "Block King Size",
   },
@@ -50,7 +50,7 @@ const backgroundColors = [
 
 export default function CircularFeatureGrid() {
   return (
-    <section className="bg-transparent">
+    <section className="">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Grid Container */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
@@ -72,9 +72,9 @@ export default function CircularFeatureGrid() {
               // Styling for the circular container
               className={`
                 w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 
-                rounded-full // Makes the div perfectly circular
+                rounded-full
                 flex flex-col items-center justify-center text-center 
-                p-4 sm:p-6 // Padding inside the circle
+                p-4 sm:p-6
                 shadow-lg hover:shadow-xl transition-shadow duration-300 
                 overflow-hidden 
               `}

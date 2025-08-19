@@ -1,13 +1,22 @@
 import React from "react";
 import Link from "next/link";
-import SampleBoxOffer from "./components/SampleBoxOffer";
+// import SampleBoxOffer from "./components/SampleBoxOffer";
+import HeroCard from "./components/HeroCard";
 import { Metadata } from "next";
 import BackgroundCarousel from "./components/BackgroundCarousel";
-import BrandwithUs from "./components/BrandWithUs";
+// import BrandwithUs from "./components/BrandWithUs";
+import ProductCard from "./components/ProductCard";
+import { products, Product } from "@/app/lib/data";
 import BuildyourBrand from "./components/BuildYourBrand";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBoxOpen } from "@fortawesome/free-solid-svg-icons";
 import TestimonialCarousel from "./components/TestimonialCarousel";
+import {
+  faBoxesStacked,
+  faHeadset,
+  faStar,
+  faLeaf,
+} from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 export const metadata: Metadata = {
   title: "Roll your Own - Custom Rolling Papers & Contract Manufacturing",
   description:
@@ -23,123 +32,191 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const images = [
-    "/ryo/Carousel-1.png",
-    "/ryo/Carousel-3.png",
-    "/ryo/Carousel-9.png",
-    "/ryo/vecteezy.jpg",
-    "/ryo/Vandana-kaki.png",
+  const customImages = ["/ryo/images/2.png"];
+
+  for (let i = 1; i <= 32; i++) {
+    customImages.push(`/ryo/images/${i}.jpeg`);
+  }
+  const filteredProducts = products.filter(
+    (product: Product) => product.categorySlug === "rolling-paper" // Directly filter for 'rolling-paper'
+  );
+
+  const benefitsData = [
+    {
+      icon: faBoxesStacked,
+      title: "Low Order Quantities",
+      description:
+        "Every brand starts somewhere – we support your growth journey.",
+    },
+    {
+      icon: faHeadset,
+      title: "Real Human Support",
+      description:
+        "Talk to people, not bots, for genuine guidance and assistance.",
+    },
+    {
+      icon: faStar,
+      title: "Premium Finish",
+      description:
+        "Beautiful, high-quality packaging with a professional touch.",
+    },
+    {
+      icon: faLeaf,
+      title: "Eco-Friendly Promise",
+      description: "Committed to sustainability, true to your brand's vibe.",
+    },
   ];
-  const customImages = [
-    "/ryo/custom-papers.png",
-    "/ryo/your_vibe.png",
-    "/ryo/custom.png",
-    "/ryo/ship.png",
-    "/ryo/Vandana-kaki.png",
-  ];
+  const textColor = "text-[#173153]";
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen  text-gray-200">
       {/* Hero Section */}
-      <section className="relative w-full flex items-center justify-center text-center overflow-hidden shadow-xl">
-        <BackgroundCarousel
-          images={images}
-          width="w-[100vw] h-[500px]"
-          inset="true"
-        >
-          <section className="text-center mb-16 p-8">
-            <h2 className="text-5xl md:text-7xl font-bold text-[#CCFF00] uppercase mb-6">
-              Roll Your Own
-            </h2>
-            <p className="text-3xl md:text-3xl text-white font-extrabold w-full mb-4">
-              Your Vibe. Your Logo. Your Brand.
-            </p>
-            <p className="text-3xl  md:text-3xl text-white font-extrabold w-full mt-4">
-              <span className="text-[#CCFF00]">!! </span>Low MOQ at better price
-              <span className="text-[#CCFF00]"> !! </span>
-            </p>
-          </section>
-        </BackgroundCarousel>
-      </section>
+      <div className="relative w-full aspect-[9/16] md:aspect-video">
+        <Image
+          src="/ryo/Banner-mobile.jpg"
+          alt="Mobile Banner"
+          layout="fill"
+          objectFit="cover"
+          className="md:hidden"
+          priority={true}
+        />
+        <Image
+          src="/ryo/banner-web.jpg"
+          alt="Web Banner"
+          layout="fill"
+          objectFit="cover"
+          className="hidden md:block"
+          priority={true}
+        />
+      </div>
 
+      <div className="container mx-auto px-12 lg:px-8">
+        {/* Main Heading & Introduction */}
+        <HeroCard />
+        <div className="flex justify-center items-center mb-8">
+          <Image
+            src="/ryo/branding-cutout.png"
+            alt="RYO-branding"
+            width={600}
+            sizes="100vw"
+            className="object-fit contain"
+            height={400}
+          />
+        </div>
+
+        <section className="">
+          <div className="max-w-3xl mx-auto">
+            <div className="mt-10">
+              <h3 className="text-lg sm:text-xl md:text-2xl text-gray-900 mb-6 text-center">
+                Work With Us
+              </h3>
+              <p
+                className={`${textColor} dark:text-gray-900 text-lg md:text-xl leading-relaxed text-center mb-6 mx-auto`}
+              >
+                Working with RYO Papers feels more like a collaboration than a
+                transaction.
+              </p>
+
+              <p
+                className={`${textColor} text-lg md:text-xl leading-relaxed mb-8 mx-auto text-center`}
+              >
+                We know what it’s like to have an idea and not know where to
+                start. That’s why we’ve made the process simple, flexible, and
+                friendly. Whether you want 500 packs or 50,000 — we’ve got you.
+              </p>
+
+              {/* New Grid for Benefits */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-center">
+                {benefitsData.map((benefit, index) => (
+                  <span key={index}>
+                    <FontAwesomeIcon
+                      icon={benefit.icon}
+                      className="text-7xl mb-3 text-gray-400"
+                    />
+                    <h4 className="text-5xl font-extrabold text-[#A2D230] mb-2 text-center">
+                      {benefit.title}
+                    </h4>
+                    <p className="text-md text-gray-700 leading-snug text-center">
+                      {benefit.description}
+                    </p>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div className="w-full bg-[#A2D22E] mx-auto px-4 py-16 gap-y-4">
+        <h2 className="text-3xl mb-10 text-black text-center capitalize">
+          Premium <br />
+          <span className="text-6xl text-black uppercase font-extrabold">
+            Rolling
+          </span>{" "}
+          <span className="text-6xl text-white uppercase font-extrabold">
+            Papers
+          </span>
+        </h2>
+
+        {filteredProducts.length === 0 ? (
+          <p className="text-center text-gray-400 text-lg">
+            No products found in this category.
+          </p>
+        ) : (
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mx-auto">
+              {filteredProducts.map((product: Product, index: number) => {
+                return (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    index={index}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </div>
       {/* Main Content Sections */}
       <div className=" py-4 md:py-8 ">
         {/* Build your own Section */}
         <div className=" bg-white text-white flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 gap-y-4">
           {/* Hero Section */}
 
-          <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
+          <section className="container mx-auto flex flex-col items-center justify-between gap-12 lg:gap-10">
             {/* Left Content Area */}
 
             <div className="flex-1 text-center lg:text-left">
-              <h3 className="text-4xl sm:text-5xl text-[#146EBE] lg:text-6xl text-center font-extrabold leading-tight mb-6 rounded-lg">
-                Build Your Brand
-              </h3>
+              <h2 className="text-3xl mb-10 text-black text-center capitalize">
+                Build <br />
+                <span className="text-6xl text-black uppercase font-extrabold">
+                  YOUR
+                </span>{" "}
+                <span className="text-6xl text-[#A2D22E] uppercase font-extrabold">
+                  BRAND
+                </span>
+              </h2>
               <BuildyourBrand />
-              <button className="mt-8 px-6 py-3 border-1 border-b-4 border-b-[#146EBE] text-[#146EBE] rounded-lg shadow-md text-lg font-bold hover:text-xl transition-colors duration-200 flex mx-auto">
+              <button className="mt-8 px-6 py-3 rounded-lg text-black bg-[#A2D22E] shadow-md text-lg font-bold flex mx-auto">
                 <Link
                   href="/custom-printing"
                   className="flex items-center justify-center"
                 >
-                  <FontAwesomeIcon icon={faBoxOpen} className="mr-2" />
                   Start Building
                 </Link>
               </button>
             </div>
 
             {/* Right Image Placeholder */}
-            <div className="flex-1 w-full lg:w-auto relative rounded-2xl shadow-2xl max-w-full lg:max-w-2xl">
+            <div className="w-full relative">
               <BackgroundCarousel
                 images={customImages}
-                width="w-full h-200"
+                width="h-300"
                 inset="false"
               />
             </div>
           </section>
         </div>
-        <SampleBoxOffer />
-        {/* BrandWithUs Section */}
-        <section className="text-center mb-16 bg-white p-8">
-          <h3 className="text-3xl md:text-5xl font-extrabold text-[#1D4ED8] mb-6 text-center flex justify-center items-center p-4 rounded-lg">
-            Why Brands roll with us?
-          </h3>
-          {/* <p className="text-lg md:text-xl text-gray-700 font-extrabold w-full mx-auto mb-4">
-            Our collection is expertly crafted using the finest materials —
-            offering variety, quality, and a smooth rolling experience.
-          </p> */}
-          <BrandwithUs />
-        </section>
-
-        {/* Custom Printing Section */}
-        {/* <section className=" p-8  mb-16 bg-white ">
-          <div className="flex flex-col md:flex-row items-center md:space-x-8">
-            <div className="w-full md:w-1/2 mb-6 md:mb-0">
-              <Image
-                src="/ryo/Custom.jpeg"
-                alt="Custom Printing Services"
-                width={800}
-                height={500}
-                className="rounded-xl shadow-lg border border-amber-700"
-              />
-            </div>
-            <div className="w-full md:w-1/2 text-center md:flex md:flex-col md:gap-y-20">
-              <h2 className="text-3xl md:text-5xl font-bold text-yellow-500 mb-4">
-                Create Your Signature Brand
-              </h2>
-              <p className="text-lg md:text-xl text-gray-700 font-bold mb-6 ">
-                Realize your vision with bespoke, tailor-made rolling papers —
-                meticulously designed to showcase your brand’s essence and
-                deliver an unparalleled rolling experience.
-              </p>
-              <Link
-                href="/custom-printing"
-                className="inline-flex justify-center w-full items-center px-6 py-3 bg-amber-600 text-white rounded-lg shadow-md hover:bg-amber-700 transition-colors duration-200 text-center md:w-3/4 mx-auto"
-              >
-                <Printer size={20} className="mr-2" />
-                Explore Custom Solutions
-              </Link>
-            </div>
-          </div>
-        </section> */}
 
         {/* Testimonial Carousel Section */}
         <section className=" bg-white">

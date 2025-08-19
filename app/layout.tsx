@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
-import SplashCursor from "./components/SplashCursor";
+// import SplashCursor from "./components/SplashCursor";
 import ConsentManager from "./components/ConsentManager";
 import { Montserrat } from "next/font/google";
 import "@fortawesome/fontawesome-svg-core/styles.css"; // Import the CSS
@@ -32,17 +32,17 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.className} ${montserrat.variable}`}
     >
-      <body className={`text-gray-900 antialiased bg-white`}>
+      <body className={`antialiased bg-white`}>
         <Header />
         <ConsentManager
           logoSrc="/ryo/new-logo-2-removebg.png"
           logoAlt="RYO Logo"
         />
-        <main className="pt-30 flex flex-col">{children}</main>
+        <main className="pt-28 flex flex-col">{children}</main>
         <Footer />
         <WhatsAppButton /> {/* WhatsApp button added here */}
         {/* Splash Section */}
-        <SplashCursor />
+        {/* <SplashCursor /> */}
       </body>
     </html>
   );

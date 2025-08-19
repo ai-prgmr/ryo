@@ -6,10 +6,9 @@ import { motion } from "framer-motion";
 interface ProductCardProps {
   product: Product;
   index: number;
-  bgColor: string;
 }
 
-function ProductCard({ product, index, bgColor }: ProductCardProps) {
+function ProductCard({ product, index }: ProductCardProps) {
   return (
     <motion.div
       // Framer Motion animation props
@@ -25,19 +24,19 @@ function ProductCard({ product, index, bgColor }: ProductCardProps) {
         href={`/products/${product.categorySlug}/${product.slug}`}
         className="block"
       >
-        <div className="hover:shadow-2xl transition-all duration-300 overflow-hidden hover:border-3 border-gray-100 shadow-xl hover:border-gray-200 transform hover:-translate-y-1">
-          <div className="relative w-full h-48 flex items-center justify-center overflow-hidden rounded-t-xl">
+        <div className="max-w-[300px] overflow-hidden bg-[#F6F6F6] rounded-lg p-4">
+          <div className=" relative max-w-sm bg-white h-48 flex items-center justify-center overflow-hidden mx-auto mt-2 rounded-lg">
             {" "}
             {/* Fixed height for consistency */}
             <Image
               src={product.image}
               alt={product.name}
-              width={200} // Provide intrinsic width for Next.js Image optimization
-              height={200} // Provide intrinsic height for Next.js Image optimization
-              className="p-4 group-hover:scale-105 transition-transform duration-300" // Padding inside the image container, hover effect
+              width={200}
+              height={200}
+              className="p-8" // Padding inside the image container, hover effect
             />
           </div>
-          <div className="p-4" style={{ backgroundColor: bgColor }}>
+          <div className="p-4">
             <h3 className="text-xl font-semibold text-gray-700 mb-2 truncate text-center">
               {product.name}
             </h3>
@@ -45,7 +44,7 @@ function ProductCard({ product, index, bgColor }: ProductCardProps) {
               {product.description}
             </p>
             <div className="mt-4">
-              <button className="bg-transparent hover:bg-amber-700 hover:text-gray-200 text-gray-600 font-bold py-2 px-4 rounded-lg transition-colors duration-200 w-1/2 shadow-md text-center justify-center flex items-center mx-auto">
+              <button className="bg-black text-white uppercase py-2 px-4 rounded-lg w-full shadow-md text-center justify-center flex items-center mx-auto">
                 View Details
               </button>
             </div>
