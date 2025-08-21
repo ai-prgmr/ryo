@@ -103,11 +103,11 @@ export default function AboutUs() {
         </div>
 
         {/* CSR Section */}
-        <div className=" text-gray-800 bg-white font-sans">
-          <div className="bg-white container mx-auto px-6 py-4 lg:px-8  shadow-lg">
+        <div className=" text-gray-800 bg-white font-sans mt-10">
+          <div className="bg-white container mx-auto px-6 py-4 lg:px-8">
             {/* Main Heading & Introduction */}
             <div className="text-center mb-10 p-4">
-              <h1 className="text-3xl md:text-5xl font-bold text-yellow-500  tracking-tight mb-12">
+              <h1 className="text-3xl md:text-5xl font-bold text-[#A2D22E]  tracking-tight mb-12">
                 Our Commitment to Social Responsibility
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed font-bold">
@@ -132,10 +132,10 @@ export default function AboutUs() {
                   />
                 </div>
                 <div className="flex-grow text-center md:text-left">
-                  <div className="inline-block bg-green-100 p-3 rounded-full mb-4">
-                    <Sprout size={24} className="text-green-700" />
+                  <div className="inline-block p-3 rounded-full mb-4">
+                    <Sprout size={24} className="" />
                   </div>
-                  <h2 className="text-xl md:text-3xl font-bold text-yellow-500 mb-5">
+                  <h2 className="text-xl md:text-3xl font-bold text-[#A2D22E] mb-5">
                     Sustainable Farmland Initiatives
                   </h2>
                   <p className="text-xl font-bold text-gray-700 leading-relaxed">
@@ -161,10 +161,10 @@ export default function AboutUs() {
                   />
                 </div>
                 <div className="flex-grow text-center md:text-right">
-                  <div className="inline-block bg-purple-100 p-3 rounded-full mb-4">
-                    <Home size={24} className="text-purple-700" />
+                  <div className="inline-block p-3 rounded-full mb-4">
+                    <Home size={24} className="" />
                   </div>
-                  <h2 className="text-xl md:text-3xl font-bold text-yellow-500 mb-5">
+                  <h2 className="text-xl md:text-3xl font-bold text-[#A2D22E] mb-5">
                     Supporting Our Elders
                   </h2>
                   <p className="text-xl font-bold text-gray-700 leading-relaxed">
@@ -180,7 +180,7 @@ export default function AboutUs() {
 
               {/* Initiative 3: Donations to Orphanages */}
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-gray-50 p-6 rounded-xl shadow-sm">
-                <div className="flex-shrink-0 w-full md:w-1/3">
+                <div className="flex-shrink-0 w-full justify-center md:w-1/3">
                   {/* Replace with your Popsy.co image for orphanage/children */}
                   <Image
                     src="/ryo/CSR-3.jpeg"
@@ -191,10 +191,10 @@ export default function AboutUs() {
                   />
                 </div>
                 <div className="flex-grow text-center md:text-left">
-                  <div className="inline-block bg-orange-100 p-3 rounded-full mb-4">
-                    <HandHeart size={24} className="text-orange-700" />
+                  <div className="inline-block p-3 rounded-full mb-4">
+                    <HandHeart size={24} className="" />
                   </div>
-                  <h2 className="text-xl md:text-3xl font-bold text-yellow-500 mb-5">
+                  <h2 className="text-xl md:text-3xl font-bold text-[#A2D22E] mb-5">
                     Nurturing Future Generations
                   </h2>
                   <p className="text-xl font-bold text-gray-700 leading-relaxed">
@@ -213,7 +213,7 @@ export default function AboutUs() {
             {/* Concluding Section */}
             <div className="text-center mt-10">
               <div className="inline-block bg-blue-100 p-4 rounded-full mb-4">
-                <Heart size={32} className="text-blue-700" />
+                <Heart size={32} className="" />
               </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-3">
                 A Commitment Beyond Products

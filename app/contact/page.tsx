@@ -7,9 +7,8 @@ export default function ContactPage() {
     <div className="bg-white max-w-5xl mx-auto px-4 py-8">
       <div className="p-6 md:p-10 text-center">
         <h1
-          className="inline-flex items-center justify-center px-16 py-4 bg-indigo-500 text-white font-semibold rounded-full shadow-md
-                           text-4xl
-                           focus:outline-none focus:ring-4 focus:ring-indigo-300 focus:ring-opacity-75 mb-16"
+          className="inline-flex items-center justify-center px-16 py-4 text-[#A2D22E] font-semibold rounded-full shadow-md
+                           text-5xl mb-16"
         >
           Get in touch{" "}
         </h1>

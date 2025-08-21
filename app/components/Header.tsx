@@ -22,8 +22,8 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="bg-[#05014a] text-gray-50 shadow-xl fixed w-full z-50 border-b-4 border-b-[#CCFF00]">
-      <div className="max-w-5xl mx-auto flex justify-between items-center px-4">
+    <header className="bg-[#05014a] text-gray-50 shadow-xl fixed w-full z-50 border-b-4 border-b-[#A2D22E]">
+      <div className="w-full mx-auto flex justify-between items-center px-4 md:px-16">
         {" "}
         {/* Added relative for absolute positioning of nav */}
         {/* Logo/Brand */}

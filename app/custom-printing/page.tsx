@@ -50,33 +50,41 @@ function CustomPrintingPage() {
           </div>
         </div>
 
-        <div className="py-2 text-center mb-5">
-          <h2 className="text-3xl font-bold text-amber-300 m-8">
-            Our Process: Simple & Seamless
+        <div className="py-2 text-center m-5">
+          <h2 className="text-3xl mb-10 text-black text-center capitalize">
+            Our Process <br />
+            <span className="text-6xl text-black uppercase font-extrabold">
+              Simple &
+            </span>{" "}
+            <span className="text-6xl text-[#A2D22E] uppercase font-extrabold">
+              BRAND
+            </span>
           </h2>
           <div className="flex flex-wrap justify-center gap-6 mb-12 text-gray-100">
-            <div className="flex flex-col items-center p-4  rounded-xl w-full sm:w-1/2 md:w-1/4">
-              <Lightbulb size={40} className="text-blue-400 mb-3" />
-              <span className="font-semibold text-gray-500">
-                1. Concept & Design
+            <div className="flex flex-col items-center p-4  rounded-xl w-full sm:w-1/2 md:w-1/3">
+              <Lightbulb size={40} className=" text-black mb-3" />
+              <span className="text-2xl font-bold text-[#A2D22E]">
+                Concept & Design
               </span>
-              <p className="text-sm mt-1 text-center text-gray-500">
+              <p className="text-md mt-1 text-center text-black">
                 Share your ideas and artwork.
               </p>
             </div>
             <div className="flex flex-col items-center p-4  rounded-xl w-full sm:w-1/2 md:w-1/4">
-              <Factory size={40} className="text-green-400 mb-3" />
-              <span className="font-semibold text-gray-500">2. Production</span>
-              <p className="text-sm mt-1 text-center text-gray-500">
+              <Factory size={40} className="text-black mb-3" />
+              <span className="text-2xl font-bold text-[#A2D22E]">
+                Production
+              </span>
+              <p className="text-md mt-1 text-center text-black">
                 Precision manufacturing & printing.
               </p>
             </div>
             <div className="flex flex-col items-center p-4  rounded-xl w-full sm:w-1/2 md:w-1/4">
-              <TrendingUp size={40} className="text-purple-400 mb-3" />
-              <span className="font-semibold text-gray-500">
-                3. Launch & Grow
+              <TrendingUp size={40} className="text-black mb-3" />
+              <span className="text-2xl font-bold text-[#A2D22E]">
+                Launch & Grow
               </span>
-              <p className="text-sm mt-1 text-center text-gray-500">
+              <p className="text-md mt-1 text-center text-black ">
                 Your unique brand enters the market.
               </p>
             </div>
@@ -90,7 +98,7 @@ function CustomPrintingPage() {
 
           <Link
             href="/contact"
-            className="inline-flex items-center  px-16 py-4 bg-[#FFC0CB] text-black rounded-full text-xl font-semibold shadow-xl"
+            className="inline-flex items-center  px-16 py-4 bg-black text-white text-xl font-semibold shadow-xl"
           >
             Get a Custom Printing Quote
           </Link>

@@ -4,15 +4,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 export default function CustomDesign() {
-  const googleFormLink = "YOUR_GOOGLE_FORM_LINK_HERE"; // e.g., "https://docs.google.com/forms/d/e/1FAIpQLSc..."
-  const whatsappNumber = "YOUR_WHATSAPP_NUMBER"; // e.g., "+919876543210" (include country code, no spaces or hyphens)
+  const googleFormLink = "YOUR_GOOGLE_FORM_LINK_HERE";
+  const whatsappNumber = "+919009111088";
 
   const whatsappMessage = encodeURIComponent(
     "Hi, I'm interested in custom rolling paper booklets. I'd like to discuss design options."
   );
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
+    <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-full mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-emerald-500 via-zinc-700 to-sky-600 bg-clip-text text-transparent mb-6 leading-tight">
           Craft Your Unique Rolling Paper Brand
@@ -21,11 +21,7 @@ export default function CustomDesign() {
           Whether you have a design in mind or need a little help, we&apos;re
           here to bring your vision to life.
         </p>
-        <h4
-          className="inline-flex items-center justify-center px-16 py-4 bg-[#63E6BE] text-[#173153] font-semibold rounded-full shadow-md
-                           text-2xl
-                           focus:outline-none focus:ring-4 focus:ring-indigo-300 focus:ring-opacity-75 mb-16"
-        >
+        <h4 className="inline-flex items-center justify-center px-16 py-4 bg-black text-white font-semibold text-2xl mb-16">
           Explore our product range{" "}
         </h4>
 
@@ -42,7 +38,7 @@ export default function CustomDesign() {
             }}
           >
             <div className="bg-white dark:bg-gray-850 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
-              <h3 className="text-3xl font-bold text-amber-600 dark:text-amber-400 mb-4">
+              <h3 className="text-3xl font-bold text-[#A2D22E] mb-4">
                 Have Your Design Ready?
               </h3>
               <p className="text-gray-700 h-20 dark:text-gray-300 mb-8 leading-relaxed">
@@ -54,9 +50,8 @@ export default function CustomDesign() {
                 href={googleFormLink}
                 target="_blank" // Opens in a new tab
                 rel="noopener noreferrer" // Security best practice for target="_blank"
-                className="inline-flex items-center justify-center px-8 py-3 bg-amber-500 text-white font-semibold rounded-full shadow-md
-                         hover:bg-amber-600 transition-colors duration-200 text-lg
-                         focus:outline-none focus:ring-4 focus:ring-amber-300 focus:ring-opacity-75"
+                className="inline-flex items-center justify-center px-8 py-3 bg-black text-white font-semibold rounded-full shadow-md
+                          transition-colors duration-200 text-lg"
               >
                 Submit Your Brand Design
               </a>
@@ -74,7 +69,7 @@ export default function CustomDesign() {
             }}
           >
             <div className="bg-white dark:bg-gray-850 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
-              <h3 className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-4">
+              <h3 className="text-3xl font-bold text-[#A2D22E] mb-4">
                 Need Design Assistance?
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed h-20">
@@ -89,17 +84,10 @@ export default function CustomDesign() {
                   href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} // Can be the same form, or a different form/section within it for design requests
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-3 bg-indigo-500 text-white font-semibold rounded-full shadow-md
+                  className="inline-flex items-center justify-center px-8 py-3 bg-black text-white font-semibold rounded-full shadow-md
                            hover:bg-indigo-600 transition-colors duration-200 text-lg
                            focus:outline-none focus:ring-4 focus:ring-indigo-300 focus:ring-opacity-75"
                 >
-                  {/* <Image
-                  src="/ryo/Digital_Glyph_Green.svg" // Ensure you have this icon in your public folder
-                  alt="WhatsApp Icon"
-                  width={80}
-                  height={80}
-                  className="text-white"
-                /> */}
                   Start Your Custom Design
                 </a>
                 {/* Using <a> tag for external WhatsApp link */}
