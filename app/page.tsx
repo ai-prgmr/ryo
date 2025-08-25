@@ -1,14 +1,11 @@
 import React from "react";
 import Link from "next/link";
-// import SampleBoxOffer from "./components/SampleBoxOffer";
 import HeroCard from "./components/HeroCard";
 import { Metadata } from "next";
 import BackgroundCarousel from "./components/BackgroundCarousel";
-// import BrandwithUs from "./components/BrandWithUs";
 import ProductCard from "./components/ProductCard";
 import { products, Product } from "@/app/lib/data";
 import BuildyourBrand from "./components/BuildYourBrand";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TestimonialCarousel from "./components/TestimonialCarousel";
 import {
   faBoxesStacked,
@@ -32,9 +29,9 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const customImages = ["/ryo/images/2.png"];
+  const customImages = ["/ryo/images/3.jpeg"];
 
-  for (let i = 1; i <= 32; i++) {
+  for (let i = 3; i <= 32; i++) {
     customImages.push(`/ryo/images/${i}.jpeg`);
   }
   const filteredProducts = products.filter(
@@ -44,24 +41,28 @@ export default function Home() {
   const benefitsData = [
     {
       icon: faBoxesStacked,
+      image: "/ryo/images/01.png",
       title: "Low Order Quantities",
       description:
         "Every brand starts somewhere – we support your growth journey.",
     },
     {
       icon: faHeadset,
+      image: "/ryo/images/02.png",
       title: "Real Human Support",
       description:
         "Talk to people, not bots, for genuine guidance and assistance.",
     },
     {
       icon: faStar,
+      image: "/ryo/images/03.png",
       title: "Premium Finish",
       description:
         "Beautiful, high-quality packaging with a professional touch.",
     },
     {
       icon: faLeaf,
+      image: "/ryo/images/04.png",
       title: "Eco-Friendly Promise",
       description: "Committed to sustainability, true to your brand's vibe.",
     },
@@ -129,9 +130,12 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-center">
                 {benefitsData.map((benefit, index) => (
                   <span key={index}>
-                    <FontAwesomeIcon
-                      icon={benefit.icon}
-                      className="text-7xl mb-3 text-gray-400"
+                    <Image
+                      src={benefit.image}
+                      alt={benefit.title}
+                      width={75}
+                      height={75}
+                      className="mb-3 rounded-lg flex justify-center mx-auto"
                     />
 
                     <h4 className="text-2xl font-extrabold text-[#A2D230] mb-2 text-center">

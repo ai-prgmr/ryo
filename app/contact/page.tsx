@@ -26,7 +26,7 @@ export default function ContactPage() {
             transition={{
               duration: 0.7, // Duration of the individual card animation
               delay: 0.1, // Stagger delay: each card animates 0.1s after the previous one
-              ease: "easeOut",
+              ease: "easeIn",
             }}
           >
             <div className="text-orange-400 bg-white p-6  shadow-lg flex flex-col items-center">

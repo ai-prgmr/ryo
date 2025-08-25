@@ -9,6 +9,14 @@ const _ProductDetailClientPage = React.memo(
   ({ productSlug }: { productSlug: string }) => {
     const curentProduct = products.find((p) => p.slug === productSlug);
     const filteredProducts = products.filter((p) => p.slug !== productSlug);
+    const whatsappNumber = "+919009111088";
+    const whatsappMessage = encodeURIComponent(
+      `Hello! I have a question about your ${
+        curentProduct && curentProduct.name
+      } rolling papers.`
+    );
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
     return (
       curentProduct && (
         <div className="">
@@ -113,7 +121,15 @@ const _ProductDetailClientPage = React.memo(
 
                 <div className="mt-8">
                   <button className="bg-black text-white font-bold py-3 px-8 text-lg shadow-xl">
-                    Inquire About This Product
+                    <a
+                      href={whatsappLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white flex items-center justify-center"
+                      aria-label="Chat on WhatsApp"
+                    >
+                      Inquire About This Product
+                    </a>
                   </button>
                 </div>
               </div>

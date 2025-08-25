@@ -4,7 +4,7 @@ import Image from "next/image";
 // This component needs client-side interactivity
 
 const WhatsAppButton: React.FC = () => {
-  const whatsappNumber = "+919009111088"; // Replace with your actual WhatsApp number
+  const whatsappNumber = "+919009111088";
   const whatsappMessage = encodeURIComponent(
     "Hello! I have a question about your rolling papers."
   );
