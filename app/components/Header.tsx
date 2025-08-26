@@ -25,8 +25,6 @@ export default function Header() {
     <header className="bg-[#05014a] text-gray-50 shadow-xl fixed w-full z-50 border-b-4 border-b-[#A2D22E]">
       <div className="w-full mx-auto flex justify-between items-center px-4 md:px-16">
         {" "}
-        {/* Added relative for absolute positioning of nav */}
-        {/* Logo/Brand */}
         <Link
           href="/"
           className="flex items-center space-x-2 text-2xl font-bold transition-colors duration-200 p-2 rounded-2xl"
@@ -43,13 +41,6 @@ export default function Header() {
             className="transform scale-125" // Optional: Add rounded corners to the logo
           />
         </Link>
-        {/* <Image
-          src="/respect.gif"
-          alt="RYO Paper gif"
-          width={100}
-          height={100}
-          className="items-center p-4" // Optional: Add rounded corners to the logo
-        /> */}
         {/* Hamburger/Close Button for Mobile */}
         <button
           className="sm:hidden text-blue-500 focus:outline-none z-60" // Hidden on sm screens and up
@@ -86,7 +77,7 @@ export default function Header() {
             icon={Home}
             label="Home"
             textColor="text-gray-300"
-            hoverColor="hover:text-gray-600"
+            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
           <NavLink
@@ -105,22 +96,6 @@ export default function Header() {
             hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
-          {/* <NavLink
-            href="/#sampleBox"
-            icon={Printer}
-            label="Samples"
-            textColor="text-gray-100"
-            hoverColor="hover:text-gray-200"
-            onClick={closeMenu}
-          /> */}
-          {/* <NavLink
-            href="/csr"
-            icon={Leaf}
-            label="CSR"
-            textColor="text-white"
-            hoverColor="hover:text-gray-200"
-            onClick={closeMenu}
-          /> */}
           <NavLink
             href="/about-us"
             icon={Leaf}
@@ -156,8 +131,8 @@ function NavLink({
   href,
   icon: Icon,
   label,
-  hoverColor = "hover:text-blue-100",
-  onClick, // Destructure the onClick prop
+  hoverColor = "hover:text-blue-600",
+  onClick,
 }: NavLinkProps) {
   const pathname = usePathname();
   // Simplified active check for routes like /products/category
@@ -170,7 +145,7 @@ function NavLink({
       href={href}
       className={`flex flex-col items-center p-2 rounded-lg transition-colors duration-200
         ${isActive ? "bg-[#e1ffac] text-black bg-opacity-20" : "text-gray-200"}
-         ${hoverColor}`}
+        ${isActive ? "hover:text-black" : `${hoverColor}`}`}
       onClick={onClick}
     >
       <Icon size={20} />

@@ -50,9 +50,9 @@ const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
       <Image
         src={images[currentIndex]}
         alt={`Background image ${currentIndex + 1}`}
-        layout="fill"
-        objectFit="contain"
+        fill={true}
         sizes="(max-width: 768px) 100vw, 33vw"
+        className="contain"
         priority={true}
       />
 

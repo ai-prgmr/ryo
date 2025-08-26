@@ -76,18 +76,18 @@ export default function Home() {
         <Image
           src="/ryo/Banner-mobile.jpg"
           alt="Mobile Banner"
-          layout="fill"
-          objectFit="cover"
+          fill={true}
           className="md:hidden"
           priority={true}
+          style={{ objectFit: "cover" }}
         />
         <Image
           src="/ryo/banner-web.jpg"
           alt="Web Banner"
-          layout="fill"
-          objectFit="cover"
           className="hidden md:block"
           priority={true}
+          fill={true}
+          style={{ objectFit: "cover" }}
         />
       </div>
 
@@ -129,13 +129,13 @@ export default function Home() {
               {/* New Grid for Benefits */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-center">
                 {benefitsData.map((benefit, index) => (
-                  <span key={index}>
+                  <div key={index} className="">
                     <Image
                       src={benefit.image}
                       alt={benefit.title}
-                      width={75}
-                      height={75}
-                      className="mb-3 rounded-lg flex justify-center mx-auto"
+                      width={90}
+                      height={90}
+                      className="rounded-lg flex mx-auto"
                     />
 
                     <h4 className="text-2xl font-extrabold text-[#A2D230] mb-2 text-center">
@@ -144,7 +144,7 @@ export default function Home() {
                     <p className="text-md text-gray-700 leading-snug text-center">
                       {benefit.description}
                     </p>
-                  </span>
+                  </div>
                 ))}
               </div>
             </div>
