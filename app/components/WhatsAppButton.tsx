@@ -11,7 +11,7 @@ const WhatsAppButton: React.FC = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
   // --- Facebook Configuration ---
   // Replace this with your actual Facebook page URL
-  const facebookLink = "https://www.facebook.com/";
+  // const facebookLink = "https://www.facebook.com/";
 
   // --- Instagram Configuration ---
   // Replace this with your actual Instagram profile URL
@@ -54,7 +54,7 @@ const WhatsAppButton: React.FC = () => {
       </a>
 
       {/* Facebook Button */}
-      <a
+      {/* <a
         href={facebookLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const WhatsAppButton: React.FC = () => {
           height={40}
           className="text-white"
         />
-      </a>
+      </a> */}
     </div>
   );
 };
