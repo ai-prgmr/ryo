@@ -35,8 +35,8 @@ export default function ContactPage() {
               <p className="leading-relaxed">
                 <a
                   href="mailto:info@ryopapers.com"
-                  className="inline-flex items-center justify-center px-12 py-3 bg-amber-500 text-white font-semibold rounded-full shadow-md
-                         hover:bg-amber-600 transition-colors duration-200 text-2xl
+                  className="inline-flex items-center justify-center px-6 md:px-12 py-3 bg-amber-500 text-white font-semibold rounded-full shadow-md
+                         hover:bg-amber-600 transition-colors duration-200 text-lg md:text-2xl
                          focus:outline-none focus:ring-4 focus:ring-amber-300 focus:ring-opacity-75"
                 >
                   info@ryopapers.com
@@ -70,8 +70,8 @@ export default function ContactPage() {
                 <a
                   target="_blank"
                   href="https://wa.me/919009111088"
-                  className="inline-flex items-center justify-center px-12 py-3 bg-green-400 text-white font-semibold rounded-full shadow-md
-                          transition-colors duration-200 text-2xl
+                  className="inline-flex items-center justify-center px-6 md:px-12 py-3 bg-green-400 text-white font-semibold rounded-full shadow-md
+                          transition-colors duration-200 text-lg md:text-2xl
                          focus:outline-none focus:ring-4 focus:ring-amber-300 focus:ring-opacity-75"
                 >
                   +91 90091 11088

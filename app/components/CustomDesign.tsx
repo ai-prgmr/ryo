@@ -18,7 +18,7 @@ export default function CustomDesign() {
         <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-emerald-500 via-zinc-700 to-sky-600 bg-clip-text text-transparent mb-6 leading-tight">
           Craft Your Unique Rolling Paper Brand
         </h2>
-        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-900 mb-12 max-w-3xl mx-auto">
           Whether you have a design in mind or need a little help, we&apos;re
           here to bring your vision to life.
         </p>
@@ -38,11 +38,11 @@ export default function CustomDesign() {
               ease: "easeOut",
             }}
           >
-            <div className="bg-white dark:bg-gray-850 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
               <h3 className="text-3xl font-bold text-[#A2D22E] mb-4">
                 Have Your Design Ready?
               </h3>
-              <p className="text-gray-700 h-20 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-gray-700 mb-8 leading-relaxed">
                 Already have a print-ready design for your rolling paper brand?
                 Share it with us directly through our easy-to-use form.
               </p>
@@ -51,7 +51,7 @@ export default function CustomDesign() {
                 href={googleFormLink}
                 target="_blank" // Opens in a new tab
                 rel="noopener noreferrer" // Security best practice for target="_blank"
-                className="inline-flex items-center justify-center px-8 py-3 bg-black text-white font-semibold rounded-full shadow-md
+                className="inline-flex items-center justify-center px-4 lg:px-8 py-3 bg-black text-white font-semibold rounded-full shadow-md
                           transition-colors duration-200 text-lg"
               >
                 Submit Your Brand Design
@@ -69,47 +69,24 @@ export default function CustomDesign() {
               ease: "easeInOut",
             }}
           >
-            <div className="bg-white dark:bg-gray-850 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
               <h3 className="text-3xl font-bold text-[#A2D22E] mb-4">
                 Need Design Assistance?
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed h-20">
+              <p className="text-gray-700 mb-8 leading-relaxed">
                 No worries - Our creative team is here to help craft a perfect
                 brand! Fill us in with your vision, inspiration and emotions and
                 your brand style.
               </p>
-
-              <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                {/* Using <a> tag for external Google Form link */}
-                <a
-                  href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} // Can be the same form, or a different form/section within it for design requests
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-3 bg-black text-white font-semibold rounded-full shadow-md
-                           hover:bg-indigo-600 transition-colors duration-200 text-lg
-                           focus:outline-none focus:ring-4 focus:ring-indigo-300 focus:ring-opacity-75"
-                >
-                  Start Your Custom Design
-                </a>
-                {/* Using <a> tag for external WhatsApp link */}
-                {/* <a
-                href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+              <a
+                href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} // Can be the same form, or a different form/section within it for design requests
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-3 bg-green-500 text-white font-semibold rounded-full shadow-md
-                           hover:bg-green-600 transition-colors duration-200 text-lg
-                           focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-75"
+                className="inline-flex items-center justify-center px-4 lg:px-8 py-3 bg-black text-white font-semibold rounded-full shadow-md
+                          transition-colors duration-200 text-lg"
               >
-                <Image
-                  src="/ryo/Digital_Glyph_Green.svg" // Ensure you have this icon in your public folder
-                  alt="WhatsApp Icon"
-                  width={80}
-                  height={80}
-                  className="text-white"
-                />
-                Chat on WhatsApp
-              </a> */}
-              </div>
+                Start Your Custom Design
+              </a>
             </div>
           </motion.div>
         </div>

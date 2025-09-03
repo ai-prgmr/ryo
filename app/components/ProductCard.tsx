@@ -24,7 +24,7 @@ function ProductCard({ product, index }: ProductCardProps) {
         href={`/products/${product.categorySlug}/${product.slug}`}
         className="block"
       >
-        <div className="max-w-[300px] overflow-hidden bg-[#F6F6F6] rounded-lg p-4">
+        <div className="max-w-[300px] overflow-hidden bg-[#F6F6F6] rounded-lg p-4 mx-auto">
           <div className=" relative max-w-sm bg-white h-48 flex items-center justify-center overflow-hidden mx-auto mt-2 rounded-lg">
             {" "}
             {/* Fixed height for consistency */}

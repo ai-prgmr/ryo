@@ -42,7 +42,7 @@ export default function AboutUs() {
   const textColor = "text-[#173153]";
   return (
     <div className=" font-sans mt-2">
-      <div className="max-w-5xl mx-auto px-12 lg:px-8">
+      <div className="max-w-5xl mx-auto lg:px-8">
         {/* Main Heading & Introduction */}
         <div className="max-w-5xl mx-auto px-12 lg:px-8">
           {/* Main Heading & Introduction */}
