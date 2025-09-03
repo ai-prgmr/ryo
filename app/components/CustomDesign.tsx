@@ -4,7 +4,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 export default function CustomDesign() {
-  const googleFormLink = "YOUR_GOOGLE_FORM_LINK_HERE";
+  const googleFormLink =
+    "https://docs.google.com/forms/d/e/1FAIpQLScmqEWZn3wrgT8ARpoNphSO1CnD_QN7in0fIga6pa2pqBVvOw/viewform?usp=header";
   const whatsappNumber = "+919009111088";
 
   const whatsappMessage = encodeURIComponent(
