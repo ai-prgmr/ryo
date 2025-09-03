@@ -45,7 +45,7 @@ const WhatsAppButton: React.FC = () => {
         aria-label="Follow on Instagram"
       >
         <Image
-          src="/ryo/Instagram.png"
+          src="/Instagram.png"
           alt="WhatsApp Icon"
           width={40}
           height={40}
