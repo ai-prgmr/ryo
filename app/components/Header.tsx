@@ -33,7 +33,7 @@ export default function Header() {
           title="Rolling Paper Co. Home"
         >
           <Image
-            src="/ryo/new-logo-2-removebg.png"
+            src="/new-logo-2-removebg.png"
             alt="RYO Papers Logo"
             width={100}
             height={100}

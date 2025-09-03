@@ -57,7 +57,7 @@ export default function ContactPage() {
           >
             <div className="bg-white p-6 shadow-lg flex flex-col items-center">
               <Image
-                src="/ryo/Digital_Glyph_Green.svg"
+                src="/Digital_Glyph_Green.svg"
                 alt="WhatsApp"
                 width={48}
                 height={48}

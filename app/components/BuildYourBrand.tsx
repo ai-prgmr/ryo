@@ -7,13 +7,13 @@ const stepsData = [
   {
     icon: Lightbulb,
     title: "Choose Rolling Paper",
-    image: "/ryo/01.png",
+    image: "/01.png",
     description:
       "Rolling papers, cones, tips, or full sets — pick what fits your brand best.",
   },
   {
     icon: Factory,
-    image: "/ryo/02.png",
+    image: "/02.png",
     title: "Share Your Vibe",
     description: (
       <>
@@ -26,13 +26,13 @@ const stepsData = [
   {
     icon: TrendingUp,
     title: "We Custom-Make It",
-    image: "/ryo/03.png",
+    image: "/03.png",
     description:
       "Premium materials. Flawless finish. 100% tailored to your brand.",
   },
   {
     icon: TrendingUp,
-    image: "/ryo/04.png",
+    image: "/04.png",
     title: "We Ship it",
     description: "No middlemen, No hidden costs, No hassle.",
   },

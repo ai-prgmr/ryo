@@ -24,7 +24,7 @@ function CustomPrintingPage() {
         <div className="relative py-20 px-4 overflow-hidden min-h-[400px]">
           {/* Background Image */}
           <Image
-            src="/ryo/customize.jpeg" // <-- Replace with your actual image path
+            src="/customize.jpeg" // <-- Replace with your actual image path
             alt="Custom Printing Services Background"
             layout="fill"
             objectFit="cover"

@@ -28,7 +28,7 @@ const WhatsAppButton: React.FC = () => {
         aria-label="Chat on WhatsApp"
       >
         <Image
-          src="/ryo/Digital_Glyph_Green.svg"
+          src="/Digital_Glyph_Green.svg"
           alt="WhatsApp Icon"
           width={40}
           height={40}

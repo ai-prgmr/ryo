@@ -29,10 +29,10 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const customImages = ["/ryo/images/3.jpeg"];
+  const customImages = ["/images/3.jpeg"];
 
   for (let i = 3; i <= 32; i++) {
-    customImages.push(`/ryo/images/${i}.jpeg`);
+    customImages.push(`/images/${i}.jpeg`);
   }
   const filteredProducts = products.filter(
     (product: Product) => product.categorySlug === "rolling-paper" // Directly filter for 'rolling-paper'
@@ -41,28 +41,28 @@ export default function Home() {
   const benefitsData = [
     {
       icon: faBoxesStacked,
-      image: "/ryo/images/01.png",
+      image: "/images/01.png",
       title: "Low Order Quantities",
       description:
         "Every brand starts somewhere – we support your growth journey.",
     },
     {
       icon: faHeadset,
-      image: "/ryo/images/02.png",
+      image: "/images/02.png",
       title: "Real Human Support",
       description:
         "Talk to people, not bots, for genuine guidance and assistance.",
     },
     {
       icon: faStar,
-      image: "/ryo/images/03.png",
+      image: "/images/03.png",
       title: "Premium Finish",
       description:
         "Beautiful, high-quality packaging with a professional touch.",
     },
     {
       icon: faLeaf,
-      image: "/ryo/images/04.png",
+      image: "/images/04.png",
       title: "Eco-Friendly Promise",
       description: "Committed to sustainability, true to your brand's vibe.",
     },
@@ -74,7 +74,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative w-full aspect-[9/16] md:aspect-video">
         <Image
-          src="/ryo/Banner-mobile.jpg"
+          src="/Banner-mobile.jpg"
           alt="Mobile Banner"
           fill={true}
           className="md:hidden"
@@ -82,7 +82,7 @@ export default function Home() {
           style={{ objectFit: "cover" }}
         />
         <Image
-          src="/ryo/banner-web.jpg"
+          src="/banner-web.jpg"
           alt="Web Banner"
           className="hidden md:block"
           priority={true}
@@ -96,7 +96,7 @@ export default function Home() {
         <HeroCard />
         <div className="flex justify-center items-center mb-8">
           <Image
-            src="/ryo/branding-cutout.png"
+            src="/branding-cutout.png"
             alt="RYO-branding"
             width={600}
             sizes="100vw"
