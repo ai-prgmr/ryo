@@ -33,12 +33,12 @@ export default function Header() {
           title="Rolling Paper Co. Home"
         >
           <Image
-            src="/new-logo-2-removebg.png"
+            src="/images/ryopapers-final-logo.png"
             alt="RYO Papers Logo"
             width={100}
             height={100}
             priority
-            className="transform scale-125" // Optional: Add rounded corners to the logo
+            className="transition scale-125"
           />
         </Link>
         {/* Hamburger/Close Button for Mobile */}

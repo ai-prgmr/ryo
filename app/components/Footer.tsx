@@ -12,7 +12,7 @@ function Footer() {
           className="flex justify-center items-center text-2xl font-semibold text-white"
         >
           <Image
-            src="/new-logo-2-removebg.png"
+            src="/images/ryopapers-final-logo.png"
             alt="RYO Papers Logo"
             width={100}
             height={100}
