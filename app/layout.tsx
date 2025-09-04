@@ -34,7 +34,10 @@ export default function RootLayout({
     >
       <body className={`antialiased bg-white`}>
         <Header />
-        <ConsentManager logoSrc="/new-logo-2-removebg.png" logoAlt="RYO Logo" />
+        <ConsentManager
+          logoSrc="/images/ryopapers-final-logo.png"
+          logoAlt="RYO Logo"
+        />
         <main className="pt-28 flex flex-col">{children}</main>
         <Footer />
         <WhatsAppButton /> {/* WhatsApp button added here */}
