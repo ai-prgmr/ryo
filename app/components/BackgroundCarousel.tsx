@@ -44,7 +44,7 @@ const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
 
   return (
     <div
-      className={`relative overflow-hidden z-10 w-full md:${width} aspect-video`}
+      className={`relative overflow-hidden z-10 w-full md:${width} aspect-video mx-auto`}
     >
       {/* Background Image */}
       <Image

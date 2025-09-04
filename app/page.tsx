@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 export default function Home() {
   const customImages = ["/images/3.jpeg"];
 
-  for (let i = 3; i <= 32; i++) {
+  for (let i = 3; i <= 35; i++) {
     customImages.push(`/images/${i}.jpeg`);
   }
   const filteredProducts = products.filter(
@@ -216,7 +216,7 @@ export default function Home() {
             <div className="w-full relative">
               <BackgroundCarousel
                 images={customImages}
-                width="h-300"
+                width="max-w-md"
                 inset="false"
               />
             </div>
