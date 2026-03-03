@@ -80,68 +80,6 @@ export default function ContactPage() {
             </div>
           </motion.div>
         </div>
-
-        {/* <h2 className="text-3xl font-bold text-amber-300 mb-6">
-          Send Us a Message
-        </h2>
-        <form className="max-w-2xl mx-auto bg-gray-900 p-8 rounded-2xl border border-gray-700 shadow-lg text-left">
-          <div className="mb-4">
-            <label
-              htmlFor="name"
-              className="block text-gray-300 text-sm font-bold mb-2"
-            >
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="shadow appearance-none border border-gray-600 rounded-lg w-full py-3 px-4 text-gray-100 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-500 bg-gray-700 transition-all duration-200"
-              placeholder="Your Name"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label
-              htmlFor="email"
-              className="block text-gray-300 text-sm font-bold mb-2"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="shadow appearance-none border border-gray-600 rounded-lg w-full py-3 px-4 text-gray-100 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-500 bg-gray-700 transition-all duration-200"
-              placeholder="your.email@example.com"
-              required
-            />
-          </div>
-          <div className="mb-6">
-            <label
-              htmlFor="message"
-              className="block text-gray-300 text-sm font-bold mb-2"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={5}
-              className="shadow appearance-none border border-gray-600 rounded-lg w-full py-3 px-4 text-gray-100 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-500 bg-gray-700 transition-all duration-200"
-              placeholder="Tell us how we can help..."
-              required
-            ></textarea>
-          </div>
-          <div className="flex items-center justify-center">
-            <button
-              type="submit"
-              className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-full text-lg shadow-xl transition-all duration-300 transform hover:scale-105"
-            >
-              Send Message
-            </button>
-          </div>
-        </form> */}
       </div>
     </div>
   );

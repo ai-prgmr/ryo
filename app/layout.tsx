@@ -18,7 +18,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Roll your Own",
+  title: "Roll your Own | RYO Papers",
   description: "Roll your Own Papers, custom solutions",
 };
 

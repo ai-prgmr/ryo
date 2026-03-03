@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import { machines } from "@/app/lib/machineData";
 import ProductDetailClient from "../../components/ProductDetailClient";
 

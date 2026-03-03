@@ -1,9 +1,6 @@
 // --- CONSTANTS ---
 export const WHATSAPP_NUMBER = "919876543210";
 export const EMAIL_ADDRESS = "sales@techmachinery.com";
-import { Cog, LucideIcon } from "lucide-react";
-
-
 export interface Specification {
   label: string;
   value: string;

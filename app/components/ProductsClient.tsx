@@ -3,8 +3,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
-import { ArrowRight, Cog, Gauge, Settings } from "lucide-react";
-import { machines, ProductType } from "@/app/lib/machineData";
+import { ArrowRight, Cog } from "lucide-react";
+import { machines } from "@/app/lib/machineData";
 
 export default function ProductsClient() {
   const ref = useRef(null);
@@ -21,17 +21,7 @@ export default function ProductsClient() {
     },
   };
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  };
+
 
   return (
     <div className="min-h-screen">

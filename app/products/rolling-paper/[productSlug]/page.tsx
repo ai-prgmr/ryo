@@ -4,7 +4,7 @@ import _ProductDetailClientPage from "./_ProductDetailClientPage";
 import { Metadata } from "next";
 
 type Props = {
-  params: { productSlug: string };
+  params: Promise<{ productSlug: string }>;
 };
 
 export async function generateStaticParams() {
@@ -14,8 +14,8 @@ export async function generateStaticParams() {
 }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Fetch the product to get the slug/name
-  console.log(params)
-  const product = products.find((p) => p.slug === params.productSlug);
+  const resolvedParams = await params;
+  const product = products.find((p) => p.slug === resolvedParams.productSlug);
   if (!product) {
     return {
       title: "Product Not Found",
