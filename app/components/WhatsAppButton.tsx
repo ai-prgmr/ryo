@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-
+import WorldMusicRadioPlayer from "./WorldMusicRadioPlayer";
 // This component needs client-side interactivity
 
 const WhatsAppButton: React.FC = () => {
@@ -20,6 +20,7 @@ const WhatsAppButton: React.FC = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center">
       {/* WhatsApp Button */}
+      <WorldMusicRadioPlayer /> {/* World Music Radio Player */}
       <a
         href={whatsappLink}
         target="_blank"
@@ -35,7 +36,6 @@ const WhatsAppButton: React.FC = () => {
           className="text-white"
         />
       </a>
-
       {/* Instagram Button */}
       <a
         href={instagramLink}
@@ -45,14 +45,13 @@ const WhatsAppButton: React.FC = () => {
         aria-label="Follow on Instagram"
       >
         <Image
-          src="/Instagram.png"
+          src="/Instagram-1.png"
           alt="WhatsApp Icon"
           width={40}
           height={40}
           className="text-white"
         />
       </a>
-
       {/* Facebook Button */}
       {/* <a
         href={facebookLink}

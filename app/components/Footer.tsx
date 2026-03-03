@@ -2,7 +2,6 @@
 // components/Footer.tsx
 import Image from "next/image";
 import Link from "next/link";
-import WorldMusicRadioPlayer from "./WorldMusicRadioPlayer";
 function Footer() {
   return (
     <footer className="p-8 lg:p-10 mt-4 bg-black">
@@ -29,7 +28,6 @@ function Footer() {
           </a>
           . All Rights Reserved.
         </span>
-        <WorldMusicRadioPlayer /> {/* World Music Radio Player */}
       </div>
     </footer>
   );

@@ -4,21 +4,36 @@ import Image from "next/image";
 import { Product, products } from "@/app/lib/data";
 import ProductCard from "@/app/components/ProductCard";
 import PaperTypeSelector from "@/app/components/PaperTypeSelector";
+import { generateProductSchema } from "@/app/lib/seo";
+
+
 
 const _ProductDetailClientPage = React.memo(
   ({ productSlug }: { productSlug: string }) => {
     const curentProduct = products.find((p) => p.slug === productSlug);
+    if (!curentProduct) {
+      return (
+        <div className="min-h-[50vh] flex items-center justify-center">
+          <h2 className="text-2xl font-bold text-gray-500">Product Not Found</h2>
+        </div>
+      );
+    }
     const filteredProducts = products.filter((p) => p.slug !== productSlug);
     const whatsappNumber = "+919009111088";
     const whatsappMessage = encodeURIComponent(
-      `Hello! I have a question about your ${
-        curentProduct && curentProduct.name
+      `Hello! I have a question about your ${curentProduct && curentProduct.name
       } rolling papers.`
     );
+    const BASE_URL = "https://ryopapers.com";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-
+    const jsonLd = generateProductSchema(curentProduct as Product, BASE_URL);
     return (
-      curentProduct && (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd }}
+        />
+
         <div className="">
           <div className="bg-white ">
             <div className="max-w-5xl mx-auto p-6 md:p-10 flex flex-col md:flex-row gap-8">
@@ -161,7 +176,8 @@ const _ProductDetailClientPage = React.memo(
             </div>
           </div>
         </div>
-      )
+
+      </>
     );
   }
 );

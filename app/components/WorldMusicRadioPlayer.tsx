@@ -6,7 +6,7 @@ const RADIO_STREAM =
 export default function WorldMusicRadioPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState(false);
-
+  const [showTooltip, setShowTooltip] = useState(false);
   useEffect(() => {
     // Attempt to autoplay on mount
     if (audioRef.current) {
@@ -36,18 +36,40 @@ export default function WorldMusicRadioPlayer() {
   };
 
   return (
-    <div>
-      <audio ref={audioRef} src={RADIO_STREAM} />
-      <button
+    <div className="relative inline-block">
+      {showTooltip && (<div
+        className="absolute left-1/2 -top-14 z-10 
+                     -translate-x-1/2 transform 
+                     px-5 py-2 text-xs font-medium 
+                     text-white bg-gray-800 rounded-lg shadow-md 
+                     transition-opacity duration-300 opacity-100"
+      >
+        {/* Tooltip Content */}
+        {playing ? "Pause Music" : "Play Music"}
+
+        {/* Tooltip Arrow (Tailwind CSS Triangle) */}
+        <div className="absolute left-1/2 -bottom-2 h-0 w-0 -translate-x-1/2
+                          border-x-8 border-x-transparent border-t-8 border-t-gray-800">
+        </div>
+      </div>
+      )}
+      <audio ref={audioRef} src={RADIO_STREAM} autoPlay={true} />
+      <button name="Play Music" data-tooltip-target="tooltip-default" aria-description="Play Music" aria-hidden="false"
         onClick={togglePlay}
         style={{
-          padding: "0.5em 1.5em",
+          padding: "0.5rem",
           fontSize: "1.1em",
           borderRadius: 6,
           border: "none",
           background: "#0070f3",
           color: "#fff",
           cursor: "pointer",
+        }}
+        onMouseEnter={() => {
+          setShowTooltip(true);
+        }}
+        onMouseLeave={() => {
+          setShowTooltip(false)
         }}
       >
         {playing ? <PauseCircle /> : <PlayCircle />}
