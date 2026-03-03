@@ -3,7 +3,7 @@ import { products } from "@/app/lib/data";
 
 export const dynamic = "force-static";
 
-export const baseUrl = "https://www.ryopapers.com";
+export const baseUrl = "https://ryopapers.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const staticRoutes: MetadataRoute.Sitemap = [

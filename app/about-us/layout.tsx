@@ -4,12 +4,12 @@ export const metadata: Metadata = {
     title: "About Us | RYO Papers",
     description: "Learn more about RYO Papers. Low order quantities, real human support, premium finish, and eco-friendly promise.",
     alternates: {
-        canonical: "https://www.ryopapers.com/about-us",
+        canonical: "https://ryopapers.com/about-us",
     },
     openGraph: {
         title: "About Us | RYO Papers",
         description: "Learn more about RYO Papers. Low order quantities, real human support, premium finish, and eco-friendly promise.",
-        url: "https://www.ryopapers.com/about-us",
+        url: "https://ryopapers.com/about-us",
     },
     twitter: {
         card: "summary_large_image",

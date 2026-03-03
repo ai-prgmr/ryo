@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     "Tips/Filters",
   ],
   alternates: {
-    canonical: "https://www.ryopapers.com/custom-printing",
+    canonical: "https://ryopapers.com/custom-printing",
   },
   openGraph: {
     title: "Custom Printing & Contract Manufacturing | Rolling Paper Co.",
     description: "Explore our custom printing services for rolling papers and contract manufacturing solutions tailored for the tobacco industry.",
-    url: "https://www.ryopapers.com/custom-printing",
+    url: "https://ryopapers.com/custom-printing",
   },
   twitter: {
     card: "summary_large_image",

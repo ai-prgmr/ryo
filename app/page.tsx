@@ -27,16 +27,16 @@ export const metadata: Metadata = {
     "bespoke rolling papers printing",
   ],
   alternates: {
-    canonical: "https://www.ryopapers.com",
+    canonical: "https://ryopapers.com",
   },
   openGraph: {
     title: "Roll your Own - Custom Rolling Papers & Contract/OEM Manufacturing",
     description: "Explore our premium rolling papers, custom rolling papers printing services, and contract rolling papers manufacturing solutions for your brand",
-    url: "https://www.ryopapers.com",
+    url: "https://ryopapers.com",
     type: "website",
     images: [
       {
-        url: "https://www.ryopapers.com/images/ryopapers-final-logo.png",
+        url: "https://ryopapers.com/images/ryopapers-final-logo.png",
         width: 1200,
         height: 630,
         alt: "Roll your Own - Custom Rolling Papers & Contract/OEM Manufacturing",

@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const baseUrl = "https://www.ryopapers.com";
+  const baseUrl = "https://ryopapers.com";
 
   return {
     title: `${product.name} rolling papers | RYO Papers`, // Page Title
