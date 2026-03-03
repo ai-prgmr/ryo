@@ -1,6 +1,5 @@
 import { MetadataRoute } from "next";
 import { products } from "@/app/lib/data";
-import { machines } from "@/app/lib/machineData";
 
 export const dynamic = "force-static";
 

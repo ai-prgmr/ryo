@@ -22,9 +22,9 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: "ks-slim-filters",
+    id: "ks-slim-filters-rolling-papers",
     name: "KING SIZE SLIM + FILTERS",
-    slug: "king-size-slim-plus-filters",
+    slug: "king-size-slim-plus-filters-rolling-papers",
     categorySlug: "rolling-paper",
     description:
       "Our popular King Size Slim papers conveniently packaged with high-quality filters.",
@@ -35,9 +35,9 @@ export const products: Product[] = [
     features: ["Integrated Filters", "Easy to Roll", "Smooth Draw"],
   },
   {
-    id: "one-quarter-filters",
+    id: "one-quarter-filters-rolling-papers",
     name: "1 ¼ + FILTERS",
-    slug: "one-quarter-plus-filters",
+    slug: "one-quarter-plus-filters-rolling-papers",
     categorySlug: "rolling-paper",
     description:
       "Convenient 1 ¼ papers with included filters for a complete rolling solution.",
@@ -48,9 +48,9 @@ export const products: Product[] = [
     features: ["All-in-One Pack", "Clean Draw", "Effortless Rolling"],
   },
   {
-    id: "block-200-king-size",
+    id: "block-200-king-size-rolling-papers",
     name: "Block King Size",
-    slug: "block-200-king-size",
+    slug: "block-200-king-size-rolling-papers",
     categorySlug: "rolling-paper",
     description:
       "A block of 100/200/500 King Size papers, offering great value and a consistent experience.",
@@ -61,9 +61,9 @@ export const products: Product[] = [
     features: ["Bulk Pack", "Economical", "Consistent Slim"],
   },
   {
-    id: "block-1-1-4",
+    id: "block-1-1-4-rolling-papers",
     name: "Block 1 1/4",
-    slug: "block-1-1-4",
+    slug: "block-1-1-4-rolling-papers",
     categorySlug: "rolling-paper",
     description:
       "A large block of classic 1 ¼ papers, perfect for heavy users.",
@@ -76,7 +76,7 @@ export const products: Product[] = [
   {
     id: "rolled-cones",
     name: "Rolled Cones",
-    slug: "rolled-cones",
+    slug: "rolled-cones-rolling-papers",
     categorySlug: "rolling-paper",
     description:
       "Pre-rolled cones for those who prefer convenience without sacrificing quality.",
@@ -87,9 +87,9 @@ export const products: Product[] = [
     features: ["Mega Pack", "Unbeatable Value", "Long Lasting Supply"],
   },
   {
-    id: "custom-size",
+    id: "custom-size-rolling-papers",
     name: "CUSTOM SIZE",
-    slug: "custom-size",
+    slug: "custom-size-rolling-papers",
     categorySlug: "rolling-paper",
     description:
       "Connect with us directly for your custom needs. Your unique dimensions, our quality.",

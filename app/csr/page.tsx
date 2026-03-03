@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Sprout, Home, Heart, HandHeart } from "lucide-react";
 
+
 const CSR = () => {
   return (
     <div className=" text-gray-800 bg-white font-sans py-16 sm:py-24">

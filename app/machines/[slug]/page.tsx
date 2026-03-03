@@ -13,9 +13,24 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     (m) => m.slug === slug
   ) || Object.values(machines)[0];
 
+  const baseUrl = "https://www.ryopapers.com";
+
   return {
     title: `${product.name} | RYO Papers`,
     description: product.description,
+    alternates: {
+      canonical: `${baseUrl}/machines/${product.slug}`,
+    },
+    openGraph: {
+      title: `${product.name} | RYO Papers`,
+      description: product.description,
+      url: `${baseUrl}/machines/${product.slug}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} | RYO Papers`,
+      description: product.description,
+    },
   };
 }
 

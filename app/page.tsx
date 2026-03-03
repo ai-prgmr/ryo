@@ -15,7 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 export const metadata: Metadata = {
-  title: "Roll your Own - Custom Rolling Papers & Contract Manufacturing",
+  title: "Roll your Own - Custom Rolling Papers & OEM Manufacturing",
   description:
     "Explore our premium rolling papers, custom rolling papers printing services, and contract rolling papers manufacturing solutions for your brand",
   keywords: [
@@ -26,6 +26,28 @@ export const metadata: Metadata = {
     "premium rolling papers",
     "bespoke rolling papers printing",
   ],
+  alternates: {
+    canonical: "https://www.ryopapers.com",
+  },
+  openGraph: {
+    title: "Roll your Own - Custom Rolling Papers & Contract/OEM Manufacturing",
+    description: "Explore our premium rolling papers, custom rolling papers printing services, and contract rolling papers manufacturing solutions for your brand",
+    url: "https://www.ryopapers.com",
+    type: "website",
+    images: [
+      {
+        url: "https://www.ryopapers.com/images/ryopapers-final-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Roll your Own - Custom Rolling Papers & Contract/OEM Manufacturing",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Roll your Own - Custom Rolling Papers & Contract Manufacturing",
+    description: "Explore our premium rolling papers, custom rolling papers printing services, and contract rolling papers manufacturing solutions for your brand",
+  },
 };
 
 const organizationSchema = {

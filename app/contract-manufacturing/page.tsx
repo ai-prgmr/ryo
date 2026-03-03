@@ -1,5 +1,25 @@
 import Link from "next/link";
 import { Award, FlaskConical, Blend, Handshake } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contract Manufacturing | RYO Papers",
+  description: "Comprehensive contract manufacturing solutions specifically designed for the tobacco industry. Partner with us for reliable, high-volume manufacturing.",
+  alternates: {
+    canonical: "https://www.ryopapers.com/contract-manufacturing",
+  },
+  openGraph: {
+    title: "Contract Manufacturing | RYO Papers",
+    description: "Comprehensive contract manufacturing solutions specifically designed for the tobacco industry. Partner with us for reliable, high-volume manufacturing.",
+    url: "https://www.ryopapers.com/contract-manufacturing",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contract Manufacturing | RYO Papers",
+    description: "Comprehensive contract manufacturing solutions specifically designed for the tobacco industry. Partner with us for reliable, high-volume manufacturing.",
+  },
+};
+
 function ContractManufacturingPage() {
   return (
     <div className="container mx-auto px-4 py-8">

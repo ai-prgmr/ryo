@@ -1,5 +1,34 @@
 import { products, Product } from "@/app/lib/data";
 import ProductCard from "@/app/components/ProductCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Premium Rolling Papers | RYO Papers",
+  description: "Shop our premium collection of rolling papers, including King Size Slim and 1 ¼ with Filters, Block King Size, Block 1 ¼, and pre-rolled Cones.",
+  alternates: {
+    canonical: "https://www.ryopapers.com/products/rolling-paper",
+  },
+  openGraph: {
+    title: "Premium Rolling Papers | RYO Papers",
+    description: "Shop our premium collection of rolling papers, including King Size Slim and 1 ¼ with Filters, Block King Size, Block 1 ¼, and pre-rolled Cones.",
+    url: "https://www.ryopapers.com/products/rolling-paper",
+    type: "website",
+    images: [
+      {
+        url: "https://www.ryopapers.com/images/ryopapers-final-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Roll your Own - Custom Rolling Papers & Contract Manufacturing",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shop our premium collection of rolling papers, including King Size Slim and 1 ¼ with Filters, Block King Size, Block 1 ¼, and pre-rolled Cones.",
+    description: "Browse our selection of premium rolling papers.",
+  },
+};
+
 function RollingPaperCategoryPage() {
   // `params.categorySlug` would be 'rolling-paper' in this case due to file structure.
   const filteredProducts = products.filter(

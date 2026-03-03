@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Mail } from "lucide-react";
 import { motion } from "framer-motion";
+
 export default function ContactPage() {
   return (
     <div className="bg-white max-w-5xl mx-auto px-4 py-8">

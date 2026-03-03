@@ -38,6 +38,7 @@ const benefitsData = [
   },
 ];
 
+
 export default function AboutUs() {
   const textColor = "text-[#173153]";
   return (
@@ -107,9 +108,9 @@ export default function AboutUs() {
           <div className="bg-white container mx-auto px-6 py-4 lg:px-8">
             {/* Main Heading & Introduction */}
             <div className="text-center mb-10 p-4">
-              <h1 className="text-3xl md:text-5xl font-bold text-[#A2D22E]  tracking-tight mb-12">
+              <h2 className="text-3xl md:text-5xl font-bold text-[#A2D22E]  tracking-tight mb-12">
                 Our Commitment to Social Responsibility
-              </h1>
+              </h2>
               <p className="text-xl text-gray-600 leading-relaxed font-bold">
                 At RYOPAPERS, we recognize that true success reaches beyond
                 profits. That’s why we invest in our community and protect the

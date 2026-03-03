@@ -22,10 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const baseUrl = "https://ryopapers.com";
+  const baseUrl = "https://www.ryopapers.com";
 
   return {
-    title: `${product.name} | RYO Papers`, // Page Title
+    title: `${product.name} rolling papers | RYO Papers`, // Page Title
     description: product.description,     // Meta Description
 
     // 2. THIS IS THE CANONICAL TAG FIX
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     // Optional: Open Graph for sharing
     openGraph: {
-      title: product.name,
+      title: `${product.name} | RYO Papers`,
       description: product.description,
       url: `${baseUrl}/products/rolling-paper/${product.slug}`,
       images: [
@@ -45,6 +45,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           height: 600,
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} | RYO Papers`,
+      description: product.description,
+      images: [`${baseUrl}${product.image}`],
     },
   };
 }
