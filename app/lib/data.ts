@@ -27,9 +27,9 @@ export const products: Product[] = [
     slug: "king-size-slim-plus-filters-rolling-papers",
     categorySlug: "rolling-paper",
     description:
-      "Our popular King Size Slim papers conveniently packaged with high-quality filters.",
+      "Our popular King Size Slim Rolling papers conveniently packaged with high-quality filters.",
     longDescription:
-      "Experience the ultimate convenience with our King Size Slim papers bundled with premium filters. This combo ensures a smooth draw and prevents unwanted particles, providing a cleaner and more enjoyable smoking experience. Perfect for those who value both quality and practicality in their rolling essentials.",
+      "Experience the ultimate convenience with our King Size Slim Rolling papers bundled with premium filters. This combo ensures a smooth draw and prevents unwanted particles, providing a cleaner and more enjoyable smoking experience. Perfect for those who value both quality and practicality in their rolling essentials.",
     availablePaperTypes: ["UNBLEACHED CLASSIC", "WHITE", "FLAVOURED"],
     image: "/images/tips.png",
     features: ["Integrated Filters", "Easy to Roll", "Smooth Draw"],
@@ -40,9 +40,9 @@ export const products: Product[] = [
     slug: "one-quarter-plus-filters-rolling-papers",
     categorySlug: "rolling-paper",
     description:
-      "Convenient 1 ¼ papers with included filters for a complete rolling solution.",
+      "Convenient 1 ¼ rolling papers with included filters for a complete rolling solution.",
     longDescription:
-      "Simplify your rolling process with our 1 ¼ papers, complete with high-quality filters. This all-in-one pack ensures you have everything you need for a perfect roll, providing a clean and enjoyable draw every time. Ideal for smokers who value convenience without compromising on quality.",
+      "Simplify your rolling process with our 1 ¼ rolling papers, complete with high-quality filters. This all-in-one pack ensures you have everything you need for a perfect roll, providing a clean and enjoyable draw every time. Ideal for smokers who value convenience without compromising on quality.",
     availablePaperTypes: ["WHITE", "BAMBOO", "FLAVOURED"],
     image: "/images/tips.png",
     features: ["All-in-One Pack", "Clean Draw", "Effortless Rolling"],
@@ -53,9 +53,9 @@ export const products: Product[] = [
     slug: "block-200-king-size-rolling-papers",
     categorySlug: "rolling-paper",
     description:
-      "A block of 100/200/500 King Size papers, offering great value and a consistent experience.",
+      "A block of 100/200/500 King Size rolling papers, offering great value and a consistent experience.",
     longDescription:
-      "Our Block of King Size provides a generous supply of our popular papers in a convenient block format. Ideal for regular smokers, this pack ensures you always have a high-quality, paper ready for your next roll. Enjoy consistency and value with every sheet.",
+      "Our Block of King Size provides a generous supply of our popular rolling papers in a convenient block format. Ideal for regular smokers, this pack ensures you always have a high-quality, rolling paper ready for your next roll. Enjoy consistency and value with every sheet.",
     availablePaperTypes: ["UNBLEACHED ORGANIC HEMP", "UNBLEACHED CLASSIC"],
     image: "/images/booklet.png",
     features: ["Bulk Pack", "Economical", "Consistent Slim"],
@@ -68,7 +68,7 @@ export const products: Product[] = [
     description:
       "A large block of classic 1 ¼ papers, perfect for heavy users.",
     longDescription:
-      "For the dedicated enthusiast, our Block of 100/300/500 1 ¼ delivers a substantial quantity of our beloved classic papers. This bulk pack is designed for convenience and ensures you're always stocked with the perfect everyday rolling paper, offering superior quality and value.",
+      "For the dedicated enthusiast, our Block of 100/300/500 1 ¼ rolling papers delivers a substantial quantity of our beloved classic rolling papers. This bulk pack is designed for convenience and ensures you're always stocked with the perfect everyday rolling paper, offering superior quality and value.",
     availablePaperTypes: ["WHITE", "ALFALFA", "BAMBOO"],
     image: "/images/booklet.png",
     features: ["Large Pack", "Great Value", "Reliable Classic"],
