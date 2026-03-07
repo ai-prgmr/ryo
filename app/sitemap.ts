@@ -10,8 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "",
         "/about-us",
         "/contact",
-        "/contract-manufacturing",
-        "/csr",
+        // "/contract-manufacturing",
+        // "/csr",
         "/custom-printing",
         "/products/rolling-paper",
     ].map((route) => ({

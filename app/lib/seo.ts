@@ -63,8 +63,7 @@ export const generateProductSchema = (product: Product, baseUrl: string) => {
                         "maxValue": 7,
                         "unitCode": "DAY"
                     }
-                },
-                "shippingLabel": "Door to door, Delivered via DHL/Fedex, weight 250gms"
+                }
             },
             "seller": {
                 "@type": "Organization",
