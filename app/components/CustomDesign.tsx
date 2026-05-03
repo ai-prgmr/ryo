@@ -16,11 +16,10 @@ export default function CustomDesign() {
     <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-full mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-emerald-500 via-zinc-700 to-sky-600 bg-clip-text text-transparent mb-6 leading-tight">
-          Craft Your Unique Rolling Paper Brand
+          Build Your Rolling Paper Brand, Your Way
         </h2>
         <p className="text-lg md:text-xl text-gray-900 mb-12 max-w-3xl mx-auto">
-          Whether you have a design in mind or need a little help, we&apos;re
-          here to bring your vision to life.
+          Whether you arrive with a finished design or just a spark of an idea, we take it from concept to carton.
         </p>
         <h4 className="inline-flex items-center justify-center px-16 py-4 bg-black text-white font-semibold text-2xl mb-16">
           Explore our product range{" "}
@@ -43,8 +42,7 @@ export default function CustomDesign() {
                 Have Your Design Ready?
               </h3>
               <p className="text-gray-700 mb-8 leading-relaxed">
-                Already have a print-ready design for your rolling paper brand?
-                Share it with us directly through our easy-to-use form.
+                Already have print-ready artwork? Send it across through our quick submission form, and we'll move straight to production planning.
               </p>
               {/* Using <a> tag for external Google Form link */}
               <a
@@ -74,9 +72,7 @@ export default function CustomDesign() {
                 Need Design Assistance?
               </h3>
               <p className="text-gray-700 mb-8 leading-relaxed">
-                No worries - Our creative team is here to help craft a perfect
-                brand! Fill us in with your vision, inspiration and emotions and
-                your brand style.
+                No artwork yet? No problem. Our in-house creative team will build your brand from scratch — share your vision, mood, and target audience, and we'll handle the rest.
               </p>
               <a
                 href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} // Can be the same form, or a different form/section within it for design requests

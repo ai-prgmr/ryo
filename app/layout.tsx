@@ -18,7 +18,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Roll your Own | RYO Papers",
+  title: "RYO Papers | Custom Rolling Paper Solutions",
   description: "Roll your Own Papers, RYO Rolling Papers custom solutions",
 };
 
@@ -42,7 +42,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton /> {/* WhatsApp button added here */}
         {/* Splash Section */}
-        <SplashCursor />
+        {/* <SplashCursor /> */}
       </body>
     </html>
   );

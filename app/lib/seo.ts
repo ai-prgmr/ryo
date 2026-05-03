@@ -4,7 +4,7 @@ const cleanDescription = (text: string) => text.replace(/"/g, "'");
 
 export const generateProductSchema = (product: Product, baseUrl: string) => {
     const price = "20.00";
-    const currency = "USD";
+    const currency = "EUR";
     const availabilityStatus = "InStock";
     const productSchema = {
         "@context": "https://schema.org/",
@@ -42,7 +42,7 @@ export const generateProductSchema = (product: Product, baseUrl: string) => {
                 "@type": "OfferShippingDetails",
                 "shippingRate": {
                     "@type": "MonetaryAmount",
-                    "value": "70",
+                    "value": "50",
                     "currency": currency
                 },
                 "shippingDestination": {

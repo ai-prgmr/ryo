@@ -11,6 +11,7 @@ import {
   X,
   Leaf,
   AlignRightIcon,
+  PenToolIcon
 } from "lucide-react"; // Import Menu and X icons
 import { useState } from "react"; // Import useState hook
 import { usePathname } from "next/navigation";
@@ -89,9 +90,17 @@ export default function Header() {
             onClick={closeMenu}
           />
           <NavLink
-            href="/custom-printing"
+            href="/custom-rolling-papers"
             icon={Printer}
             label="Customize"
+            textColor="text-gray-100"
+            hoverColor="hover:text-gray-200"
+            onClick={closeMenu}
+          />
+          <NavLink
+            href="/blogs"
+            icon={PenToolIcon}
+            label="Blogs"
             textColor="text-gray-100"
             hoverColor="hover:text-gray-200"
             onClick={closeMenu}

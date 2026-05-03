@@ -1,0 +1,26 @@
+# RYO Papers
+
+> RYO Papers provides custom rolling paper solutions, private label manufacturing, and high-quality rolling paper products for businesses and individuals.
+
+This document outlines the key sections of our website to help AI models and agents navigate our products, services, and company information effectively.
+
+## Products & Services
+
+- [Custom Rolling Papers](https://ryopapers.com/custom-rolling-papers): Information on our custom branding and private label rolling paper manufacturing services
+- [Rolling Paper Products](https://ryopapers.com/products/rolling-paper): Browse our catalog of standard and premium rolling papers
+- [Private Label Rolling Papers](https://ryopapers.com/private-label-rolling-papers): OEM service for brands to create their own rolling‑paper packs
+
+## Company
+
+- [About Us](https://ryopapers.com/about-us): Learn about our history, mission, and manufacturing capabilities
+- [Contact](https://ryopapers.com/contact): Get in touch with our team for inquiries, quotes, and bulk orders
+
+## Blog
+
+- [Blog Index](https://ryopapers.com/blogs): Collection of all RYO Papers blog articles
+- [How to Start a Rolling Paper Brand](https://ryopapers.com/blogs/how-to-start-rolling-paper-brand): Step‑by‑step guide for founders launching a rolling‑paper brand
+- [Rolling Paper Materials Guide](https://ryopapers.com/blogs/rolling-paper-materials-guide): Overview of hemp, rice, flax, and wood‑pulp fibers
+
+## Optional
+
+- [Products Overview](https://ryopapers.com/products/rolling-paper): General product listings and categories

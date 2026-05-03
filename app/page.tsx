@@ -270,6 +270,31 @@ export default function Home() {
               <TestimonialCarousel />
             </div>
           </section>
+          {/* Featured Blogs */}
+          <section className="py-12 bg-gray-50">
+            <h2 className="text-3xl font-bold text-center text-gray-600 mb-8">Featured <span className="text-[#A2D22E] italic">Articles</span></h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+                <h3 className="text-xl font-semibold mb-2 text-[#A2D22E]">Private Label Rolling Papers</h3>
+                <p className="text-gray-600 mb-4">Learn how to create your own branded rolling papers with our OEM services.</p>
+                <Link href="/blogs/private-label-rolling-papers" className="text-[#A2D22E] hover:underline">
+                  Read more →
+                </Link>
+              </div>
+              <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+                <h3 className="text-xl font-semibold mb-2 text-[#A2D22E]">How to Start a Rolling Paper Brand</h3>
+                <p className="text-gray-600 mb-4">Step‑by‑step guide for founders launching their own rolling paper brand.</p>
+                <Link href="/blogs/how-to-start-rolling-paper-brand" className="text-[#A2D22E] hover:underline">
+                  Read more →
+                </Link>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <Link href="/blogs" className="inline-block px-6 py-3 bg-[#A2D22E] text-white rounded-lg hover:bg-[#8FB126] transition">
+                View All Blogs
+              </Link>
+            </div>
+          </section>
         </div>
       </div>
     </>

@@ -4,7 +4,13 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
   reactStrictMode: true,
-  images: { unoptimized: true },
+  experimental: {
+    inlineCss: true
+  },
+  images: {
+    unoptimized: true,
+    minimumCacheTTL: 31536000,
+  },
 };
 
 export default nextConfig;
