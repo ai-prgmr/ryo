@@ -44,5 +44,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "weekly" as const,
         priority: 0.7,
     }));
-    return [...staticRoutes, ...productRoutes, ...blogRoutes];
+    const llmRoutes: MetadataRoute.Sitemap = [
+        {
+            url: `${baseUrl}/llms.txt`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.5,
+        },
+        {
+            url: `${baseUrl}/llms-full.txt`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.5,
+        },
+    ];
+
+    return [...staticRoutes, ...productRoutes, ...blogRoutes, ...llmRoutes];
 }

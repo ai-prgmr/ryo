@@ -32,6 +32,10 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.className} ${montserrat.variable}`}
     >
+      <head>
+        <link rel="help" type="text/markdown" href="https://ryopapers.com/llms.txt" />
+        <link rel="help" type="text/markdown" href="https://ryopapers.com/llms-full.txt" />
+      </head>
       <body className={`antialiased bg-white`}>
         <Header />
         <ConsentManager

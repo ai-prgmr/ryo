@@ -1,0 +1,32 @@
+# General Rules
+User-agent: *
+Allow: /
+Sitemap: https://ryopapers.com/sitemap.xml
+
+# Explicitly welcome AI Agents
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+# AI Agent context
+X-llms-txt: https://ryopapers.com/llms.txt
