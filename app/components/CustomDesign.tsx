@@ -9,7 +9,7 @@ export default function CustomDesign() {
   const whatsappNumber = "+919009111088";
 
   const whatsappMessage = encodeURIComponent(
-    "Hi, I'm interested in custom rolling paper booklets. I'd like to discuss design options."
+    "Hi, I&apos;m interested in custom rolling paper booklets. I&apos;d like to discuss design options."
   );
 
   return (
@@ -42,7 +42,7 @@ export default function CustomDesign() {
                 Have Your Design Ready?
               </h3>
               <p className="text-gray-700 mb-8 leading-relaxed">
-                Already have print-ready artwork? Send it across through our quick submission form, and we'll move straight to production planning.
+                Already have print-ready artwork? Send it across through our quick submission form, and we&apos;ll move straight to production planning.
               </p>
               {/* Using <a> tag for external Google Form link */}
               <a
@@ -72,7 +72,7 @@ export default function CustomDesign() {
                 Need Design Assistance?
               </h3>
               <p className="text-gray-700 mb-8 leading-relaxed">
-                No artwork yet? No problem. Our in-house creative team will build your brand from scratch — share your vision, mood, and target audience, and we'll handle the rest.
+                No artwork yet? No problem. Our in-house creative team will build your brand from scratch — share your vision, mood, and target audience, and we&apos;ll handle the rest.
               </p>
               <a
                 href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} // Can be the same form, or a different form/section within it for design requests

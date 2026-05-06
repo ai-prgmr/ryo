@@ -10,8 +10,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "",
         "/about-us",
         "/contact",
-        // "/contract-manufacturing",
-        // "/csr",
         "/custom-rolling-papers",
         "/blogs",
         "/products/rolling-paper",

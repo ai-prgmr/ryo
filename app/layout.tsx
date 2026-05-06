@@ -42,7 +42,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton /> {/* WhatsApp button added here */}
         {/* Splash Section */}
-        {/* <SplashCursor /> */}
+        <SplashCursor />
       </body>
     </html>
   );

@@ -54,7 +54,7 @@ export default function WorldMusicRadioPlayer() {
       </div>
       )}
       <audio ref={audioRef} src={RADIO_STREAM} autoPlay={true} />
-      <button name="Play Music" data-tooltip-target="tooltip-default" aria-description="Play Music" aria-hidden="false"
+      <button name="Play Music" aria-hidden="false"
         onClick={togglePlay}
         style={{
           padding: "0.5rem",

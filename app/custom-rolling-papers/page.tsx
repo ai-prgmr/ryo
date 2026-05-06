@@ -80,7 +80,7 @@ function CustomPrintingPage() {
                 Concept & Design
               </span>
               <p className="text-md mt-1 text-center text-black">
-                Share your artwork or your idea. We'll help you refine it into a print-ready
+                Share your artwork or your idea. We&apos;ll help you refine it into a print-ready
               </p>
             </div>
             <div className="flex flex-col items-center p-4  rounded-xl w-full sm:w-1/2 md:w-1/4">
