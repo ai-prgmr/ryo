@@ -1,157 +1,325 @@
-# RYO Papers
+# RYO Papers - Full Knowledge Base
 
-> RYO Papers provides custom rolling paper solutions, private label manufacturing, and high-quality rolling paper products for businesses and individuals.
+> This file contains the complete technical documentation, manufacturing guides, and business resources for RYO Papers.
 
-This document outlines the key sections of our website to help AI models and agents navigate our products, services, and company information effectively.
+Use this document to understand the technical specifications of rolling paper manufacturing, including fiber types, GSM calculations, private label branding, and factory processes.
 
-## Products & Services
-
-- [Custom Rolling Papers](https://ryopapers.com/custom-rolling-papers): Information on our custom branding and private label rolling paper manufacturing services
-- [Rolling Paper Products](https://ryopapers.com/products/rolling-paper): Browse our catalog of standard and premium rolling papers
-
-## Company
-
-- [About Us](https://ryopapers.com/about-us): Learn about our history, mission, and manufacturing capabilities
-- [Contact](https://ryopapers.com/contact): Get in touch with our team for inquiries, quotes, and bulk orders
-
-## Optional
-
-- [Blogs](https://ryopapers.com/blogs): Articles, guides, and insights about rolling papers, GSM, and the private label industry
+---
+## Custom Rolling Papers Manufacturer | OEM Private Label India | RYO Papers
+Source: https://ryopapers.com/blogs/custom-rolling-papers
 
 
-========================================================================
-# FULL CONTENT ARCHIVE
-========================================================================
+# Custom Rolling Papers — Built to Your Exact Spec
 
-## Products Catalog
+**Build a rolling paper that's 100% yours — your fiber, your GSM, your watermark, your size, your packaging.** RYO Papers manufactures fully custom rolling papers from our facility in India for global private-label brands, distributors, dispensary chains, smoke shop networks, and lifestyle brands. No standard SKU lock-in. No "you can only choose from our existing range." Every spec is yours to define.
 
-```typescript
-export type PaperType =
-  | "UNBLEACHED ORGANIC HEMP"
-  | "UNBLEACHED CLASSIC"
-  | "WHITE"
-  | "ALFALFA"
-  | "BAMBOO"
-  | "VERGE"
-  | "FLAVOURED"
-  | "COLOURED";
+**[→ Request / Order Samples](/contact)**
 
-export interface Product {
-  id: string;
-  name: string;
-  slug: string; // URL-friendly name
-  categorySlug: string; // e.g., "rolling-paper"
-  description: string;
-  longDescription: string;
-  availablePaperTypes: PaperType[];
-  image: string; // Placeholder image URL
-  features?: string[];
+---
+
+## ⚡ What "Custom" Actually Means at RYO Papers
+
+| Customizable Element | Your Options |
+|------------------------|----------------|
+| **Fiber Type** | Hemp, Rice, Flax, Wood Pulp, or Custom Blends |
+| **GSM (Thickness)** | 10–35 GSM, any value |
+| **Bleaching** | TCF chlorine-free, ECF, or unbleached natural |
+| **Color** | Bright white, off-white, cream, natural tan, brown |
+| **Watermark** | Your brand logo embedded into the paper itself |
+| **Size** | 1¼, 1½, King Size, King Slim (custom sizes for high volume) |
+| **Length** | Standard 78mm, 100mm, 110mm — custom lengths possible |
+| **Booklet Count** | 32, 50, or 100 leaves |
+| **Gum** | Natural arabic gum (vegan certified available) |
+| **Cover Stock** | 200–300 GSM, full-color CMYK + Pantone, foil, embossing |
+| **Display Box** | 24 or 50 booklet packs, fully printed |
+| **Master Carton** | Custom shipping marks, barcoding |
+| **Wrapping** | Cellophane (standard) or BOPP-PLA biodegradable |
+| **Certifications** | FDA, EU food-contact, GOTS organic, FSC, vegan |
+
+**MOQ:** 50,000 booklets per SKU
+**Lead Time:** 40–60 days order-to-FOB
+**Sample Lead Time:** 7–14 days
+
+**[→ Get FOB Pricing for Your Custom Spec](/contact)**
+
+---
+
+## Why Custom (Not Standard) Wins in 2026
+
+The rolling paper market is fragmenting. Buyers are abandoning legacy mass-market brands in favor of niche, specialty, and lifestyle-driven brands. The brands winning shelf space in 2026 share one common feature: **they own their spec.**
+
+### Custom Wins Because:
+
+🎯 **Differentiation.** A unique fiber blend or GSM is impossible for competitors to copy off your shelf.
+
+💰 **Higher Margins.** Custom-positioned papers command 40–70% gross margins vs 15–25% for white-label resellers.
+
+📦 **Brand Equity.** Your watermark, your packaging, your story — not a relabeled generic SKU.
+
+🌍 **Market Fit.** Tune GSM, fiber, and packaging to your specific destination market and consumer.
+
+🔒 **Supply Chain Control.** Direct manufacturer relationship, no middlemen, no markup stacking.
+
+If your brand strategy is just "buy the cheapest white-label paper and slap a logo on it," custom isn't for you. If you're building something that lasts, custom is the only path.
+
+---
+
+## How Custom Rolling Paper Manufacturing Works
+
+A clear, predictable 6-stage process from first conversation to your warehouse:
+
+### Stage 1 — Discovery (Day 1–3)
+You share your brand vision, target market, and rough specs. We share pricing ranges, MOQ, lead times, and recommendations on fiber/GSM that fit your positioning.
+
+### Stage 2 — Sampling (Day 5–18)
+We send physical samples in your target fiber/GSM range. You verify burn, feel, color, and quality before committing.
+
+### Stage 3 — Spec Lock + Quotation (Day 18–25)
+You finalize fiber, GSM, size, watermark, gum, packaging. We issue a formal FOB quotation with exact per-unit pricing.
+
+### Stage 4 — Artwork + Pre-Production (Day 25–40)
+Your design team submits artwork to our dieline templates. We produce digital proofs + physical pre-production samples for final sign-off.
+
+### Stage 5 — Manufacturing + QC (Day 40–55)
+Production runs with inline GSM monitoring (±5% tolerance), batch quality control, and Certificate of Analysis issued for the shipment.
+
+### Stage 6 — Export + Dispatch (Day 55–60)
+Full export documentation in-house: Commercial Invoice, Packing List, Bill of Lading, Certificate of Origin (with FTA preference where eligible), COA, compliance declarations. FOB shipment from Indian port.
+
+**[→ Start at Stage 1: Request a Discovery Call](/contact)**
+
+---
+
+## Custom Specifications We Manufacture (By Popularity)
+
+The most-ordered custom rolling paper specs at RYO Papers in 2026:
+
+| Spec | Fiber | GSM | Position | Price Range (FOB) |
+|------|--------|------|----------|----------------------|
+| **Premium Hemp Custom** | 100% hemp | 14–17 GSM | Eco-premium | $0.18–$0.30 |
+| **Hemp + Rice Blend Custom** | 70% hemp / 30% rice | 14–16 GSM | Premium mainstream | $0.22–$0.35 |
+| **Pure Rice Luxury** | 100% rice blend | 12–14 GSM | Connoisseur | $0.25–$0.40 |
+| **Unbleached Wood Pulp** | Wood pulp | 18–22 GSM | Mass-market natural | $0.10–$0.18 |
+| **Bleached White Premium** | Hemp or wood pulp | 16–20 GSM | Refined classic | $0.14–$0.28 |
+| **Heavy Hemp Wraps** | 100% hemp | 28–32 GSM | Specialty | $0.30–$0.55 |
+| **Organic GOTS Hemp** | Certified hemp | 14–16 GSM | Certified organic | $0.28–$0.45 |
+| **Custom Flax Heritage** | 100% flax | 14–17 GSM | Heritage premium | $0.20–$0.35 |
+
+**Don't see your spec?** That's the point of custom. [Tell us what you need](/contact).
+
+---
+
+## What Customization Looks Like — Real Examples
+
+How buyers use RYO Papers' custom manufacturing in practice:
+
+**🌿 The Eco-Premium Brand**
+14 GSM unbleached hemp, custom watermark, FSC paperboard cover, BOPP-PLA biodegradable wrap, vegan gum, GOTS organic certification. Retail: $6.99 per booklet.
+
+**💎 The Luxury Connoisseur Brand**
+12 GSM ultra-thin rice, custom embossed watermark, foil-stamped premium cover, magnetic-close box, plastic-free packaging. Retail: $12.99 per booklet.
+
+**📦 The Distributor House Brand**
+20 GSM hemp + wood pulp blend, simple watermark, basic 4-color cover, standard cellophane wrap, 50-leaf booklets. FOB: $0.13/booklet × 500,000 booklets order.
+
+**🏪 The Dispensary Private Label**
+16 GSM hemp, custom dispensary-branded cover, King Size Slim format, 32-leaf booklets, batch tracking. Order: 100,000 booklets per quarter.
+
+**🎨 The Lifestyle / Streetwear Drop**
+17 GSM bleached hemp, full-color artist collaboration cover, foil details, limited-edition box, included filter tips. Limited drop: 50,000 booklets.
+
+Each of these is a real spec pattern. Yours can be entirely different.
+
+---
+
+## Why Manufacture Custom Rolling Papers in India
+
+For brands evaluating manufacturing geographies in 2026:
+
+🌾 **Hemp & rice fiber availability** — direct fiber sourcing without import overhead
+
+🤝 **FTA advantages** — India-UAE CEPA, SAFTA, ASEAN-India FTA — meaningful duty savings for Middle East, South Asia, and Southeast Asian buyers
+
+💰 **Cost competitive** — 10–25% cheaper than equivalent Chinese production for premium specs
+
+🗣️ **English fluency** in business communication
+
+📋 **Documentation-complete** — Indian export-licensed factories handle full paperwork in-house
+
+✅ **No cannabis-related restrictions** — rolling papers are pure paper products under Indian export law, frictionless supply chain
+
+📦 **MOQ flexibility** — 50,000 vs 100K-250K minimums at most Chinese factories
+
+[Read the full geographic comparison in our founder's guide →](/blogs/how-to-start-rolling-paper-brand)
+
+---
+
+## What Sets RYO Papers Apart
+
+Most "custom rolling paper" suppliers online are traders, agents, or middlemen. We're a real manufacturer.
+
+**We Are:**
+- ✅ A real factory — fiber pulping, sheet forming, watermark embedding, gumming, booklet folding, packaging — all in-house
+- ✅ Export-licensed (IEC) and DGFT-compliant
+- ✅ English-speaking, dedicated account management
+- ✅ MOQ-flexible — 50,000 booklets vs 100K-250K minimums elsewhere
+- ✅ Tolerance-tight — ±5% GSM standard, ±3% on request
+- ✅ Documentation-complete — every shipment ships with full export paperwork
+
+**We Are Not:**
+- ❌ A trading company reselling another factory's papers
+- ❌ A drop-ship middleman
+- ❌ A factory that sells "standard SKUs only" with limited customization
+- ❌ A supplier that pushes documentation responsibility back to the buyer
+
+---
+
+## Certifications Available on Custom Orders
+
+- ✅ **ISO 9001:2015** Quality Management
+- ✅ **FDA-compliant** materials for US-bound shipments
+- ✅ **EU EC 1935/2004** food-contact compliance for European exports
+- ✅ **REACH** chemical compliance
+- ✅ **TCF / ECF** chlorine-free bleaching
+- ✅ **Vegan-certified** arabic gum
+- ✅ **FSC-certified** paperboard for booklet covers
+- ✅ **GOTS-organic** hemp (with proper notice for fiber sourcing)
+- ✅ **Certificate of Origin** with FTA preference where applicable
+
+Compliance documentation included with every shipment — not an add-on charge.
+
+---
+
+## Common Questions About Custom Rolling Papers
+
+### What is the minimum order quantity for custom rolling papers?
+RYO Papers' MOQ is **50,000 booklets per SKU** for fully customized production — significantly lower than most international rolling paper manufacturers, who typically require 100,000–250,000 booklet MOQs. For multi-SKU launches, MOQ applies per SKU.
+
+### How long does custom rolling paper production take?
+**40–60 days** order-to-FOB at our port. This includes sample approval (7–14 days), artwork finalization (5–10 days), production run (12–18 days), QC + packaging (5–7 days), and export documentation (3–5 days). Sea freight transit adds 18–35 days depending on destination.
+
+### Can I customize the watermark to my brand logo?
+Yes. Custom watermarks are physically embedded into the paper during sheet formation using a **dandy roll** with your custom design. The watermark is part of the fiber structure — visible when held to light. A one-time tooling fee applies (typically $300–$800 depending on design complexity).
+
+### What custom GSM values are available?
+Any GSM between **10 and 35**. The most-ordered custom GSM specs are 14, 16, 18, and 22 GSM. We maintain ±5% GSM tolerance per batch as standard, with ±3% available on request for export-grade orders.
+
+### Can I order custom hemp + rice blends?
+Yes. Custom blend ratios are available — 70:30, 60:40, 50:50, or any custom ratio. Hemp + rice blends are the **most-requested custom specification**, combining hemp's sustainability story with rice's smoothness. [Read the hemp vs rice comparison](/blogs/hemp-vs-rice-rolling-papers).
+
+### What's the price per booklet for custom rolling papers?
+FOB India pricing depends on fiber tier, GSM, packaging, and order volume:
+- **Wood pulp economy:** $0.08–$0.15 per booklet
+- **Hemp premium:** $0.15–$0.30 per booklet
+- **Rice luxury:** $0.20–$0.40 per booklet
+- **Premium custom blends with full custom packaging:** $0.25–$0.50 per booklet
+
+[Request your exact quotation →](/contact)
+
+### Do you handle custom packaging too?
+Yes. Custom packaging covers all three layers: **booklet cover** (200-300 GSM stock, full-color print, foil/embossing), **display box** (24 or 50 booklets, fully printed), and **master carton** (custom shipping marks). Eco-packaging options available.
+
+### Can I order custom rolling papers if I'm new to the industry?
+Yes — RYO Papers regularly works with first-time founders. We provide guidance on spec selection, packaging design, compliance requirements, and launch logistics. [Read our complete guide to launching a rolling paper brand](/blogs/how-to-start-rolling-paper-brand).
+
+### Do you ship custom rolling papers internationally?
+Yes. Regular exports to North America, Europe, the Middle East, Africa, ASEAN, ANZ, and Latin America. Full export documentation included. [Contact us](/contact) to confirm logistics for your destination.
+
+### Can I get samples before committing to a custom order?
+Yes. We provide **pre-production samples** in your target fiber/GSM range so you can verify burn, feel, color, and quality before placing a production order. Sample fees apply (typically refundable against your first production order).
+
+---
+
+## Founder & Buyer Resources
+
+Before placing your custom order, these guides will help:
+
+- 📘 [How to Start Your Own Rolling Paper Brand — Step-by-Step](/blogs/how-to-start-rolling-paper-brand)
+- 📘 [Rolling Paper Materials Guide — All Fibers Compared](/blogs/rolling-paper-materials-guide)
+- 📘 [Hemp vs Rice Rolling Papers — Which to Choose](/blogs/hemp-vs-rice-rolling-papers)
+- 📘 [What Is GSM in Rolling Papers? — Thickness Explained](/blogs/what-is-gsm-rolling-papers)
+- 📘 [How Are Rolling Papers Manufactured? — Factory Process](/blogs/how-rolling-papers-are-manufactured)
+- 📘 [Private Label Rolling Papers — Full OEM Service](/blogs/private-label-rolling-papers)
+
+---
+
+## Ready to Build Your Custom Rolling Paper?
+
+Tell us your vision, target market, and rough specs. We'll come back with samples, exact pricing, and a production timeline within 5 working days.
+
+### **[→ Request a Custom Quote](/contact)**
+### **[→ Order Sample Pack](/contact)**
+### **[→ Schedule a Discovery Call](/contact)**
+
+**RYO Papers**
+Indore, Madhya Pradesh, India
+Email · WhatsApp · Phone — [contact us here](/contact)
+
+---
+
+## FAQ Schema (JSON-LD) — Paste in `<head>`
+
+```json
+{
+  "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the minimum order quantity for custom rolling papers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RYO Papers' MOQ is 50,000 booklets per SKU for fully customized production — lower than most international manufacturers requiring 100,000-250,000 booklet MOQs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does custom rolling paper production take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "40-60 days order-to-FOB. Includes sample approval, artwork, production, QC, and documentation. Sea freight adds 18-35 days depending on destination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I customize the watermark to my brand logo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Custom watermarks are physically embedded into the paper during sheet formation using a dandy roll. Visible when held to light. One-time tooling fee of $300-$800 applies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What custom GSM values are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any GSM between 10 and 35. Most-ordered custom GSM specs are 14, 16, 18, and 22 GSM. ±5% tolerance standard, ±3% available on request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the price per booklet for custom rolling papers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FOB pricing ranges from $0.08-$0.15 for wood pulp economy, $0.15-$0.30 for hemp premium, $0.20-$0.40 for rice luxury, and $0.25-$0.50 for premium custom blends with full packaging."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I order custom hemp + rice blends?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Custom blend ratios are available — 70:30, 60:40, 50:50, or any custom ratio. Hemp + rice blends are the most-requested custom specification."
+          }
+        }
+      ]
 }
-
-export const products: Product[] = [
-  {
-    id: "ks-slim-filters-rolling-papers",
-    name: "KING SIZE SLIM + FILTERS",
-    slug: "king-size-slim-plus-filters-rolling-papers",
-    categorySlug: "rolling-paper",
-    description:
-      "Our popular King Size Slim Rolling papers conveniently packaged with high-quality filters.",
-    longDescription:
-      "Experience the ultimate convenience with our King Size Slim Rolling papers bundled with premium filters. This combo ensures a smooth draw and prevents unwanted particles, providing a cleaner and more enjoyable smoking experience. Perfect for those who value both quality and practicality in their rolling essentials.",
-    availablePaperTypes: ["UNBLEACHED CLASSIC", "WHITE", "FLAVOURED"],
-    image: "/images/tips.png",
-    features: ["Integrated Filters", "Easy to Roll", "Smooth Draw"],
-  },
-  {
-    id: "one-quarter-filters-rolling-papers",
-    name: "1 ¼ + FILTERS",
-    slug: "one-quarter-plus-filters-rolling-papers",
-    categorySlug: "rolling-paper",
-    description:
-      "Convenient 1 ¼ rolling papers with included filters for a complete rolling solution.",
-    longDescription:
-      "Simplify your rolling process with our 1 ¼ rolling papers, complete with high-quality filters. This all-in-one pack ensures you have everything you need for a perfect roll, providing a clean and enjoyable draw every time. Ideal for smokers who value convenience without compromising on quality.",
-    availablePaperTypes: ["WHITE", "BAMBOO", "FLAVOURED"],
-    image: "/images/tips.png",
-    features: ["All-in-One Pack", "Clean Draw", "Effortless Rolling"],
-  },
-  {
-    id: "block-200-king-size-rolling-papers",
-    name: "Block King Size",
-    slug: "block-200-king-size-rolling-papers",
-    categorySlug: "rolling-paper",
-    description:
-      "A block of 100/200/500 King Size rolling papers, offering great value and a consistent experience.",
-    longDescription:
-      "Our Block of King Size provides a generous supply of our popular rolling papers in a convenient block format. Ideal for regular smokers, this pack ensures you always have a high-quality, rolling paper ready for your next roll. Enjoy consistency and value with every sheet.",
-    availablePaperTypes: ["UNBLEACHED ORGANIC HEMP", "UNBLEACHED CLASSIC"],
-    image: "/images/booklet.png",
-    features: ["Bulk Pack", "Economical", "Consistent Slim"],
-  },
-  {
-    id: "block-1-1-4-rolling-papers",
-    name: "Block 1 1/4",
-    slug: "block-1-1-4-rolling-papers",
-    categorySlug: "rolling-paper",
-    description:
-      "A large block of classic 1 ¼ papers, perfect for heavy users.",
-    longDescription:
-      "For the dedicated enthusiast, our Block of 100/300/500 1 ¼ rolling papers delivers a substantial quantity of our beloved classic rolling papers. This bulk pack is designed for convenience and ensures you're always stocked with the perfect everyday rolling paper, offering superior quality and value.",
-    availablePaperTypes: ["WHITE", "ALFALFA", "BAMBOO"],
-    image: "/images/booklet.png",
-    features: ["Large Pack", "Great Value", "Reliable Classic"],
-  },
-  {
-    id: "rolled-cones",
-    name: "Rolled Cones",
-    slug: "rolled-cones-rolling-papers",
-    categorySlug: "rolling-paper",
-    description:
-      "Pre-rolled cones for those who prefer convenience without sacrificing quality.",
-    longDescription:
-      "Our Rolled Cones are the perfect solution for smokers who want the ease of a pre-rolled option without compromising on quality. Made from our premium rolling paper, these cones are ready to fill, ensuring a hassle-free experience. Enjoy a consistent burn and a smooth draw with every cone, ideal for on-the-go use or social gatherings.",
-    availablePaperTypes: ["VERGE", "FLAVOURED", "COLOURED"],
-    image: "/images/rolling-cone.jpeg",
-    features: ["Mega Pack", "Unbeatable Value", "Long Lasting Supply"],
-  },
-  {
-    id: "custom-size-rolling-papers",
-    name: "CUSTOM SIZE",
-    slug: "custom-size-rolling-papers",
-    categorySlug: "rolling-paper",
-    description:
-      "Connect with us directly for your custom needs. Your unique dimensions, our quality.",
-    longDescription:
-      "Anything can be customized. Our Custom Size option is designed for those who require a specific dimension for their unique rolling needs. Whether you need extra-long, extra-wide, or any other custom size, we can accommodate your request. Crafted with the same quality and care as our standard products, these papers ensure a perfect roll every time, tailored to your specifications.",
-    availablePaperTypes: [
-      "UNBLEACHED ORGANIC HEMP",
-      "UNBLEACHED CLASSIC",
-      "WHITE",
-    ],
-    image: "/images/booklet.png",
-    features: ["Extra Long", "Large Rolls", "Creative Freedom"],
-  },
-];
-
 ```
 
-========================================================================
-
-## Blog Posts
-
-### Blog: hemp vs rice rolling papers
-
 ---
-title: "Hemp vs Rice Rolling Papers: What's the Difference? (2026 Buyer's Guide)"
-meta_description: "Hemp vs rice rolling papers compared — thickness, burn rate, ash, durability, taste & positioning. The complete B2B comparison from RYO Papers."
-primary_keyword: "hemp vs rice rolling papers"
-secondary_keywords: "rolling papers, custom rolling papers, ryopapers, hemp rolling papers, rice rolling papers, hemp vs rice, best rolling paper for private label"
-url_slug: "/hemp-vs-rice-rolling-papers"
-search_intent: "Comparison / Commercial Investigation"
-schema_type: "Article + FAQPage"
-author: "RYO Papers"
-last_updated: "2026"
----
+## Hemp vs Rice Rolling Papers (2026 Buyer's Guide)
+Source: https://ryopapers.com/blogs/hemp-vs-rice-rolling-papers
+
 
 # Hemp vs Rice Rolling Papers: What's the Difference?
 
@@ -159,7 +327,7 @@ last_updated: "2026"
 
 This guide is the side-by-side B2B comparison used by brand owners ordering [custom rolling papers](/custom-rolling-papers) from **RYO Papers** — covering everything from burn behaviour to private-label positioning.
 
-For the full fiber-by-fiber reference, see our [Rolling Paper Materials Guide](/rolling-paper-materials-guide). For the factory process behind both materials, see [How Are Rolling Papers Manufactured?](/how-rolling-papers-are-manufactured)
+For the full fiber-by-fiber reference, see our [Rolling Paper Materials Guide](/blogs/rolling-paper-materials-guide). For the factory process behind both materials, see [How Are Rolling Papers Manufactured?](/blogs/how-rolling-papers-are-manufactured)
 
 ---
 
@@ -189,7 +357,7 @@ Now the full comparison.
 **Where hemp wins:**
 Hemp is the dominant choice for **eco-premium and natural-positioned brands** in 2026. The word "hemp" itself has become a marketing asset — buyers increasingly seek it out, especially in the wellness, dispensary, and natural-lifestyle segments. Hemp papers also handle long-distance shipping and humid climates better than rice.
 
-[Explore custom hemp rolling papers manufactured by RYO Papers →](/custom-rolling-papers)
+[Explore custom hemp rolling papers manufactured by RYO Papers →](/blogs/custom-rolling-papers)
 
 ---
 
@@ -340,7 +508,7 @@ For B2B brand owners, both hemp and rice papers — and any blend ratio — can 
 - **Custom cover printing:** full-brand booklet jackets
 - **Certifications:** FDA, EU food-contact, vegan gum, FSC
 
-Minimum order quantities for fully custom production typically start at **50,000 booklets**. [Contact RYO Papers](/contact) to discuss specifications, request samples, or get a quotation for [custom rolling papers](/custom-rolling-papers).
+Minimum order quantities for fully custom production typically start at **50,000 booklets**. [Contact RYO Papers](/contact) to discuss specifications, request samples, or get a quotation for [custom rolling papers](/blogs/custom-rolling-papers).
 
 ---
 
@@ -398,8 +566,8 @@ For sample requests, custom blends, hemp-only or rice-only specifications, and c
 **Continue reading:**
 - [Rolling Paper Materials Guide](/blogs/rolling-paper-materials-guide) — full breakdown of hemp, rice, flax & wood pulp
 - [How Are Rolling Papers Manufactured?](/blogs/how-rolling-papers-are-manufactured) — the factory process
-- [Custom Rolling Papers by RYO Papers](/custom-rolling-papers) — explore the full custom range
-- [Custom Rolling Papers](/custom-rolling-papers) — start your private label
+- [Custom Rolling Papers by RYO Papers](/blogs/custom-rolling-papers) — explore the full custom range
+- [Custom Rolling Papers](/blogs/private-label-rolling-papers) — start your private label
 
 ---
 
@@ -462,28 +630,16 @@ For sample requests, custom blends, hemp-only or rice-only specifications, and c
 }
 ```
 
-
 ---
+## How Are Rolling Papers Manufactured? (Complete Factory Process Explained)
+Source: https://ryopapers.com/blogs/how-rolling-papers-are-manufactured
 
-### Blog: how rolling papers are manufactured
-
----
-title: "How Are Rolling Papers Manufactured? (Complete Factory Process Explained)"
-meta_description: "How rolling papers are manufactured — fiber pulping, sheet forming, watermarking, gumming & booklet assembly. Inside a real RYO Papers factory."
-primary_keyword: "how rolling papers are manufactured"
-secondary_keywords: "rolling papers, custom rolling papers, ryopapers, rolling paper manufacturing process, GSM in rolling papers, hemp rolling paper, rice rolling paper"
-url_slug: "/how-rolling-papers-are-manufactured"
-search_intent: "Informational (Awareness)"
-schema_type: "Article + FAQPage"
-author: "RYO Papers"
-last_updated: "2026"
----
 
 # How Are Rolling Papers Manufactured?
 
 **Rolling papers are manufactured through a precision paper-converting process involving raw fiber pulping, sheet formation, drying, watermark embedding, cutting, gum application, and booklet assembly.** The process requires specialized machinery to maintain consistent GSM (grams per square meter), even burn rate, and structural integrity — typically producing sheets between 10 and 35 GSM, with most premium brands sitting in the 14–18 GSM range, far thinner than standard printing paper.
 
-This guide walks you through every stage of how rolling papers are made — the same process used by leading global brands and by manufacturers like **[RYO Papers](/contact)** for [custom rolling papers](/custom-rolling-papers) and private-label production.
+This guide walks you through every stage of how rolling papers are made — the same process used by leading global brands and by manufacturers like **[RYO Papers](/contact)** for [custom rolling papers](/blogs/custom-rolling-papers) and [private-label](/blogs/private-label-rolling-papers) production.
 
 ---
 
@@ -618,7 +774,7 @@ The core machinery includes a **Fourdrinier paper machine** (sheet forming), **d
 From raw fiber to finished, packed booklets, a full production run typically takes **7–14 days** in a continuous factory environment. The paper-making cycle itself (pulp to dry paper) runs continuously in 30–60 minutes per section. Cutting and converting add 2–3 days, and booklet assembly plus packaging adds another 1–2 days. For **custom rolling paper orders** with bespoke watermarks, custom GSM, and printed covers, total order-to-FOB lead time at RYO Papers is typically **25–35 days**, depending on artwork approval and quantity.
 
 ### Can rolling papers be customized during production?
-Yes — almost every parameter can be customized. RYO Papers offers custom GSM (10–35 GSM), custom watermarks featuring your logo, custom fiber blends (hemp, rice, flax, wood pulp), all standard sizes (1¼, 1½, King Size, King Slim), custom booklet leaf counts (32/50/100), fully printed cover stock, private-label/OEM branding, and complete custom packaging. Minimum order quantities for custom production typically start at 50,000 booklets. Learn more on the [custom rolling papers](/custom-rolling-papers) page or [contact the team](/contact) for a quotation.
+Yes — almost every parameter can be customized. RYO Papers offers custom GSM (10–35 GSM), custom watermarks featuring your logo, custom fiber blends (hemp, rice, flax, wood pulp), all standard sizes (1¼, 1½, King Size, King Slim), custom booklet leaf counts (32/50/100), fully printed cover stock, private-label/OEM branding, and complete custom packaging. Minimum order quantities for custom production typically start at 50,000 booklets. Learn more on the [custom rolling papers](/blogs/custom-rolling-papers) page or [contact the team](/contact) for a quotation.
 
 ---
 
@@ -691,22 +847,10 @@ For B2B inquiries, custom production samples, or technical specifications on ryo
 }
 ```
 
-
 ---
+## How to Start Your Own Rolling Paper Brand (Step-by-Step Guide 2026)
+Source: https://ryopapers.com/blogs/how-to-start-rolling-paper-brand
 
-### Blog: how to start rolling paper brand
-
----
-title: "How to Start Your Own Rolling Paper Brand (Step-by-Step Guide 2026)"
-meta_description: "Step-by-step guide to start a rolling paper brand — manufacturer selection, materials, packaging, compliance, costs & launch. From RYO Papers India."
-primary_keyword: "start a rolling paper brand"
-secondary_keywords: "rolling papers, custom rolling papers, ryopapers, private label rolling papers, rolling paper manufacturer, OEM rolling papers, how to start rolling paper business"
-url_slug: "/how-to-start-rolling-paper-brand"
-search_intent: "Commercial / Entrepreneur"
-schema_type: "Article + HowTo + FAQPage"
-author: "RYO Papers"
-last_updated: "2026"
----
 
 # How to Start Your Own Rolling Paper Brand (Step-by-Step Guide)
 
@@ -1219,23 +1363,10 @@ For founders ready to build a rolling paper brand with a manufacturer trusted by
 }
 ```
 
-
 ---
+## Private Label Rolling Papers Manufacturer | OEM & Custom Branding | RYO Papers India
+Source: https://ryopapers.com/blogs/private-label-rolling-papers
 
-### Blog: private label rolling papers
-
----
-title: "Private Label Rolling Papers Manufacturer | OEM & Custom Branding | RYO Papers India"
-meta_description: "Leading private label rolling papers manufacturer India. Custom GSM, hemp/rice/flax fibers, OEM service, MOQ 50,000 booklets. Get a quote."
-primary_keyword: "private label rolling papers"
-secondary_keywords: "rolling paper OEM, rolling paper manufacturer, white label rolling papers, custom rolling papers, ryopapers, rolling paper supplier India, contract manufacturing rolling papers"
-url_slug: "/private-label-rolling-papers"
-page_type: "Service / Landing Page"
-schema_type: "Service + Organization + FAQPage"
-author: "RYO Papers"
-location: "Indore, Madhya Pradesh, India"
-manufacturer: "RYO Papers"
----
 
 # Private Label Rolling Papers — OEM & Custom Branding Manufacturer
 
@@ -1488,7 +1619,7 @@ Email · WhatsApp · Phone — all on the [contact page](/contact)
 
 ---
 
-## Schema (JSON-LD) — Paste in `<head>` for SEO/AEO
+## FAQ Schema (JSON-LD) — Paste in `<head>` for SEO/AEO
 
 ```json
 {
@@ -1580,28 +1711,16 @@ Email · WhatsApp · Phone — all on the [contact page](/contact)
 }
 ```
 
-
 ---
+## Rolling Paper Materials Guide: Hemp, Rice, Flax & Wood Pulp Compared (2026)
+Source: https://ryopapers.com/blogs/rolling-paper-materials-guide
 
-### Blog: rolling paper materials guide
-
----
-title: "Rolling Paper Materials Guide: Hemp, Rice, Flax & Wood Pulp Compared (2026)"
-meta_description: "Hemp, rice, flax & wood pulp rolling papers compared — burn rate, GSM, taste, sustainability, cost. The B2B sourcing reference from RYO Papers."
-primary_keyword: "rolling paper materials"
-secondary_keywords: "rolling papers, custom rolling papers, ryopapers, hemp rolling paper, rice rolling paper, flax rolling paper, wood pulp rolling paper, best rolling paper material"
-url_slug: "/rolling-paper-materials-guide"
-search_intent: "Informational + Commercial Investigation"
-schema_type: "Article + FAQPage"
-author: "RYO Papers"
-last_updated: "2026"
----
 
 # Rolling Paper Materials Guide: Hemp, Rice, Flax & Wood Pulp Compared
 
 **Rolling paper materials fall into four primary categories — hemp, rice, flax (linen), and wood pulp — each with distinct burn rates, GSM ranges, taste profiles, and sustainability footprints.** Hemp delivers the strongest sustainability story with a slow, even burn; rice produces the thinnest paper with the technically slowest burn rate and minimal ash; flax is the strongest traditional fiber; wood pulp is the most cost-effective for mass-market production. Choosing the right material is the single biggest decision in rolling paper sourcing.
 
-This guide is the technical sourcing reference used by buyers ordering [custom rolling papers](/custom-rolling-papers) from **RYO Papers** — covering every fiber, blend, and certification you'll encounter when building a brand.
+This guide is the technical sourcing reference used by buyers ordering [custom rolling papers](/blogs/custom-rolling-papers) from **RYO Papers** — covering every fiber, blend, and certification you'll encounter when building a brand.
 
 For the full factory process behind these materials, see our companion blog: [How Are Rolling Papers Manufactured?](/blogs/how-rolling-papers-are-manufactured)
 
@@ -1735,7 +1854,7 @@ In modern rolling paper manufacturing, **most premium products are blends, not p
 - **Rice + Flax** → ultra-thin yet rolling-friendly. Connoisseur grade.
 - **Hemp + Wood Pulp** → cost-controlled "hemp blend" — common in mass-market hemp-branded papers.
 
-When ordering [custom rolling papers](/custom-rolling-papers), specifying your blend ratio (e.g., "70% hemp / 30% rice") gives you a unique product that competitors can't easily replicate.
+When ordering [custom rolling papers](/blogs/custom-rolling-papers), specifying your blend ratio (e.g., "70% hemp / 30% rice") gives you a unique product that competitors can't easily replicate.
 
 ---
 
@@ -1843,7 +1962,7 @@ Rolling paper material is not a commodity decision — it's a brand decision dre
 
 For B2B buyers building a serious rolling paper brand, the right answer almost always starts with: **request samples in 3–4 different specifications, test the burn, test the roll, then commit.**
 
-For sample requests, custom blends, and certified [custom rolling papers](/custom-rolling-papers) manufactured for global private-label brands, **[contact RYO Papers](/contact)**.
+For sample requests, custom blends, and certified [custom rolling papers](/blogs/custom-rolling-papers) manufactured for global private-label brands, **[contact RYO Papers](/contact)**.
 
 Want to understand how these materials become finished booklets? Read our companion guide: [How Are Rolling Papers Manufactured?](/blogs/how-rolling-papers-are-manufactured)
 
@@ -1908,22 +2027,10 @@ Want to understand how these materials become finished booklets? Read our compan
 }
 ```
 
-
 ---
+## What Is GSM in Rolling Papers? (2026 Buyer's Guide)
+Source: https://ryopapers.com/blogs/what-is-gsm-rolling-papers
 
-### Blog: what is gsm rolling papers
-
----
-title: "What Is GSM in Rolling Papers? Thickness Explained (2026 Buyer's Guide)"
-meta_description: "GSM in rolling papers explained — common ranges (10–35 GSM), how GSM affects burn rate & how to choose the right GSM for your brand. From RYO Papers."
-primary_keyword: "rolling paper GSM"
-secondary_keywords: "rolling papers, custom rolling papers, ryopapers, GSM in rolling papers, rolling paper thickness, rolling paper weight, GSM meaning rolling papers"
-url_slug: "/what-is-gsm-rolling-papers"
-search_intent: "Informational"
-schema_type: "Article + FAQPage"
-author: "RYO Papers"
-last_updated: "2026"
----
 
 # What Is GSM in Rolling Papers? Thickness Explained
 
@@ -2149,7 +2256,7 @@ For sample requests across multiple GSM ranges, custom specifications, and certi
 - [Rolling Paper Materials Guide](/blogs/rolling-paper-materials-guide) — fiber-by-fiber comparison
 - [Hemp vs Rice Rolling Papers](/blogs/hemp-vs-rice-rolling-papers) — the two premium fibers head-to-head
 - [How Are Rolling Papers Manufactured?](/blogs/how-rolling-papers-are-manufactured) — the full factory process
-- [Custom Rolling Papers](/custom-rolling-papers) — start your private-label brand
+- [Custom Rolling Papers](/blogs/custom-rolling-papers) — start your private-label brand
 
 ---
 
@@ -2219,7 +2326,4 @@ For sample requests across multiple GSM ranges, custom specifications, and certi
   ]
 }
 ```
-
-
----
 

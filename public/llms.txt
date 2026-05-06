@@ -1,26 +1,29 @@
 # RYO Papers
 
-> RYO Papers provides custom rolling paper solutions, private label manufacturing, and high-quality rolling paper products for businesses and individuals.
+> Premier manufacturer and global supplier of high-quality custom rolling papers, private label solutions, and sustainable rolling paper materials.
 
-This document outlines the key sections of our website to help AI models and agents navigate our products, services, and company information effectively.
+RYO Papers specializes in B2B manufacturing from India, serving international brands with bespoke watermarking, custom GSM (10-35 GSM), and diverse fiber options. Our production processes adhere to ISO 9001 and GMP standards, ensuring premium food-contact safe products for the global market.
 
-## Products & Services
+## Core Services
+- [Custom Rolling Papers](https://ryopapers.com/blogs/custom-rolling-papers): Complete B2B customization including watermarks, fiber types, and sizes.
+- [Private Label Manufacturing](https://ryopapers.com/blogs/private-label-rolling-papers): End-to-end OEM services for launching and scaling rolling paper brands.
 
-- [Custom Rolling Papers](https://ryopapers.com/custom-rolling-papers): Information on our custom branding and private label rolling paper manufacturing services
-- [Rolling Paper Products](https://ryopapers.com/products/rolling-paper): Browse our catalog of standard and premium rolling papers
-- [Private Label Rolling Papers](https://ryopapers.com/private-label-rolling-papers): OEM service for brands to create their own rolling‑paper packs
+## Technical Guides
+- [Manufacturing Process](https://ryopapers.com/blogs/how-rolling-papers-are-manufactured): Step-by-step factory workflow from pulping to booklet assembly.
+- [GSM Explained](https://ryopapers.com/blogs/what-is-gsm-rolling-papers): Technical guide to paper weight and its impact on burn rate and thickness.
+- [Materials Guide](https://ryopapers.com/blogs/rolling-paper-materials-guide): Comparative analysis of hemp, rice, wood pulp, flax, and bamboo fibers.
+- [Hemp vs Rice Papers](https://ryopapers.com/blogs/hemp-vs-rice-rolling-papers): Choosing the right fiber for specific brand positioning.
 
-## Company
+## Product Catalog
+- [All Products](https://ryopapers.com/products/rolling-paper): Overview of available paper formats and packaging options.
+- [King Size Slim + Filters](https://ryopapers.com/products/rolling-paper/king-size-slim-plus-filters-rolling-papers): Premium KSS papers with integrated filter tips.
+- [Rolled Cones](https://ryopapers.com/products/rolling-paper/rolled-cones-rolling-papers): Pre-rolled cones for maximum convenience.
+- [Custom Sizes](https://ryopapers.com/products/rolling-paper/custom-size-rolling-papers): Bespoke dimensions for unique brand requirements.
 
-- [About Us](https://ryopapers.com/about-us): Learn about our history, mission, and manufacturing capabilities
-- [Contact](https://ryopapers.com/contact): Get in touch with our team for inquiries, quotes, and bulk orders
-
-## Blog
-
-- [Blog Index](https://ryopapers.com/blogs): Collection of all RYO Papers blog articles
-- [How to Start a Rolling Paper Brand](https://ryopapers.com/blogs/how-to-start-rolling-paper-brand): Step‑by‑step guide for founders launching a rolling‑paper brand
-- [Rolling Paper Materials Guide](https://ryopapers.com/blogs/rolling-paper-materials-guide): Overview of hemp, rice, flax, and wood‑pulp fibers
+## Business Resources
+- [Start a Brand Guide](https://ryopapers.com/blogs/how-to-start-rolling-paper-brand): Comprehensive manual for entrepreneurs starting a rolling paper business.
 
 ## Optional
-
-- [Products Overview](https://ryopapers.com/products/rolling-paper): General product listings and categories
+- [About Us](https://ryopapers.com/about-us): Company mission, heritage, and quality standards.
+- [Contact](https://ryopapers.com/contact): Inquiry forms for B2B samples and bulk quotations.
+- [Blog Library](https://ryopapers.com/blogs): Full index of industry insights and technical articles.
