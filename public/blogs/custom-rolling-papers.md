@@ -153,7 +153,7 @@ For brands evaluating manufacturing geographies in 2026:
 
 📦 **MOQ flexibility** — 50,000 vs 100K-250K minimums at most Chinese factories
 
-[Read the full geographic comparison in our founder's guide →](/how-to-start-rolling-paper-brand)
+[Read the full geographic comparison in our founder's guide →](/blogs/how-to-start-rolling-paper-brand)
 
 ---
 
@@ -208,7 +208,7 @@ Yes. Custom watermarks are physically embedded into the paper during sheet forma
 Any GSM between **10 and 35**. The most-ordered custom GSM specs are 14, 16, 18, and 22 GSM. We maintain ±5% GSM tolerance per batch as standard, with ±3% available on request for export-grade orders.
 
 ### Can I order custom hemp + rice blends?
-Yes. Custom blend ratios are available — 70:30, 60:40, 50:50, or any custom ratio. Hemp + rice blends are the **most-requested custom specification**, combining hemp's sustainability story with rice's smoothness. [Read the hemp vs rice comparison](/hemp-vs-rice-rolling-papers).
+Yes. Custom blend ratios are available — 70:30, 60:40, 50:50, or any custom ratio. Hemp + rice blends are the **most-requested custom specification**, combining hemp's sustainability story with rice's smoothness. [Read the hemp vs rice comparison](/blogs/hemp-vs-rice-rolling-papers).
 
 ### What's the price per booklet for custom rolling papers?
 FOB India pricing depends on fiber tier, GSM, packaging, and order volume:
@@ -223,7 +223,7 @@ FOB India pricing depends on fiber tier, GSM, packaging, and order volume:
 Yes. Custom packaging covers all three layers: **booklet cover** (200-300 GSM stock, full-color print, foil/embossing), **display box** (24 or 50 booklets, fully printed), and **master carton** (custom shipping marks). Eco-packaging options available.
 
 ### Can I order custom rolling papers if I'm new to the industry?
-Yes — RYO Papers regularly works with first-time founders. We provide guidance on spec selection, packaging design, compliance requirements, and launch logistics. [Read our complete guide to launching a rolling paper brand](/how-to-start-rolling-paper-brand).
+Yes — RYO Papers regularly works with first-time founders. We provide guidance on spec selection, packaging design, compliance requirements, and launch logistics. [Read our complete guide to launching a rolling paper brand](/blogs/how-to-start-rolling-paper-brand).
 
 ### Do you ship custom rolling papers internationally?
 Yes. Regular exports to North America, Europe, the Middle East, Africa, ASEAN, ANZ, and Latin America. Full export documentation included. [Contact us](/contact) to confirm logistics for your destination.

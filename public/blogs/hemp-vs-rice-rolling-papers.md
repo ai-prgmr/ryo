@@ -16,7 +16,7 @@ last_updated: "24th, April, 2026"
 
 This guide is the side-by-side B2B comparison used by brand owners ordering [custom rolling papers](/custom-rolling-papers) from **RYO Papers** — covering everything from burn behaviour to private-label positioning.
 
-For the full fiber-by-fiber reference, see our [Rolling Paper Materials Guide](/rolling-paper-materials-guide). For the factory process behind both materials, see [How Are Rolling Papers Manufactured?](/how-rolling-papers-are-manufactured)
+For the full fiber-by-fiber reference, see our [Rolling Paper Materials Guide](/blogs/rolling-paper-materials-guide). For the factory process behind both materials, see [How Are Rolling Papers Manufactured?](/blogs/how-rolling-papers-are-manufactured)
 
 ---
 
@@ -46,7 +46,7 @@ Now the full comparison.
 **Where hemp wins:**
 Hemp is the dominant choice for **eco-premium and natural-positioned brands** in 2026. The word "hemp" itself has become a marketing asset — buyers increasingly seek it out, especially in the wellness, dispensary, and natural-lifestyle segments. Hemp papers also handle long-distance shipping and humid climates better than rice.
 
-[Explore custom hemp rolling papers manufactured by RYO Papers →](/custom-rolling-papers)
+[Explore custom hemp rolling papers manufactured by RYO Papers →](/blogs/custom-rolling-papers)
 
 ---
 
@@ -197,7 +197,7 @@ For B2B brand owners, both hemp and rice papers — and any blend ratio — can 
 - **Custom cover printing:** full-brand booklet jackets
 - **Certifications:** FDA, EU food-contact, vegan gum, FSC
 
-Minimum order quantities for fully custom production typically start at **50,000 booklets**. [Contact RYO Papers](/contact) to discuss specifications, request samples, or get a quotation for [custom rolling papers](/custom-rolling-papers).
+Minimum order quantities for fully custom production typically start at **50,000 booklets**. [Contact RYO Papers](/contact) to discuss specifications, request samples, or get a quotation for [custom rolling papers](/blogs/custom-rolling-papers).
 
 ---
 
@@ -255,7 +255,7 @@ For sample requests, custom blends, hemp-only or rice-only specifications, and c
 **Continue reading:**
 - [Rolling Paper Materials Guide](/blogs/rolling-paper-materials-guide) — full breakdown of hemp, rice, flax & wood pulp
 - [How Are Rolling Papers Manufactured?](/blogs/how-rolling-papers-are-manufactured) — the factory process
-- [Custom Rolling Papers by RYO Papers](/custom-rolling-papers) — explore the full custom range
+- [Custom Rolling Papers by RYO Papers](/blogs/custom-rolling-papers) — explore the full custom range
 - [Custom Rolling Papers](/blogs/private-label-rolling-papers) — start your private label
 
 ---

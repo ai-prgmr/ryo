@@ -234,7 +234,7 @@ For sample requests across multiple GSM ranges, custom specifications, and certi
 - [Rolling Paper Materials Guide](/blogs/rolling-paper-materials-guide) — fiber-by-fiber comparison
 - [Hemp vs Rice Rolling Papers](/blogs/hemp-vs-rice-rolling-papers) — the two premium fibers head-to-head
 - [How Are Rolling Papers Manufactured?](/blogs/how-rolling-papers-are-manufactured) — the full factory process
-- [Custom Rolling Papers](/custom-rolling-papers) — start your private-label brand
+- [Custom Rolling Papers](/blogs/custom-rolling-papers) — start your private-label brand
 
 ---
 

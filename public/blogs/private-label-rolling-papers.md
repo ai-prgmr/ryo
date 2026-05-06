@@ -263,7 +263,7 @@ Email · WhatsApp · Phone — all on the [contact page](/contact)
 
 ---
 
-## Schema (JSON-LD) — Paste in `<head>` for SEO/AEO
+## FAQ Schema (JSON-LD) — Paste in `<head>` for SEO/AEO
 
 ```json
 {

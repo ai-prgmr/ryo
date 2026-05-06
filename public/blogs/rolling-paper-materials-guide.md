@@ -14,7 +14,7 @@ last_updated: "1st, April, 2026"
 
 **Rolling paper materials fall into four primary categories — hemp, rice, flax (linen), and wood pulp — each with distinct burn rates, GSM ranges, taste profiles, and sustainability footprints.** Hemp delivers the strongest sustainability story with a slow, even burn; rice produces the thinnest paper with the technically slowest burn rate and minimal ash; flax is the strongest traditional fiber; wood pulp is the most cost-effective for mass-market production. Choosing the right material is the single biggest decision in rolling paper sourcing.
 
-This guide is the technical sourcing reference used by buyers ordering [custom rolling papers](/custom-rolling-papers) from **RYO Papers** — covering every fiber, blend, and certification you'll encounter when building a brand.
+This guide is the technical sourcing reference used by buyers ordering [custom rolling papers](/blogs/custom-rolling-papers) from **RYO Papers** — covering every fiber, blend, and certification you'll encounter when building a brand.
 
 For the full factory process behind these materials, see our companion blog: [How Are Rolling Papers Manufactured?](/blogs/how-rolling-papers-are-manufactured)
 
@@ -148,7 +148,7 @@ In modern rolling paper manufacturing, **most premium products are blends, not p
 - **Rice + Flax** → ultra-thin yet rolling-friendly. Connoisseur grade.
 - **Hemp + Wood Pulp** → cost-controlled "hemp blend" — common in mass-market hemp-branded papers.
 
-When ordering [custom rolling papers](/custom-rolling-papers), specifying your blend ratio (e.g., "70% hemp / 30% rice") gives you a unique product that competitors can't easily replicate.
+When ordering [custom rolling papers](/blogs/custom-rolling-papers), specifying your blend ratio (e.g., "70% hemp / 30% rice") gives you a unique product that competitors can't easily replicate.
 
 ---
 
@@ -256,7 +256,7 @@ Rolling paper material is not a commodity decision — it's a brand decision dre
 
 For B2B buyers building a serious rolling paper brand, the right answer almost always starts with: **request samples in 3–4 different specifications, test the burn, test the roll, then commit.**
 
-For sample requests, custom blends, and certified [custom rolling papers](/custom-rolling-papers) manufactured for global private-label brands, **[contact RYO Papers](/contact)**.
+For sample requests, custom blends, and certified [custom rolling papers](/blogs/custom-rolling-papers) manufactured for global private-label brands, **[contact RYO Papers](/contact)**.
 
 Want to understand how these materials become finished booklets? Read our companion guide: [How Are Rolling Papers Manufactured?](/blogs/how-rolling-papers-are-manufactured)
 

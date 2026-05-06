@@ -111,7 +111,7 @@ function Footer() {
             <ul className="space-y-3 text-sm">
               <li><Link href="/products/rolling-paper" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Rolling Papers</Link></li>
               <li><Link href="/blogs/private-label-rolling-papers" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Private Label Brands</Link></li>
-              <li><Link href="/custom-rolling-papers" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Custom Size & Print</Link></li>
+              <li><Link href="/blogs/custom-rolling-papers" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Custom Size & Print</Link></li>
             </ul>
           </div>
 

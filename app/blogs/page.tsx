@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Roll your Own - Custom Rolling Papers & Contract/OEM Manufacturing",
     description: "Explore our premium rolling papers, custom rolling papers printing services, and contract rolling papers manufacturing solutions for your brand",
-    url: "https://ryopapers.com",
+    url: "https://ryopapers.com/blogs",
     type: "website",
     images: [
       {

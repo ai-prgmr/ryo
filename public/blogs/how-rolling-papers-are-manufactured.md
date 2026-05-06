@@ -14,7 +14,7 @@ last_updated: "23rd, March, 2026"
 
 **Rolling papers are manufactured through a precision paper-converting process involving raw fiber pulping, sheet formation, drying, watermark embedding, cutting, gum application, and booklet assembly.** The process requires specialized machinery to maintain consistent GSM (grams per square meter), even burn rate, and structural integrity — typically producing sheets between 10 and 35 GSM, with most premium brands sitting in the 14–18 GSM range, far thinner than standard printing paper.
 
-This guide walks you through every stage of how rolling papers are made — the same process used by leading global brands and by manufacturers like **[RYO Papers](/contact)** for [custom rolling papers](/custom-rolling-papers) and private-label production.
+This guide walks you through every stage of how rolling papers are made — the same process used by leading global brands and by manufacturers like **[RYO Papers](/contact)** for [custom rolling papers](/blogs/custom-rolling-papers) and [private-label](/blogs/private-label-rolling-papers) production.
 
 ---
 
@@ -149,7 +149,7 @@ The core machinery includes a **Fourdrinier paper machine** (sheet forming), **d
 From raw fiber to finished, packed booklets, a full production run typically takes **7–14 days** in a continuous factory environment. The paper-making cycle itself (pulp to dry paper) runs continuously in 30–60 minutes per section. Cutting and converting add 2–3 days, and booklet assembly plus packaging adds another 1–2 days. For **custom rolling paper orders** with bespoke watermarks, custom GSM, and printed covers, total order-to-FOB lead time at RYO Papers is typically **25–35 days**, depending on artwork approval and quantity.
 
 ### Can rolling papers be customized during production?
-Yes — almost every parameter can be customized. RYO Papers offers custom GSM (10–35 GSM), custom watermarks featuring your logo, custom fiber blends (hemp, rice, flax, wood pulp), all standard sizes (1¼, 1½, King Size, King Slim), custom booklet leaf counts (32/50/100), fully printed cover stock, private-label/OEM branding, and complete custom packaging. Minimum order quantities for custom production typically start at 50,000 booklets. Learn more on the [custom rolling papers](/custom-rolling-papers) page or [contact the team](/contact) for a quotation.
+Yes — almost every parameter can be customized. RYO Papers offers custom GSM (10–35 GSM), custom watermarks featuring your logo, custom fiber blends (hemp, rice, flax, wood pulp), all standard sizes (1¼, 1½, King Size, King Slim), custom booklet leaf counts (32/50/100), fully printed cover stock, private-label/OEM branding, and complete custom packaging. Minimum order quantities for custom production typically start at 50,000 booklets. Learn more on the [custom rolling papers](/blogs/custom-rolling-papers) page or [contact the team](/contact) for a quotation.
 
 ---
 
