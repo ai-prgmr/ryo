@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { products } from "@/app/lib/data";
+import { getAllBlogs } from "@/app/lib/blogs";
 
 export const dynamic = "force-static";
 
@@ -27,12 +28,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.6,
     }));
 
-    // const machineRoutes: MetadataRoute.Sitemap = machines.map((machine) => ({
-    //     url: `${baseUrl}/machines/${machine.slug}`,
-    //     lastModified: new Date(),
-    //     changeFrequency: "weekly" as const,
-    //     priority: 0.7,
-    // }));
+    const blogs = getAllBlogs();
 
-    return [...staticRoutes, ...productRoutes];
+    const parseBlogDate = (dateStr: string) => {
+        if (!dateStr) return new Date();
+        // Remove st, nd, rd, th and clean up commas to make it parseable by Date
+        const cleanDate = dateStr.replace(/(\d+)(st|nd|rd|th)/, '$1').replace(/,/g, ' ');
+        const date = new Date(cleanDate);
+        return isNaN(date.getTime()) ? new Date() : date;
+    };
+
+    const blogRoutes: MetadataRoute.Sitemap = blogs.map((blog) => ({
+        url: `${baseUrl}/blogs/${blog.slug}`,
+        lastModified: parseBlogDate(blog.last_updated),
+        changeFrequency: "weekly" as const,
+        priority: 0.7,
+    }));
+    return [...staticRoutes, ...productRoutes, ...blogRoutes];
 }
