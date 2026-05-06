@@ -19,7 +19,18 @@ export interface BlogMetadata {
 export interface BlogPost {
   metadata: BlogMetadata;
   content: string;
-  faqSchema?: any;
+  faqSchema?: {
+    "@context": string;
+    "@type": string;
+    mainEntity: Array<{
+      "@type": string;
+      name: string;
+      acceptedAnswer: {
+        "@type": string;
+        text: string;
+      };
+    }>;
+  };
 }
 
 export function getAllBlogs(): BlogMetadata[] {

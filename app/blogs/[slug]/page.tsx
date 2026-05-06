@@ -116,20 +116,20 @@ export default async function BlogPost({ params }: Props) {
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 components={{
-                  h1: ({ node, ...props }) => <h2 className="text-4xl font-bold mt-12 mb-6 text-[#A2D22E]" {...props} />,
-                  h2: ({ node, ...props }) => <h2 className="text-3xl font-semibold mt-10 mb-4 text-[#A2D22E]" {...props} />,
-                  h3: ({ node, ...props }) => <h3 className="text-2xl font-medium mt-8 mb-3 text-[#A2D22E]" {...props} />,
-                  p: ({ node, ...props }) => <p className="text-lg leading-relaxed mb-6 text-gray-200" {...props} />,
-                  ul: ({ node, ...props }) => <ul className="list-disc list-outside ml-6 mb-6 text-gray-200 space-y-2" {...props} />,
-                  ol: ({ node, ...props }) => <ol className="list-decimal list-outside ml-6 mb-6 text-gray-200 space-y-2" {...props} />,
-                  li: ({ node, ...props }) => <li className="pl-2" {...props} />,
-                  a: ({ node, ...props }) => <a className="text-blue-400 hover:text-blue-300 underline" {...props} />,
-                  strong: ({ node, ...props }) => <strong className="font-bold text-white" {...props} />,
-                  blockquote: ({ node, ...props }) => <blockquote className="border-l-4 border-[#A2D22E] pl-4 italic text-gray-300 my-6 bg-white/5 p-4 rounded-r" {...props} />,
-                  table: ({ node, ...props }) => <div className="overflow-x-auto mb-8"><table className="w-full text-left border-collapse" {...props} /></div>,
-                  th: ({ node, ...props }) => <th className="border-b-2 border-white/20 p-4 font-semibold text-[#A2D22E] bg-white/5" {...props} />,
-                  td: ({ node, ...props }) => <td className="border-b border-white/10 p-4 text-gray-200" {...props} />,
-                  code: ({ node, className, children, ...props }) => {
+                  h1: ({ ...props }) => <h2 className="text-4xl font-bold mt-12 mb-6 text-[#A2D22E]" {...props} />,
+                  h2: ({ ...props }) => <h2 className="text-3xl font-semibold mt-10 mb-4 text-[#A2D22E]" {...props} />,
+                  h3: ({ ...props }) => <h3 className="text-2xl font-medium mt-8 mb-3 text-[#A2D22E]" {...props} />,
+                  p: ({ ...props }) => <p className="text-lg leading-relaxed mb-6 text-gray-200" {...props} />,
+                  ul: ({ ...props }) => <ul className="list-disc list-outside ml-6 mb-6 text-gray-200 space-y-2" {...props} />,
+                  ol: ({ ...props }) => <ol className="list-decimal list-outside ml-6 mb-6 text-gray-200 space-y-2" {...props} />,
+                  li: ({ ...props }) => <li className="pl-2" {...props} />,
+                  a: ({ ...props }) => <a className="text-blue-400 hover:text-blue-300 underline" {...props} />,
+                  strong: ({ ...props }) => <strong className="font-bold text-white" {...props} />,
+                  blockquote: ({ ...props }) => <blockquote className="border-l-4 border-[#A2D22E] pl-4 italic text-gray-300 my-6 bg-white/5 p-4 rounded-r" {...props} />,
+                  table: ({ ...props }) => <div className="overflow-x-auto mb-8"><table className="w-full text-left border-collapse" {...props} /></div>,
+                  th: ({ ...props }) => <th className="border-b-2 border-white/20 p-4 font-semibold text-[#A2D22E] bg-white/5" {...props} />,
+                  td: ({ ...props }) => <td className="border-b border-white/10 p-4 text-gray-200" {...props} />,
+                  code: ({ className, children, ...props }) => {
                     const match = /language-(\w+)/.exec(className || '')
                     return match ? (
                       <pre className="bg-black/60 p-6 rounded-xl overflow-x-auto my-8 border border-white/10 text-sm">
@@ -147,7 +147,7 @@ export default async function BlogPost({ params }: Props) {
                 <section className="mt-12">
                   <h2 className="text-3xl font-bold mb-6 text-[#A2D22E]">Frequently Asked Questions</h2>
                   <div className="space-y-6">
-                    {post.faqSchema.mainEntity.map((faq: any, idx: number) => (
+                    {post.faqSchema.mainEntity.map((faq: { name: string; acceptedAnswer?: { text: string } }, idx: number) => (
                       <div key={idx} className="bg-white/10 p-4 rounded-lg">
                         <h3 className="text-xl font-semibold text-[#A2D22E]">{faq.name}</h3>
                         <p className="text-gray-200">{faq.acceptedAnswer?.text}</p>
