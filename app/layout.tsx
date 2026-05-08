@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -35,6 +36,19 @@ export default function RootLayout({
       <head>
         <link rel="help" type="text/markdown" href="https://ryopapers.com/llms.txt" />
         <link rel="help" type="text/markdown" href="https://ryopapers.com/llms-full.txt" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-CVK6P2R76J"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-CVK6P2R76J');
+          `}
+        </Script>
       </head>
       <body className={`antialiased bg-white`}>
         <Header />
