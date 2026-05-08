@@ -68,7 +68,7 @@ function CustomPrintingPage() {
             </span>{" "}
             <span className="text-6xl text-[#A2D22E] uppercase font-extrabold">
               BRANDED.
-            </span>
+            </span>{" "}
             <span className="text-6xl text-[#A2D22E] uppercase font-extrabold">
               YOURS.
             </span>
