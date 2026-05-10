@@ -21,6 +21,10 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "RYO Papers | Custom Rolling Paper Solutions",
   description: "Roll your Own Papers, RYO Rolling Papers custom solutions",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
