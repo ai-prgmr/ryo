@@ -482,7 +482,7 @@ For founders ready to build a rolling paper brand with a manufacturer trusted by
       "name": "Can I order rolling papers with low MOQ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. RYO Papers offers fully custom private-label production starting at 50,000 booklet MOQ — significantly lower than most international manufacturers requiring 100,000–250,000 booklet MOQs."
+        "text": "Yes. RYO Papers offers fully custom private-label production starting at 5000 booklet MOQ — significantly lower than most international manufacturers requiring 100,000–250,000 booklet MOQs."
       }
     },
     {

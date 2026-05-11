@@ -20,7 +20,7 @@ function Footer() {
   const linkedinLink = "https://www.linkedin.com/company/ryopapers/";
 
   return (
-    <footer className="bg-[#05014a] text-gray-300 pt-16 pb-8 border-t-4 border-[#A2D22E]">
+    <footer className="bg-[#2D4A2B] text-gray-300 pt-16 pb-8 border-t-4 border-[#A2D22E]">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
 

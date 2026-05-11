@@ -11,10 +11,12 @@ import {
   X,
   Leaf,
   AlignRightIcon,
-  PenToolIcon
+  PenToolIcon,
+  Factory
 } from "lucide-react"; // Import Menu and X icons
 import { useState } from "react"; // Import useState hook
 import { usePathname } from "next/navigation";
+import { faIndustry } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage mobile menu visibility
@@ -23,7 +25,7 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="bg-[#05014a] text-gray-50 shadow-xl fixed w-full z-50 border-b-4 border-b-[#A2D22E]">
+    <header className="bg-[#2D4A2B] text-gray-50 shadow-xl fixed w-full z-50 border-b-4 border-b-[#A2D22E]">
       <div className="w-full mx-auto flex justify-between items-center px-4 md:px-16">
         {" "}
         <Link
@@ -60,7 +62,7 @@ export default function Header() {
             flex-col sm:flex-row
     fixed sm:relative
     top-0 left-0 w-full h-full sm:h-auto
-    bg-[#05014a]
+    bg-[#2D4A2B]
     sm:bg-none sm:shadow-none
     pb-4 sm:pb-0 pt-2 sm:pt-0
     shadow-lg
@@ -86,6 +88,14 @@ export default function Header() {
             icon={Package}
             label="Products"
             textColor="text-white"
+            hoverColor="hover:text-gray-200"
+            onClick={closeMenu}
+          />
+          <NavLink
+            href="/rolling-paper-manufacturer"
+            icon={Factory}
+            label="Manufacture"
+            textColor="text-gray-100"
             hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
