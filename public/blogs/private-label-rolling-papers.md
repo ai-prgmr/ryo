@@ -14,7 +14,7 @@ last_updated: "14th, April, 2026"
 
 # Private Label Rolling Papers — OEM & Custom Branding Manufacturer
 
-**Build your own rolling paper brand with a manufacturer trusted by global founders, distributors, and dispensary chains.** RYO Papers is a full-service private label rolling papers manufacturer based in India, producing fully customized rolling papers — your fiber, your GSM, your watermark, your packaging — with global export documentation, certified quality systems, and a 50,000 booklet MOQ.
+**Build your own rolling paper brand with a manufacturer trusted by global founders, distributors, and dispensary chains.** RYO Papers is a full-service private label rolling papers manufacturer based in India, producing fully customized rolling papers — your fiber, your GSM, your watermark, your packaging — with global export documentation, certified quality systems, and a 500 booklet MOQ.
 
 **[→ Request a Quote](/contact)** | **[→ View Sample Range](/contact)**
 
