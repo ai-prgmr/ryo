@@ -1,9 +1,8 @@
-// app/rolling-paper-manufacturer/FaqSection.tsx
 "use client";
-
 import { useState } from "react";
 import Script from "next/script";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -61,7 +60,7 @@ export default function FaqSection() {
   };
 
   return (
-    <section className="py-20 px-[clamp(20px,5vw,80px)] bg-[#F5F0E8]" id="faq">
+    <section className="py-20 px-[clamp(20px,5vw,80px)] bg-cream-200" id="faq">
       <Script
         id="faq-schema"
         type="application/ld+json"
@@ -69,25 +68,36 @@ export default function FaqSection() {
       />
       <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-20 items-start">
         <div className="md:sticky md:top-20">
-          <span className="text-[11px] font-medium tracking-[0.12em] uppercase text-[#3B5E3A] mb-3 block">FAQ</span>
-          <h2 className="font-[var(--font-playfair)] text-[clamp(28px,3.5vw,44px)] font-black leading-[1.1] tracking-tight text-[#1A1612] mb-4">Common Questions</h2>
-          <p className="text-[15px] text-[#7A6F65] mt-4 leading-relaxed font-light">Everything you need to know before placing your first order. Have a question not covered here?</p>
-          <Link href="/contact" className="inline-block mt-6 text-[13px] font-medium text-[#3B5E3A] border-b border-[#3B5E3A] pb-0.5 hover:opacity-70 transition-opacity">Contact our team →</Link>
+          <span className="text-[11px] font-medium tracking-[0.12em] uppercase text-brand mb-3 block">FAQ</span>
+          <h2 className="font-display text-[clamp(28px,3.5vw,44px)] font-black leading-[1.1] tracking-tight text-ink mb-4">Common Questions</h2>
+          <p className="text-[15px] text-muted mt-4 leading-relaxed font-light">Everything you need to know before placing your first order. Have a question not covered here?</p>
+          <Link href="/contact" className="inline-block mt-6 text-[13px] font-medium text-brand-deep border-b border-brand-deep pb-0.5 hover:opacity-70 transition-opacity">Contact our team →</Link>
         </div>
         <div className="flex flex-col border border-[rgba(26,22,18,0.12)]" role="list">
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-[rgba(26,22,18,0.12)] last:border-b-0 overflow-hidden" role="listitem">
               <button
-                className={`w-full bg-none border-none cursor-pointer p-[22px_24px] text-left flex justify-between items-center gap-4 text-[15px] font-medium text-[#1A1612] leading-[1.4] transition-colors duration-150 hover:bg-[#EDE6D6] ${openIndex === index ? "bg-[#EBF2EB] !text-[#3B5E3A]" : ""}`}
+                className={`w-full bg-none border-none cursor-pointer p-[22px_24px] text-left flex justify-between items-center gap-4 text-[15px] font-medium text-ink leading-[1.4] transition-colors duration-150 hover:bg-cream-300 ${openIndex === index ? "bg-ryo-50 !text-brand" : ""}`}
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 aria-expanded={openIndex === index}
               >
                 {faq.q}
                 <span className={`shrink-0 w-5 h-5 border border-current rounded-full flex items-center justify-center text-xs transition-transform duration-200 ${openIndex === index ? "rotate-45" : ""}`} aria-hidden="true">+</span>
               </button>
-              <div className={`overflow-hidden transition-[max-height,padding] duration-300 ease-in-out bg-[#FEFCF8] text-[15px] text-[#7A6F65] leading-relaxed ${openIndex === index ? "max-h-[500px] p-[20px_24px]" : "max-h-0 px-6"}`} role="region">
-                {faq.a}
-              </div>
+              <motion.div 
+                initial={false}
+                animate={{ 
+                  height: openIndex === index ? "auto" : 0, 
+                  opacity: openIndex === index ? 1 : 0 
+                }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="overflow-hidden bg-cream-50" 
+                role="region"
+              >
+                <div className="p-[20px_24px] text-[15px] text-muted leading-relaxed">
+                  {faq.a}
+                </div>
+              </motion.div>
             </div>
           ))}
         </div>

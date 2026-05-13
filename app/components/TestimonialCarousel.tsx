@@ -84,11 +84,11 @@ export default function TestimonialsCarousel() {
   const desktopTestimonialsToRender = getDisplayTestimonials();
 
   return (
-    <section className="bg-white py-8 lg:py-16">
+    <section className="bg-bg py-8 lg:py-16">
       <div className="max-w-screen-xl px-4 mx-auto text-center lg:px-6">
-        <h2 className="text-3xl font-extralight text-gray-500 mb-8">
+        <h2 className="font-display text-3xl font-extralight text-muted mb-8">
           What Our Clients Say <br />
-          <span className="text-[#A2D22E] font-extrabold text-6xl uppercase">
+          <span className="text-brand font-black text-6xl uppercase">
             Reviews
           </span>
         </h2>

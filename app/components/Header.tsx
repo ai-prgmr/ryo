@@ -25,15 +25,15 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="bg-[#2D4A2B] text-gray-50 shadow-xl fixed w-full z-50 border-b-4 border-b-[#A2D22E]">
+    <header className="bg-forest-600 text-cream-50 shadow-xl fixed w-full z-50 border-b-4 border-ryo-400">
       <div className="w-full mx-auto flex justify-between items-center px-4 md:px-16">
         {" "}
         <Link
           href="/"
           className="flex items-center space-x-2 text-2xl font-bold transition-colors duration-200 p-2 rounded-2xl"
           onClick={closeMenu} // Close menu if logo is clicked
-          aria-label="Rolling Paper Co. Home"
-          title="Rolling Paper Co. Home"
+          aria-label="RYOPAPERS logo"
+          title="RYOPAPERS logo"
         >
           <Image
             src="/images/ryopapers-final-logo.png"
@@ -46,7 +46,7 @@ export default function Header() {
         </Link>
         {/* Hamburger/Close Button for Mobile */}
         <button
-          className="sm:hidden text-blue-500 focus:outline-none z-60" // Hidden on sm screens and up
+          className="sm:hidden text-ryo-400 focus:outline-none z-60" // Hidden on sm screens and up
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={
             isMenuOpen ? "Close navigation menu" : "Open navigation menu"
@@ -62,7 +62,6 @@ export default function Header() {
             flex-col sm:flex-row
     fixed sm:relative
     top-0 left-0 w-full h-full sm:h-auto
-    bg-[#2D4A2B]
     sm:bg-none sm:shadow-none
     pb-4 sm:pb-0 pt-2 sm:pt-0
     shadow-lg
@@ -79,56 +78,42 @@ export default function Header() {
             href="/"
             icon={Home}
             label="Home"
-            textColor="text-gray-300"
-            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
           <NavLink
             href="/products/rolling-paper"
             icon={Package}
             label="Products"
-            textColor="text-white"
-            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
           <NavLink
             href="/rolling-paper-manufacturer"
             icon={Factory}
             label="Manufacture"
-            textColor="text-gray-100"
-            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
           <NavLink
             href="/custom-rolling-papers"
             icon={Printer}
             label="Customize"
-            textColor="text-gray-100"
-            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
           <NavLink
             href="/blogs"
             icon={PenToolIcon}
             label="Blogs"
-            textColor="text-gray-100"
-            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
           <NavLink
             href="/about-us"
             icon={Leaf}
             label="About Us"
-            textColor="text-gray-100"
-            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
           <NavLink
             href="/contact"
             icon={Mail}
             label="Contact"
-            textColor="text-gray-100"
-            hoverColor="hover:text-gray-200"
             onClick={closeMenu}
           />
         </nav>
@@ -145,7 +130,6 @@ interface NavLinkProps {
   hoverColor?: string;
   onClick?: () => void; // Add onClick prop
 }
-
 function NavLink({
   href,
   icon: Icon,
@@ -163,12 +147,12 @@ function NavLink({
     <Link
       href={href}
       className={`flex flex-col items-center p-2 rounded-lg transition-colors duration-200
-        ${isActive ? "bg-[#e1ffac] text-black bg-opacity-20" : "text-gray-200"}
-        ${isActive ? "hover:text-black" : `${hoverColor}`}`}
+        ${isActive ? "bg-ryo-400/20 text-ryo-400" : "text-cream-200/70"}
+        hover:text-ryo-400`}
       onClick={onClick}
     >
       <Icon size={20} />
-      <span className="text-md mt-1 whitespace-nowrap">{label}</span>
+      <span className="text-xs mt-1.5 whitespace-nowrap font-medium tracking-wide uppercase">{label}</span>
     </Link>
   );
 }

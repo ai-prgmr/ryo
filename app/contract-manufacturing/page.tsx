@@ -20,9 +20,24 @@ export const metadata: Metadata = {
   },
 };
 
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ryopapers.com/contract-manufacturing/#webpage",
+  "url": "https://ryopapers.com/contract-manufacturing",
+  "name": "Contract Manufacturing | RYO Papers",
+  "description": "Comprehensive contract manufacturing solutions specifically designed for the tobacco industry. Partner with us for reliable, high-volume manufacturing.",
+  "publisher": { "@id": "https://ryopapers.com/#organization" }
+};
+
 function ContractManufacturingPage() {
   return (
     <div className="container mx-auto px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+
       <div className=" rounded-3xl shadow-xl p-6 md:p-10 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-amber-300 mb-6">
           Contract Manufacturing for the Tobacco Industry
@@ -62,7 +77,7 @@ function ContractManufacturingPage() {
               Custom Formulation & Production
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Whether it&unquot;s specific blends, unique paper types, or
+              Whether it&apos;s specific blends, unique paper types, or
               specialized packaging, we adapt to your exact manufacturing
               requirements.
             </p>

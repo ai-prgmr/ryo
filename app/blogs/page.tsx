@@ -34,29 +34,46 @@ export const metadata: Metadata = {
 export default function BlogsPage() {
   const blogs = getAllBlogs();
 
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://ryopapers.com/blogs/#webpage",
+    "url": "https://ryopapers.com/blogs",
+    "name": "Blogs | RYO Papers",
+    "description": "Read our latest blogs on rolling papers, customization, and materials.",
+    "publisher": { "@id": "https://ryopapers.com/#organization" }
+  };
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     itemListElement: blogs.map((blog, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      url: `https://www.ryopapers.com/blogs/${blog.slug}`,
+      url: `https://ryopapers.com/blogs/${blog.slug}`,
       name: blog.title,
     }))
   };
 
+
   return (
     <>
+      <Script
+        id="blogs-webpage-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
       <Script
         id="blogs-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="bg-[#ffffff] min-h-screen pt-32 pb-20">
+
+      <div className="bg-bg min-h-screen pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold text-[#A2D230] mb-6">Our Blogs</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h1 className="font-display text-4xl md:text-6xl font-black text-ink mb-6">Our Blogs</h1>
+            <p className="text-xl text-muted max-w-3xl mx-auto">
               Insights, guides, and updates from the world of custom rolling papers.
             </p>
           </div>
@@ -64,12 +81,12 @@ export default function BlogsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogs.map((blog) => (
               <Link href={`/blogs/${blog.slug}`} key={blog.slug}>
-                <div className="bg-linear-to-b/oklab from-[#A2D230] from-10% to-[#ffffff] to-20% shadow-2xl rounded-2xl p-6 transition-all duration-300 h-full flex flex-col">
-                  <h2 className="text-xl font-bold text-[#A2D230] mt-10">{blog.title}</h2>
-                  <p className="text-gray-900 mb-4 flex-grow line-clamp-3">
+                <div className="bg-surface border border-border hover:border-brand shadow-md hover:shadow-xl rounded-2xl p-8 transition-all duration-300 h-full flex flex-col group">
+                  <h2 className="font-display text-2xl font-bold text-ink mb-4 group-hover:text-brand transition-colors">{blog.title}</h2>
+                  <p className="text-muted mb-6 flex-grow line-clamp-3 leading-relaxed">
                     {blog.meta_description}
                   </p>
-                  <div className="flex justify-between items-center text-sm text-black mt-auto pt-4 border-t border-white/10">
+                  <div className="flex justify-between items-center text-xs font-medium tracking-wider uppercase text-muted mt-auto pt-6 border-t border-border">
                     <span>{blog.author}</span>
                     <span>{blog.last_updated}</span>
                   </div>

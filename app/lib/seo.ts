@@ -3,8 +3,8 @@ import { Product } from "@/app/lib/data";
 const cleanDescription = (text: string) => text.replace(/"/g, "'");
 
 export const generateProductSchema = (product: Product, baseUrl: string) => {
-    const price = "20.00";
-    const currency = "EUR";
+    const price = "5.00";
+    const currency = "USD";
     const availabilityStatus = "InStock";
     const productSchema = {
         "@context": "https://schema.org/",

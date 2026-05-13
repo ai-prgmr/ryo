@@ -1,41 +1,676 @@
+/* ════════════════════════════════════════════════════════════════════
+   RYO PAPERS — Global Stylesheet
+   Tailwind CSS v4 · Single-file theme + base + components
+   Brand Book v1.0 · YUVU OVERSEAS · Indore
+   ════════════════════════════════════════════════════════════════════
+   Usage:
+     1. Install Tailwind v4:  npm install tailwindcss @tailwindcss/postcss
+     2. Import this file in your root layout / entry point.
+     3. All tokens below are available as Tailwind utilities globally:
+          bg-ryo-400, text-cream-800, font-display, text-h1, etc.
+   ════════════════════════════════════════════════════════════════════ */
+
 @import "tailwindcss";
 
-body {
-  font-family: var(--font-montserrat), sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* ─────────────────────────────────────────────────────────────────────
+   1 · FONTS
+   ───────────────────────────────────────────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
 
-/* Tailwind CSS base, components, and utilities are assumed to be available */
-/* for the Canvas environment and thus not explicitly imported here with @tailwind directives. */
-
-/* Custom scrollbar for dark theme */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #1f2937; /* bg-gray-800 */
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #4b5563; /* bg-gray-600 */
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #6b7280; /* bg-gray-500 */
-}
-/* Define your custom colors using the @theme directive */
+/* ─────────────────────────────────────────────────────────────────────
+   2 · THEME TOKENS  (Tailwind v4 @theme directive)
+   Every variable here becomes a utility automatically.
+   ───────────────────────────────────────────────────────────────────── */
 @theme {
-  --color-brown-50: #fdf8f6;
-  --color-brown-100: #f2e8e2;
-  --color-brown-200: #eaddd7;
-  --color-brown-300: #d7c4be;
-  --color-brown-400: #bca19a;
-  --color-brown-500: #a18072; /* Your main brown */
-  --color-brown-600: #8a6b5e;
-  --color-brown-700: #755b4e;
-  --color-brown-800: #624d40;
-  --color-brown-900: #4e3f34;
-  --color-brown-950: #2a201c;
+  /* ───── COLOR · PRIMARY (RYO GREEN — THE ANCHOR) ─────
+     Generates: bg-ryo-50 … bg-ryo-900, text-ryo-400, border-ryo-500, etc.
+     ★ Brand color: ryo-400 = #A2D230 */
+  --color-ryo-50: #F5FBE7;
+  --color-ryo-100: #E7F5C7;
+  --color-ryo-200: #D2EC93;
+  --color-ryo-300: #BCE05F;
+  --color-ryo-400: #A2D230;
+  /* ★ ANCHOR */
+  --color-ryo-500: #88B324;
+  --color-ryo-600: #6F931C;
+  --color-ryo-700: #557016;
+  --color-ryo-800: #3D4F12;
+  --color-ryo-900: #28330D;
+
+  /* ───── COLOR · NEUTRAL (CREAM — REPLACES STANDARD GREYS) ─────
+     Warm-toned neutrals. cream-100 = default page bg.
+     cream-800 = body text (replaces black entirely). */
+  --color-cream-50: #FFFEFA;
+  --color-cream-100: #FAF7F0;
+  /* ★ DEFAULT BG */
+  --color-cream-200: #F5F1E8;
+  --color-cream-300: #EDE7D8;
+  --color-cream-400: #D4CDB8;
+  --color-cream-500: #A8A092;
+  --color-cream-600: #6B6557;
+  --color-cream-700: #4A4538;
+  --color-cream-800: #2A2520;
+  /* ★ BODY TEXT (NOT BLACK) */
+  --color-cream-900: #1A1612;
+
+  /* ───── COLOR · SECONDARY BRAND (FOREST GREEN — AUTHORITY/HERITAGE) ─────
+     The deep counterpart to ryo-400. Used for:
+     - Headlines & primary brand text (more authoritative than charcoal)
+     - Dark hero/footer surfaces (forest-700/800)
+     - Heritage signal where lime feels too energetic
+     ★ Brand secondary: forest-600 = #2D4A2B  */
+  --color-forest-50: #EEF3ED;
+  --color-forest-100: #D6E1D4;
+  --color-forest-200: #ADC3AA;
+  --color-forest-300: #84A580;
+  --color-forest-400: #5B8757;
+  --color-forest-500: #3F6A3C;
+  --color-forest-600: #2D4A2B;
+  /* ★ AUTHORITY */
+  --color-forest-700: #233A22;
+  --color-forest-800: #1A2B19;
+  --color-forest-900: #101A0F;
+
+  /* ───── COLOR · ACCENT (CHAMPAGNE GOLD — PREMIUM SIGNAL) ───── */
+  --color-gold-100: #F5EDD4;
+  --color-gold-200: #E5D29A;
+  --color-gold-300: #D4BB7B;
+  --color-gold-400: #C9A961;
+  /* ★ PREMIUM */
+  --color-gold-500: #B8860B;
+  --color-gold-600: #7A5B08;
+
+  /* ───── COLOR · SEMANTIC (STATE) ───── */
+  --color-success: #88B324;
+  --color-warning: #E8B547;
+  --color-error: #C84B31;
+  --color-info: #6B8FA8;
+
+  /* ───── COLOR · ALIASES (Convenience) ─────
+     Dual-green system: ryo = energy/CTA, forest = authority/heritage */
+  --color-brand: var(--color-ryo-400);
+  /* #A2D230 lime — actions */
+  --color-brand-hover: var(--color-ryo-500);
+  --color-brand-deep: var(--color-forest-600);
+  /* #2D4A2B forest — headings, brand voice */
+  --color-bg: var(--color-cream-100);
+  /* #FAF7F0 cream — page bg */
+  --color-bg-dark: var(--color-forest-700);
+  /* dark sections (hero/footer) */
+  --color-surface: var(--color-cream-50);
+  --color-ink: var(--color-forest-600);
+  /* headings */
+  --color-text: var(--color-cream-800);
+  /* body */
+  --color-muted: var(--color-cream-600);
+  --color-border: var(--color-cream-300);
+  --color-accent: var(--color-gold-400);
+  /* #C9A961 premium gold */
+
+  /* ───── TYPOGRAPHY · FONT FAMILIES ─────
+     Generates: font-display, font-sans, font-mono */
+  --font-display: "Fraunces", "Times New Roman", Georgia, serif;
+  --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
+
+  /* ───── TYPOGRAPHY · SIZE SCALE ─────
+     Modular scale, 1.25 ratio. Generates: text-display, text-h1 … text-xs */
+  --text-display: 4.5rem;
+  /* 72px */
+  --text-display--line-height: 0.95;
+  --text-display--letter-spacing: -0.04em;
+
+  --text-h1: 3.5rem;
+  /* 56px */
+  --text-h1--line-height: 1.0;
+  --text-h1--letter-spacing: -0.03em;
+
+  --text-h2: 2.5rem;
+  /* 40px */
+  --text-h2--line-height: 1.1;
+  --text-h2--letter-spacing: -0.02em;
+
+  --text-h3: 2rem;
+  /* 32px */
+  --text-h3--line-height: 1.2;
+  --text-h3--letter-spacing: -0.02em;
+
+  --text-h4: 1.5rem;
+  /* 24px */
+  --text-h4--line-height: 1.3;
+  --text-h4--letter-spacing: -0.01em;
+
+  --text-lead: 1.25rem;
+  /* 20px */
+  --text-lead--line-height: 1.5;
+
+  --text-base: 1rem;
+  /* 16px */
+  --text-base--line-height: 1.6;
+
+  --text-sm: 0.875rem;
+  /* 14px */
+  --text-sm--line-height: 1.5;
+
+  --text-xs: 0.75rem;
+  /* 12px */
+  --text-xs--line-height: 1.4;
+  --text-xs--letter-spacing: 0.08em;
+
+  /* ───── SPACING (4px base) — extends Tailwind defaults ───── */
+  --spacing-section: 7.5rem;
+  /* 120px — section padding */
+  --spacing-section-sm: 5rem;
+  /* 80px — mobile section padding */
+  --spacing-container: 3rem;
+  /* 48px — container side padding */
+
+  /* ───── RADIUS ───── */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* ───── SHADOWS (warm-toned, not cold black) ───── */
+  --shadow-xs: 0 1px 2px 0 rgb(42 37 32 / 0.04);
+  --shadow-sm: 0 2px 4px 0 rgb(42 37 32 / 0.06);
+  --shadow-md: 0 4px 12px 0 rgb(42 37 32 / 0.08);
+  --shadow-lg: 0 8px 24px 0 rgb(42 37 32 / 0.10);
+  --shadow-xl: 0 16px 48px 0 rgb(42 37 32 / 0.14);
+  --shadow-glow: 0 0 0 4px rgb(162 210 48 / 0.15);
+
+  /* ───── TRANSITIONS ───── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* ───── BREAKPOINTS (no change — uses Tailwind defaults) ───── */
 }
+
+/* ─────────────────────────────────────────────────────────────────────
+   3 · BASE STYLES
+   Applied to raw HTML elements. Sets the page foundation.
+   ───────────────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-cream-100);
+    color: var(--color-cream-800);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  /* All headings use display font + forest green (brand authority) */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    color: var(--color-forest-600);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  h1 {
+    font-size: var(--text-h1);
+    letter-spacing: -0.03em;
+  }
+
+  h2 {
+    font-size: var(--text-h2);
+  }
+
+  h3 {
+    font-size: var(--text-h3);
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: var(--text-h4);
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  p {
+    color: var(--color-cream-800);
+  }
+
+  /* Links — forest green default, lime on hover (deep→bright) */
+  a {
+    color: var(--color-forest-600);
+    text-decoration: none;
+    transition: color 0.2s var(--ease-out);
+  }
+
+  a:hover {
+    color: var(--color-ryo-600);
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: var(--color-ryo-200);
+    color: var(--color-cream-800);
+  }
+
+  /* Focus rings — always use brand color, never blue */
+  :focus-visible {
+    outline: 2px solid var(--color-ryo-400);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Forms — cream-based, never default browser style */
+  input,
+  textarea,
+  select {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream-100);
+    border: 1.5px solid var(--color-cream-300);
+    color: var(--color-cream-800);
+    border-radius: var(--radius-sm);
+    transition: border-color 0.2s var(--ease-out);
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: var(--color-ryo-400);
+    outline: none;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-cream-500);
+  }
+
+  /* Code & pre — JetBrains Mono */
+  code,
+  pre,
+  kbd,
+  samp {
+    font-family: var(--font-mono);
+    font-size: 0.875em;
+  }
+
+  code {
+    background-color: var(--color-cream-200);
+    padding: 2px 6px;
+    border-radius: var(--radius-xs);
+    color: var(--color-cream-800);
+  }
+
+  /* Horizontal rule */
+  hr {
+    border: 0;
+    border-top: 1px solid var(--color-cream-300);
+    margin: 2rem 0;
+  }
+
+  /* Images don't overflow */
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   4 · COMPONENT CLASSES
+   Reusable patterns. Use these in your HTML/JSX directly.
+   ───────────────────────────────────────────────────────────────────── */
+@layer components {
+
+  /* ───── BUTTONS ─────────────────────────────────────────── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding: 0.875rem 1.5rem;
+    border-radius: var(--radius-sm);
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    transition: all 0.2s var(--ease-out);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .btn-primary {
+    background-color: var(--color-ryo-400);
+    color: var(--color-cream-800);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-ryo-500);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    color: var(--color-cream-800);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--color-cream-800);
+    border-color: var(--color-cream-800);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-cream-800);
+    color: var(--color-cream-100);
+  }
+
+  .btn-gold {
+    background-color: var(--color-gold-400);
+    color: var(--color-cream-800);
+  }
+
+  .btn-gold:hover {
+    background-color: var(--color-gold-500);
+    color: var(--color-cream-100);
+  }
+
+  .btn-forest {
+    background-color: var(--color-forest-600);
+    color: var(--color-cream-100);
+  }
+
+  .btn-forest:hover {
+    background-color: var(--color-forest-700);
+    color: var(--color-ryo-300);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-ghost {
+    background-color: transparent;
+    color: var(--color-cream-700);
+  }
+
+  .btn-ghost:hover {
+    color: var(--color-ryo-600);
+    background-color: var(--color-ryo-50);
+  }
+
+  .btn-lg {
+    padding: 1.125rem 2rem;
+    font-size: 1rem;
+  }
+
+  .btn-sm {
+    padding: 0.625rem 1.125rem;
+    font-size: 0.8125rem;
+  }
+
+  /* ───── BADGES ─────────────────────────────────────────── */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    padding: 0.25rem 0.625rem;
+    border-radius: var(--radius-full);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+
+  .badge-green {
+    background-color: var(--color-ryo-100);
+    color: var(--color-ryo-700);
+  }
+
+  .badge-cream {
+    background-color: var(--color-cream-300);
+    color: var(--color-cream-800);
+  }
+
+  .badge-gold {
+    background-color: var(--color-gold-100);
+    color: var(--color-gold-600);
+  }
+
+  .badge-dot::before {
+    content: '●';
+    font-size: 0.5rem;
+    line-height: 1;
+  }
+
+  /* ───── CARDS ─────────────────────────────────────────── */
+  .card {
+    background-color: var(--color-cream-50);
+    border: 1px solid var(--color-cream-300);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    transition: all 0.3s var(--ease-out);
+  }
+
+  .card:hover {
+    border-color: var(--color-ryo-400);
+    box-shadow: var(--shadow-md);
+  }
+
+  .card-flat {
+    background-color: var(--color-cream-100);
+    border: 1px solid var(--color-cream-300);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+  }
+
+  /* ───── FORM PRIMITIVES ─────────────────────────────────────────── */
+  .field {
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+
+  .field-label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    color: var(--color-cream-600);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .field-input {
+    width: 100%;
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    padding: 0.875rem 1rem;
+    background-color: var(--color-cream-100);
+    border: 1.5px solid var(--color-cream-300);
+    border-radius: var(--radius-sm);
+    color: var(--color-cream-800);
+    transition: border-color 0.2s var(--ease-out);
+  }
+
+  .field-input:focus {
+    outline: none;
+    border-color: var(--color-ryo-400);
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* ───── CONTAINER & SECTION ─────────────────────────────────────────── */
+  .container-brand {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .container-brand {
+      padding-left: var(--spacing-container);
+      padding-right: var(--spacing-container);
+    }
+  }
+
+  .section-brand {
+    padding-top: var(--spacing-section-sm);
+    padding-bottom: var(--spacing-section-sm);
+  }
+
+  @media (min-width: 768px) {
+    .section-brand {
+      padding-top: var(--spacing-section);
+      padding-bottom: var(--spacing-section);
+    }
+  }
+
+  /* ───── TYPE HELPERS ─────────────────────────────────────────── */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-ryo-700);
+  }
+
+  .lede {
+    font-family: var(--font-display);
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--color-cream-700);
+  }
+
+  .meta {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    color: var(--color-cream-500);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  /* ───── HIGHLIGHT MARKER ─────
+     Use on key words inside headings to draw the eye to brand green. */
+  .highlight {
+    background: linear-gradient(180deg, transparent 65%, var(--color-ryo-200) 65%);
+    padding: 0 2px;
+  }
+
+  /* ───── DIVIDER ─────────────────────────────────────────── */
+  .divider {
+    height: 1px;
+    background-color: var(--color-cream-300);
+    border: 0;
+    margin: 2rem 0;
+  }
+
+  .divider-thick {
+    height: 4px;
+    background-color: var(--color-ryo-400);
+    width: 48px;
+    border: 0;
+    margin: 1.5rem 0;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   5 · UTILITIES (Custom, beyond Tailwind's built-ins)
+   ───────────────────────────────────────────────────────────────────── */
+@layer utilities {
+
+  /* Glass / blurred backdrop for sticky navs */
+  .glass-cream {
+    background-color: rgb(250 247 240 / 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Stylistic Fraunces axes — use sparingly for character */
+  .fraunces-wonk {
+    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+  }
+
+  .fraunces-soft {
+    font-variation-settings: "opsz" 72, "SOFT" 50, "WONK" 0;
+  }
+
+  .fraunces-tight {
+    font-variation-settings: "opsz" 9, "SOFT" 0, "WONK" 0;
+  }
+
+  /* Letter-spacing helpers */
+  .tracking-display {
+    letter-spacing: -0.04em;
+  }
+
+  .tracking-tight-2 {
+    letter-spacing: -0.025em;
+  }
+
+  .tracking-meta {
+    letter-spacing: 0.15em;
+  }
+
+  .tracking-eyebrow {
+    letter-spacing: 0.2em;
+  }
+
+  /* No-scrollbar utility */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   6 · PRINT (basic print styles for invoices, samples, etc.)
+   ───────────────────────────────────────────────────────────────────── */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .btn,
+  nav,
+  footer {
+    display: none;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   END · RYO Papers Global Stylesheet
+   No dark-mode classes. Light-theme premium-craft only.
+   ════════════════════════════════════════════════════════════════════ */

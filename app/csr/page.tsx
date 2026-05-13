@@ -1,15 +1,30 @@
-"use client";
 import Image from "next/image";
 import { Sprout, Home, Heart, HandHeart } from "lucide-react";
+import Script from "next/script";
 
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ryopapers.com/csr/#webpage",
+  "url": "https://ryopapers.com/csr",
+  "name": "Corporate Social Responsibility | RYO Papers",
+  "description": "Learn about our commitment to social responsibility, sustainable farmland initiatives, and how we give back to our community.",
+  "publisher": { "@id": "https://ryopapers.com/#organization" }
+};
 
 const CSR = () => {
   return (
-    <div className=" text-gray-800 bg-white font-sans py-16 sm:py-24">
-      <div className="bg-white container mx-auto px-6 py-4 lg:px-8  rounded-2xl shadow-lg">
+    <div className=" text-gray-800 bg-bg font-sans py-16 sm:py-24">
+      <Script
+        id="csr-page-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+
+      <div className="bg-bg container mx-auto px-6 py-4 lg:px-8  rounded-2xl shadow-lg">
         {/* Main Heading & Introduction */}
         <div className="text-center mb-20 p-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-yellow-500  tracking-tight mb-12">
+          <h1 className="font-display text-3xl md:text-5xl font-black text-brand tracking-tight mb-12">
             Our Commitment to Social Responsibility
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed font-bold">
@@ -22,7 +37,7 @@ const CSR = () => {
 
         <div className="space-y-16">
           {/* Initiative 1: Maintaining a Farmland */}
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-gray-50 p-6 rounded-xl shadow-sm">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-surface p-6 rounded-xl shadow-sm">
             <div className="flex-shrink-0 w-full md:w-1/3">
               {/* Replace with your Popsy.co image for farmland */}
               <Image
@@ -37,7 +52,7 @@ const CSR = () => {
               <div className="inline-block bg-green-100 p-3 rounded-full mb-4">
                 <Sprout size={24} className="text-green-700" />
               </div>
-              <h2 className="text-xl md:text-3xl font-bold text-yellow-500 mb-5">
+              <h2 className="font-display text-xl md:text-3xl font-bold text-brand mb-5">
                 Sustainable Farmland Initiatives
               </h2>
               <p className="text-xl font-bold text-gray-700 leading-relaxed">
@@ -51,7 +66,7 @@ const CSR = () => {
           </div>
 
           {/* Initiative 2: Donation to Old Age Homes */}
-          <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-8 bg-gray-50 p-6 rounded-xl shadow-sm">
+          <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-8 bg-surface p-6 rounded-xl shadow-sm">
             <div className="flex-shrink-0 w-full md:w-1/3">
               <Image
                 src="/CSR-2.jpeg"
@@ -65,7 +80,7 @@ const CSR = () => {
               <div className="inline-block bg-purple-100 p-3 rounded-full mb-4">
                 <Home size={24} className="text-purple-700" />
               </div>
-              <h2 className="text-xl md:text-3xl font-bold text-yellow-500 mb-5">
+              <h2 className="font-display text-xl md:text-3xl font-bold text-brand mb-5">
                 Supporting Our Elders
               </h2>
               <p className="text-xl font-bold text-gray-700 leading-relaxed">
@@ -80,7 +95,7 @@ const CSR = () => {
           </div>
 
           {/* Initiative 3: Donations to Orphanages */}
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-gray-50 p-6 rounded-xl shadow-sm">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-surface p-6 rounded-xl shadow-sm">
             <div className="flex-shrink-0 w-full md:w-1/3">
               {/* Replace with your Popsy.co image for orphanage/children */}
               <Image
@@ -95,7 +110,7 @@ const CSR = () => {
               <div className="inline-block bg-orange-100 p-3 rounded-full mb-4">
                 <HandHeart size={24} className="text-orange-700" />
               </div>
-              <h2 className="text-xl md:text-3xl font-bold text-yellow-500 mb-5">
+              <h2 className="font-display text-xl md:text-3xl font-bold text-brand mb-5">
                 Nurturing Future Generations
               </h2>
               <p className="text-xl font-bold text-gray-700 leading-relaxed">

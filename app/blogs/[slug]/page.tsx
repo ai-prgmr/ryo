@@ -74,12 +74,16 @@ export default async function BlogPost({ params }: Props) {
       '@type': 'Organization',
       name: post.metadata.author,
     },
+    publisher: {
+      '@id': 'https://ryopapers.com/#organization'
+    },
     dateModified: post.metadata.last_updated,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://www.ryopapers.com/blogs/${slug}`,
+      '@id': `https://ryopapers.com/blogs/${slug}`,
     },
   };
+
 
   return (
     <>
@@ -95,48 +99,48 @@ export default async function BlogPost({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(post.faqSchema) }}
         />
       )}
-      <div className="min-h-screen pt-32 pb-20">
+      <div className="bg-bg min-h-screen pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <Link href="/blogs" className="inline-flex items-center text-gray-700 hover:text-gray-400 mb-8 transition-colors">
-            <ArrowLeft className="mr-2" size={20} />
+          <Link href="/blogs" className="inline-flex items-center text-muted hover:text-brand mb-8 transition-colors font-medium">
+            <ArrowLeft className="mr-2" size={18} />
             Back to Blogs
           </Link>
 
-          <div className="bg-[#05014a] backdrop-blur-md rounded-3xl p-6 md:p-12 border border-white/10 text-white shadow-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">{post.metadata.title}</h1>
-            <div className="flex flex-wrap items-center text-gray-300 mb-10 gap-4 border-b border-white/20 pb-6">
-              <span className="bg-[#A2D22E] text-black px-3 py-1 rounded-full text-sm font-semibold">
+          <div className="bg-surface rounded-3xl p-8 md:p-16 border border-border text-text shadow-xl">
+            <h1 className="font-display text-4xl md:text-6xl font-black text-ink mb-8 leading-tight tracking-tight">{post.metadata.title}</h1>
+            <div className="flex flex-wrap items-center text-muted mb-12 gap-6 border-b border-border pb-8">
+              <span className="bg-brand-light text-brand-deep px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase">
                 {post.metadata.author}
               </span>
-              <span>Updated: {post.metadata.last_updated}</span>
+              <span className="text-sm font-medium">Updated: {post.metadata.last_updated}</span>
             </div>
 
             <div className="max-w-none">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 components={{
-                  h1: ({ ...props }) => <h2 className="text-4xl font-bold mt-12 mb-6 text-[#A2D22E]" {...props} />,
-                  h2: ({ ...props }) => <h2 className="text-3xl font-semibold mt-10 mb-4 text-[#A2D22E]" {...props} />,
-                  h3: ({ ...props }) => <h3 className="text-2xl font-medium mt-8 mb-3 text-[#A2D22E]" {...props} />,
-                  p: ({ ...props }) => <p className="text-lg leading-relaxed mb-6 text-gray-200" {...props} />,
-                  ul: ({ ...props }) => <ul className="list-disc list-outside ml-6 mb-6 text-gray-200 space-y-2" {...props} />,
-                  ol: ({ ...props }) => <ol className="list-decimal list-outside ml-6 mb-6 text-gray-200 space-y-2" {...props} />,
-                  li: ({ ...props }) => <li className="pl-2" {...props} />,
-                  a: ({ ...props }) => <a className="text-blue-400 hover:text-blue-300 underline" {...props} />,
-                  strong: ({ ...props }) => <strong className="font-bold text-white" {...props} />,
-                  blockquote: ({ ...props }) => <blockquote className="border-l-4 border-[#A2D22E] pl-4 italic text-gray-300 my-6 bg-white/5 p-4 rounded-r" {...props} />,
-                  table: ({ ...props }) => <div className="overflow-x-auto mb-8"><table className="w-full text-left border-collapse" {...props} /></div>,
-                  th: ({ ...props }) => <th className="border-b-2 border-white/20 p-4 font-semibold text-[#A2D22E] bg-white/5" {...props} />,
-                  td: ({ ...props }) => <td className="border-b border-white/10 p-4 text-gray-200" {...props} />,
+                  h1: ({ ...props }) => <h2 className="font-display text-4xl font-bold mt-16 mb-8 text-ink" {...props} />,
+                  h2: ({ ...props }) => <h2 className="font-display text-3xl font-bold mt-12 mb-6 text-ink" {...props} />,
+                  h3: ({ ...props }) => <h3 className="font-display text-2xl font-bold mt-10 mb-4 text-ink" {...props} />,
+                  p: ({ ...props }) => <p className="text-lg leading-relaxed mb-6 text-text" {...props} />,
+                  ul: ({ ...props }) => <ul className="list-disc list-outside ml-6 mb-8 text-text space-y-3" {...props} />,
+                  ol: ({ ...props }) => <ol className="list-decimal list-outside ml-6 mb-8 text-text space-y-3" {...props} />,
+                  li: ({ ...props }) => <li className="pl-2 leading-relaxed" {...props} />,
+                  a: ({ ...props }) => <a className="text-brand-deep hover:text-brand font-semibold underline decoration-brand/30 underline-offset-4" {...props} />,
+                  strong: ({ ...props }) => <strong className="font-bold text-ink" {...props} />,
+                  blockquote: ({ ...props }) => <blockquote className="border-l-4 border-brand pl-6 italic text-ink my-10 bg-bg p-8 rounded-r-xl" {...props} />,
+                  table: ({ ...props }) => <div className="overflow-x-auto my-12 rounded-xl border border-border"><table className="w-full text-left border-collapse" {...props} /></div>,
+                  th: ({ ...props }) => <th className="border-b-2 border-border p-5 font-display text-base font-bold text-ink bg-bg" {...props} />,
+                  td: ({ ...props }) => <td className="border-b border-border/50 p-5 text-text" {...props} />,
                   code: ({ className, children, ...props }) => {
                     const match = /language-(\w+)/.exec(className || '')
                     return match ? (
-                      <pre className="bg-black/60 p-6 rounded-xl overflow-x-auto my-8 border border-white/10 text-sm">
+                      <pre className="bg-ink p-8 rounded-xl overflow-x-auto my-10 border border-border text-cream-100 text-sm">
                         <code className={className} {...props}>{children}</code>
                       </pre>
                     ) : (
-                      <code className="bg-white/10 px-1.5 py-0.5 rounded text-[#A2D22E] font-mono text-sm" {...props}>{children}</code>
+                      <code className="bg-brand-light px-2 py-0.5 rounded text-brand-deep font-mono text-sm font-semibold" {...props}>{children}</code>
                     )
                   }
                 }}
@@ -144,13 +148,13 @@ export default async function BlogPost({ params }: Props) {
                 {post.content}
               </ReactMarkdown>
               {post.faqSchema && post.faqSchema.mainEntity && (
-                <section className="mt-12">
-                  <h2 className="text-3xl font-bold mb-6 text-[#A2D22E]">Frequently Asked Questions</h2>
-                  <div className="space-y-6">
+                <section className="mt-20 pt-12 border-t border-border">
+                  <h2 className="font-display text-3xl font-black mb-10 text-ink">Frequently Asked Questions</h2>
+                  <div className="space-y-8">
                     {post.faqSchema.mainEntity.map((faq: { name: string; acceptedAnswer?: { text: string } }, idx: number) => (
-                      <div key={idx} className="bg-white/10 p-4 rounded-lg">
-                        <h3 className="text-xl font-semibold text-[#A2D22E]">{faq.name}</h3>
-                        <p className="text-gray-200">{faq.acceptedAnswer?.text}</p>
+                      <div key={idx} className="bg-bg p-8 rounded-2xl border border-border shadow-sm">
+                        <h3 className="font-display text-xl font-bold text-ink mb-3">{faq.name}</h3>
+                        <p className="text-text leading-relaxed">{faq.acceptedAnswer?.text}</p>
                       </div>
                     ))}
                   </div>

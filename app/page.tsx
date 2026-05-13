@@ -14,6 +14,11 @@ import {
   faLeaf,
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import StatsSection from "./components/StatsSection";
+import FaqSection from "./components/FaqSection";
+import Script from "next/script";
+
+
 export const metadata: Metadata = {
   title: "Roll your Own - Custom Rolling Papers & OEM Manufacturing",
   description:
@@ -50,19 +55,22 @@ export const metadata: Metadata = {
   },
 };
 
-const organizationSchema = {
+// Organization schema is now global in layout.tsx
+
+
+const webPageSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "RYOPAPERS",
+  "@type": "WebPage",
+  "@id": "https://ryopapers.com/#webpage",
   "url": "https://ryopapers.com",
-  "logo": "https://ryopapers.com/images/ryopapers-final-logo.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "9009111088",
-    "email": "info@ryopapers.com",
-    "contactType": "Sales"
-  }
+  "name": "Roll your Own - Custom Rolling Papers & OEM Manufacturing",
+  "description": "Explore our premium rolling papers, custom rolling papers printing services, and contract rolling papers manufacturing solutions for your brand",
+  "publisher": { "@id": "https://ryopapers.com/#organization" }
 };
+
+// Static schemas are moved or updated to dynamic versions inside the component
+
+
 
 export default function Home() {
   const customImages = ["/images/4.jpeg"];
@@ -70,9 +78,63 @@ export default function Home() {
   for (let i = 4; i <= 36; i++) {
     customImages.push(`/images/${i}.jpeg`);
   }
+
   const filteredProducts = products.filter(
-    (product: Product) => product.categorySlug === "rolling-paper" // Directly filter for 'rolling-paper'
+    (product: Product) => product.categorySlug === "rolling-paper"
   );
+
+  // Dynamic Schemas
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Our Premium Rolling Papers",
+    "numberOfItems": filteredProducts.length,
+    "itemListElement": filteredProducts.map((product, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "Product",
+        "name": product.name,
+        "description": product.description,
+        "image": `https://ryopapers.com${product.image}`,
+        "url": `https://ryopapers.com/products/rolling-paper/${product.slug}`,
+        "brand": {
+          "@type": "Brand",
+          "name": "RYOPAPERS"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }))
+  };
+
+  const productSchemas = filteredProducts.map((product) => ({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "description": product.description,
+    "image": `https://ryopapers.com${product.image}`,
+    "brand": {
+      "@type": "Brand",
+      "name": "RYOPAPERS"
+    },
+    "url": `https://ryopapers.com/products/rolling-paper/${product.slug}`,
+    "sku": product.id,
+    "offers": {
+      "@type": "Offer",
+      "url": `https://ryopapers.com/products/rolling-paper/${product.slug}`,
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "RYOPAPERS"
+      }
+    }
+  }));
+
 
   const benefitsData = [
     {
@@ -103,20 +165,37 @@ export default function Home() {
       description: "Committed to sustainability, true to your brand's vibe.",
     },
   ];
-  const textColor = "text-[#173153]";
+  const textColor = "text-text";
 
   return (
     <>
-      <script
+      <Script
+        id="home-webpage-schema"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
+
+      <Script
+        id="home-itemlist-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      {productSchemas.map((schema, idx) => (
+        <Script
+          key={idx}
+          id={`home-product-schema-${idx}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+
+
       <div className="flex flex-col items-center justify-center min-h-screen  text-gray-200">
         {/* Hero Section */}
         <div className="relative w-full aspect-[9/16] md:aspect-video">
           <Image
             src="/Banner-mobile.jpg"
-            alt="Mobile Banner"
+            alt="Custom rolling papers in king size, 1¼ and rolled cones — RYO Papers"
             fill={true}
             className="md:hidden"
             priority={true}
@@ -124,7 +203,7 @@ export default function Home() {
           />
           <Image
             src="/banner-web.jpg"
-            alt="Web Banner"
+            alt="Custom rolling papers in king size, 1¼ and rolled cones — RYO Papers"
             className="hidden md:block"
             priority={true}
             fill={true}
@@ -147,16 +226,16 @@ export default function Home() {
           </div>
 
           <section className="">
+
             <div className="max-w-3xl mx-auto">
               <div className="mt-10">
-                <h3 className="text-lg sm:text-xl md:text-2xl text-gray-900 mb-6 text-center">
-                  Work With Us
+                <h3 className="font-display text-lg sm:text-xl md:text-3xl text-brand mb-6 text-center font-semibold">
+                  Tailored Solutions for Your Brand
                 </h3>
                 <p
-                  className={`${textColor} dark:text-gray-900 text-lg md:text-xl leading-relaxed text-center mb-6 mx-auto`}
+                  className={`${textColor} dark:text-ink text-lg md:text-xl leading-relaxed text-center mb-6 mx-auto`}
                 >
-                  Working with RYO Papers feels more like a collaboration than a
-                  transaction.
+                  From standard requests to complex challenges, we've got you covered. Working with RYO Papers feels more like a dedicated collaboration than a one-off transaction.
                 </p>
 
                 <p
@@ -179,7 +258,7 @@ export default function Home() {
                         className="rounded-lg flex mx-auto"
                       />
 
-                      <h4 className="text-2xl font-extrabold text-[#A2D230] mb-2 text-center">
+                      <h4 className="font-display text-2xl font-black text-brand mb-2 text-center">
                         {benefit.title}
                       </h4>
                       <p className="text-md text-gray-700 leading-snug text-center">
@@ -192,13 +271,13 @@ export default function Home() {
             </div>
           </section>
         </div>
-        <div className="w-full bg-[#A2D22E] mx-auto px-4 py-16 gap-y-4">
-          <h2 className="text-3xl mb-10 text-black text-center capitalize">
+        <div className="w-full bg-brand mx-auto px-4 py-16 gap-y-4">
+          <h2 className="font-display text-[clamp(32px,4vw,48px)] mb-10 text-ink text-center capitalize">
             Premium <br />
-            <span className="text-6xl text-black uppercase font-extrabold">
+            <span className="text-[clamp(48px,6vw,72px)] text-ink uppercase font-black">
               Rolling
             </span>{" "}
-            <span className="text-6xl text-white uppercase font-extrabold">
+            <span className="text-[clamp(48px,6vw,72px)] text-cream-50 uppercase font-black">
               Papers
             </span>
           </h2>
@@ -233,24 +312,22 @@ export default function Home() {
               {/* Left Content Area */}
 
               <div className="flex-1 text-center lg:text-left">
-                <h2 className="text-3xl mb-10 text-black text-center capitalize">
+                <h2 className="font-display text-[clamp(32px,4vw,48px)] mb-10 text-ink text-center capitalize">
                   Build <br />
-                  <span className="text-6xl text-black uppercase font-extrabold">
+                  <span className="text-[clamp(48px,6vw,72px)] text-ink uppercase font-black">
                     YOUR
                   </span>{" "}
-                  <span className="text-6xl text-[#A2D22E] uppercase font-extrabold">
+                  <span className="text-[clamp(48px,6vw,72px)] text-brand uppercase font-black">
                     BRAND
                   </span>
                 </h2>
                 <BuildyourBrand />
-                <button className="mt-8 px-6 py-3 rounded-lg text-black bg-[#A2D22E] shadow-md text-lg font-bold flex mx-auto">
-                  <Link
-                    href="/custom-printing"
-                    className="flex items-center justify-center"
-                  >
-                    Start Building
-                  </Link>
-                </button>
+                <Link
+                  href="/custom-rolling-papers"
+                  className="btn btn-primary btn-lg mt-8 flex mx-auto w-fit"
+                >
+                  Start Building
+                </Link>
               </div>
 
               {/* Right Image Placeholder */}
@@ -263,7 +340,8 @@ export default function Home() {
               </div>
             </section>
           </div>
-
+          {/* Stats Section */}
+          <StatsSection />
           {/* Testimonial Carousel Section */}
           <section className=" bg-white">
             <div className="container mx-auto">
@@ -272,7 +350,7 @@ export default function Home() {
           </section>
           {/* Featured Blogs */}
           <section className="py-12 bg-gray-50">
-            <h2 className="text-3xl font-bold text-center text-gray-600 mb-8">Featured <span className="text-[#A2D22E] italic">Articles</span></h2>
+            <h2 className="font-display text-3xl font-bold text-center text-muted mb-8">Featured <span className="text-brand italic">Articles</span></h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
                 <h3 className="text-xl font-semibold mb-2 text-[#A2D22E]">Private Label Rolling Papers</h3>
@@ -290,11 +368,13 @@ export default function Home() {
               </div>
             </div>
             <div className="text-center mt-8">
-              <Link href="/blogs" className="inline-block px-6 py-3 bg-[#A2D22E] text-white rounded-lg hover:bg-[#8FB126] transition">
+              <Link href="/blogs" className="btn btn-primary btn-lg">
                 View All Blogs
               </Link>
             </div>
           </section>
+          <FaqSection />
+
         </div>
       </div>
     </>

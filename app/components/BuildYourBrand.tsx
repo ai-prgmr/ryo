@@ -17,9 +17,9 @@ const stepsData = [
     title: "Share Your Vibe",
     description: (
       <>
-        <span className="text-gray-700">Send us your design — or</span>
+        <span className="text-muted">Send us your design — or</span>
         <br />
-        <b className="uppercase text-gray-900">Our team designs it all.</b>
+        <b className="uppercase text-ink">Our team designs it all.</b>
       </>
     ),
   },
@@ -70,10 +70,10 @@ export default function BuildyourBrand() {
               className="mb-3 rounded-lg"
             />
             {/* <IconComponent size={40} className="text-gray-800 mb-3" /> */}
-            <span className="font-bold text-lg text-gray-900 mb-1">
+            <span className="font-display font-bold text-lg text-ink mb-1">
               {step.title}
             </span>
-            <p className="text-sm mt-1 text-center font-semibold text-[#173153]">
+            <p className="text-sm mt-1 text-center font-medium text-text">
               {step.description}
             </p>
           </motion.div>

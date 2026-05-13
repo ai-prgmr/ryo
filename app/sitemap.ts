@@ -13,7 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "/contact",
         "/custom-rolling-papers",
         "/blogs",
+        "/rolling-paper-manufacturer",
         "/products/rolling-paper",
+        "/products/cellulose-rolling-paper",
+        "/products/flax-rolling-paper",
+        "/products/hemp-rolling-paper",
+        "/products/rice-rolling-paper",
+        "/products/wood-pulp-rolling-paper",
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
@@ -44,20 +50,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "weekly" as const,
         priority: 0.7,
     }));
-    const llmRoutes: MetadataRoute.Sitemap = [
-        {
-            url: `${baseUrl}/llms.txt`,
-            lastModified: new Date(),
-            changeFrequency: "monthly",
-            priority: 0.5,
-        },
-        {
-            url: `${baseUrl}/llms-full.txt`,
-            lastModified: new Date(),
-            changeFrequency: "monthly",
-            priority: 0.5,
-        },
-    ];
-
-    return [...staticRoutes, ...productRoutes, ...blogRoutes, ...llmRoutes];
+    return [...staticRoutes, ...productRoutes, ...blogRoutes];
 }

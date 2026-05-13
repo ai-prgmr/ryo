@@ -76,7 +76,7 @@ export default function TestimonialCard({
           />
 
           {/* The main quote text */}
-          <p className="relative text-xl md:text-2xl font-normal text-gray-600 z-10">
+          <p className="relative text-xl md:text-2xl font-normal text-text z-10">
             {quote}
           </p>
 
@@ -89,11 +89,11 @@ export default function TestimonialCard({
 
         <figcaption className="flex flex-col items-center mt-6 space-y-2">
           <div className="border-t-1 border-black w-30"></div>
-          <div className="font-bold text-gray-900">{authorName}</div>
-          <div className="text-sm font-light text-gray-500">{authorTitle}</div>
+          <div className="font-bold text-ink">{authorName}</div>
+          <div className="text-sm font-light text-muted">{authorTitle}</div>
           <div className="flex space-x-1 text-green-400">
             {stars.map((_, index) => (
-              <Star key={index} className="w-5 h-5" fill="#A2D22E" />
+              <Star key={index} className="w-5 h-5 fill-brand text-brand" />
             ))}
           </div>
         </figcaption>

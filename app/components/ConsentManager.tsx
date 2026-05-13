@@ -45,7 +45,7 @@ const ConsentManager: React.FC<AgeVerificationModalProps> = ({
 
     // Redirect to a safe external site (e.g., Google.com)
     // Note: For external URLs, useRouter.push() behaves like window.location.href
-    router.push("https://www.google.com");
+    window.location.href = "https://www.google.com"
   };
 
   // If not open, don't render anything

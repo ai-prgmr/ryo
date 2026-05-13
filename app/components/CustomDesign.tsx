@@ -13,15 +13,15 @@ export default function CustomDesign() {
   );
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-16 bg-bg">
       <div className="max-w-full mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-emerald-500 via-zinc-700 to-sky-600 bg-clip-text text-transparent mb-6 leading-tight">
+        <h2 className="font-display text-4xl md:text-5xl font-black text-ink mb-6 leading-tight">
           Build Your Rolling Paper Brand, Your Way
         </h2>
-        <p className="text-lg md:text-xl text-gray-900 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-text mb-12 max-w-3xl mx-auto">
           Whether you arrive with a finished design or just a spark of an idea, we take it from concept to carton.
         </p>
-        <h4 className="inline-flex items-center justify-center px-16 py-4 bg-black text-white font-semibold text-2xl mb-16">
+        <h4 className="inline-flex items-center justify-center px-16 py-4 bg-ink text-cream-50 font-display font-bold text-2xl mb-16">
           Explore our product range{" "}
         </h4>
 
@@ -37,8 +37,8 @@ export default function CustomDesign() {
               ease: "easeOut",
             }}
           >
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
-              <h3 className="text-3xl font-bold text-[#A2D22E] mb-4">
+            <div className="bg-surface p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+              <h3 className="text-3xl font-bold text-brand mb-4">
                 Have Your Design Ready?
               </h3>
               <p className="text-gray-700 mb-8 leading-relaxed">
@@ -49,8 +49,7 @@ export default function CustomDesign() {
                 href={googleFormLink}
                 target="_blank" // Opens in a new tab
                 rel="noopener noreferrer" // Security best practice for target="_blank"
-                className="inline-flex items-center justify-center px-4 lg:px-8 py-3 bg-black text-white font-semibold rounded-full shadow-md
-                          transition-colors duration-200 text-lg"
+                className="btn btn-primary"
               >
                 Submit Your Brand Design
               </a>
@@ -67,8 +66,8 @@ export default function CustomDesign() {
               ease: "easeInOut",
             }}
           >
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
-              <h3 className="text-3xl font-bold text-[#A2D22E] mb-4">
+            <div className="bg-surface p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+              <h3 className="text-3xl font-bold text-brand mb-4">
                 Need Design Assistance?
               </h3>
               <p className="text-gray-700 mb-8 leading-relaxed">
@@ -78,8 +77,7 @@ export default function CustomDesign() {
                 href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} // Can be the same form, or a different form/section within it for design requests
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-4 lg:px-8 py-3 bg-black text-white font-semibold rounded-full shadow-md
-                          transition-colors duration-200 text-lg"
+                className="btn btn-primary"
               >
                 Start Your Custom Design
               </a>

@@ -20,7 +20,7 @@ function Footer() {
   const linkedinLink = "https://www.linkedin.com/company/ryopapers/";
 
   return (
-    <footer className="bg-[#2D4A2B] text-gray-300 pt-16 pb-8 border-t-4 border-[#A2D22E]">
+    <footer className="bg-forest-700 text-cream-200/80 pt-16 pb-8 border-t-4 border-ryo-400">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
 
@@ -35,7 +35,7 @@ function Footer() {
                 className="transform transition-transform duration-300 hover:scale-105"
               />
             </Link>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <p className="text-sm text-cream-200/60 leading-relaxed">
               Roll Your Own Paper – Crafted with care, designed for you. We provide premium, custom rolling paper solutions for businesses and individuals worldwide.
             </p>
             <div className="flex space-x-4">
@@ -79,17 +79,17 @@ function Footer() {
               >
                 <Image
                   src="/Instagram-1.png"
-                  alt="WhatsApp Icon"
+                  alt="Instagram Icon"
                   width={20}
                   height={20}
                   className="text-white"
                 />
               </a>
             </div>
-            <ul className="space-x-4 text-sm">
-              <li className="flex items-center text-gray-400 pl-4">
-                <Mail size={18} className="text-[#A2D22E] mr-3 flex-shrink-0" />
-                <a href="mailto:info@ryopapers.com" className="hover:text-[#A2D22E] transition-colors">info@ryopapers.com</a>
+            <ul className="mt-6 space-y-4 text-sm">
+              <li className="flex items-center">
+                <Mail size={18} className="text-ryo-400 mr-3 flex-shrink-0" />
+                <a href="mailto:info@ryopapers.com" className="text-cream-200 hover:text-ryo-400 transition-colors">info@ryopapers.com</a>
               </li>
             </ul>
           </div>
@@ -98,10 +98,11 @@ function Footer() {
           <div>
             <h3 className="text-white font-semibold text-sm md:text-lg mb-6 tracking-wide uppercase">Quick Links</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Home</Link></li>
-              <li><Link href="/about-us" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> About Us</Link></li>
-              <li><Link href="/blogs" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Blogs & Insights</Link></li>
-              <li><Link href="/contact" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Contact Us</Link></li>
+              <li><Link href="/" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Home</Link></li>
+              <li><Link href="/about-us" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> About Us</Link></li>
+              <li><Link href="/rolling-paper-manufacturer" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Manufacturer</Link></li>
+              <li><Link href="/blogs" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Blogs & Insights</Link></li>
+              <li><Link href="/contact" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Contact Us</Link></li>
             </ul>
           </div>
 
@@ -109,9 +110,14 @@ function Footer() {
           <div>
             <h3 className="text-white font-semibold text-sm md:text-lg mb-6 tracking-wide uppercase">Our Solutions</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/products/rolling-paper" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Rolling Papers</Link></li>
-              <li><Link href="/blogs/private-label-rolling-papers" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Private Label Brands</Link></li>
-              <li><Link href="/blogs/custom-rolling-papers" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Custom Size & Print</Link></li>
+              <li><Link href="/products/rolling-paper" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Rolling Papers</Link></li>
+              <li><Link href="/blogs/private-label-rolling-papers" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Private Label Brands</Link></li>
+              <li><Link href="/blogs/custom-rolling-papers" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Custom Size & Print</Link></li>
+              <li><Link href="/products/rice-rolling-paper" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Rice Paper</Link></li>
+              <li><Link href="/products/hemp-rolling-paper" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Hemp Paper</Link></li>
+              <li><Link href="/products/flax-rolling-paper" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Flax Paper</Link></li>
+              <li><Link href="/products/wood-pulp-rolling-paper" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Wood Pulp Paper</Link></li>
+              <li><Link href="/products/cellulose-rolling-paper" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Cellulose Paper</Link></li>
             </ul>
           </div>
 
@@ -119,23 +125,23 @@ function Footer() {
           <div>
             <h3 className="text-white font-semibold text-sm md:text-lg mb-6 tracking-wide uppercase">Latest Blogs</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/blogs/how-to-start-rolling-paper-brand" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> How to Start a Brand</Link></li>
-              <li><Link href="/blogs/what-is-gsm-rolling-papers" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> What is GSM?</Link></li>
-              <li><Link href="/blogs/hemp-vs-rice-rolling-papers" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Hemp vs Rice Papers</Link></li>
-              <li><Link href="/blogs/rolling-paper-materials-guide" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Materials Guide</Link></li>
-              <li><Link href="/blogs/how-rolling-papers-are-manufactured" className="hover:text-[#A2D22E] transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-[#A2D22E] transition-colors">›</span> Manufacturing Process</Link></li>
+              <li><Link href="/blogs/how-to-start-rolling-paper-brand" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> How to Start a Brand</Link></li>
+              <li><Link href="/blogs/what-is-gsm-rolling-papers" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> What is GSM?</Link></li>
+              <li><Link href="/blogs/hemp-vs-rice-rolling-papers" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Hemp vs Rice Papers</Link></li>
+              <li><Link href="/blogs/rolling-paper-materials-guide" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Materials Guide</Link></li>
+              <li><Link href="/blogs/how-rolling-papers-are-manufactured" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Manufacturing Process</Link></li>
             </ul>
           </div>
 
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p className="mb-4 md:mb-0">
-            © {currentYear} <Link href="/" className="text-gray-300 hover:text-white transition-colors font-medium">RYO Papers</Link>. All Rights Reserved.
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-cream-200/60">
+          <p className="mb-4 md:mb-0 text-cream-200/80 transition-colors hover:text-white">
+            © {currentYear} <Link href="/" className="text-ryo-400 hover:text-ryo-300  font-medium">RYO Papers</Link>. All Rights Reserved.
           </p>
-          <p>
-            Developed by <a href="https://www.aiprgmr.in" target="_blank" rel="noopener noreferrer" className="text-[#A2D22E] hover:text-[#b4eb31] transition-colors font-medium">AI PRGMR</a>
+          <p className="mb-4 md:mb-0 text-cream-200/80 transition-colors hover:text-white">
+            Developed by <Link href="https://www.aiprgmr.in" target="_blank" rel="noopener noreferrer" className="text-ryo-400 hover:text-ryo-300 transition-colors font-medium">AI PRGMR</Link>
           </p>
         </div>
       </div>

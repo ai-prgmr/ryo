@@ -90,7 +90,7 @@ export default function CircularFeatureGrid() {
                   src={feature.imageSrc}
                   alt={feature.altText}
                   layout="fill" // Fills the parent div
-                  objectFit="cover" // Covers the area, cropping if necessary (good for circular images)
+                  style={{ objectFit: "cover" }}
                   className="group-hover:scale-105 transition-transform duration-300" // Image zoom on hover
                 />
               </div>

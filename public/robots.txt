@@ -27,6 +27,3 @@ Allow: /
 
 User-agent: Omgilibot
 Allow: /
-
-# AI Agent context
-X-llms-txt: https://ryopapers.com/llms.txt

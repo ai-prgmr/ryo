@@ -5,6 +5,7 @@ import { Product, products } from "@/app/lib/data";
 import ProductCard from "@/app/components/ProductCard";
 import PaperTypeSelector from "@/app/components/PaperTypeSelector";
 import { generateProductSchema } from "@/app/lib/seo";
+import Script from "next/script";
 
 
 
@@ -27,9 +28,25 @@ const _ProductDetailClientPage = React.memo(
     const BASE_URL = "https://ryopapers.com";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
     const jsonLd = generateProductSchema(curentProduct as Product, BASE_URL);
+    const webPageSchema = {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${BASE_URL}/products/rolling-paper/${productSlug}/#webpage`,
+      "url": `${BASE_URL}/products/rolling-paper/${productSlug}`,
+      "name": `${curentProduct.name} rolling papers | RYO Papers`,
+      "description": curentProduct.description,
+      "publisher": { "@id": "https://ryopapers.com/#organization" }
+    };
+
     return (
       <>
-        <script
+        <Script
+          id="product-detail-webpage-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+        />
+        <Script
+          id="product-detail-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: jsonLd }}
         />
@@ -87,7 +104,7 @@ const _ProductDetailClientPage = React.memo(
               </div>
 
               <div className="w-full md:w-4/10">
-                <h1 className="text-4xl md:text-5xl font-extrabold text-[#A2D22E] mb-4 leading-tight">
+                <h1 className="font-display text-4xl md:text-5xl font-black text-brand mb-4 leading-tight">
                   {curentProduct.name}
                 </h1>
                 <p className="text-gray-600 text-lg mb-6 leading-relaxed">
@@ -135,17 +152,15 @@ const _ProductDetailClientPage = React.memo(
                 )}
 
                 <div className="mt-8">
-                  <button className="bg-black text-white font-bold py-3 px-8 text-lg shadow-xl">
-                    <a
-                      href={whatsappLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white flex items-center justify-center"
-                      aria-label="Chat on WhatsApp"
-                    >
-                      Inquire About This Product
-                    </a>
-                  </button>
+                  <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary btn-lg w-fit"
+                    aria-label="Chat on WhatsApp"
+                  >
+                    Inquire About This Product
+                  </a>
                 </div>
               </div>
             </div>

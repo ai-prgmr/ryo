@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     "Tips/Filters",
   ],
   alternates: {
-    canonical: "https://ryopapers.com/custom-printing",
+    canonical: "https://ryopapers.com/custom-rolling-papers",
   },
   openGraph: {
     title: "Custom Printing & Contract Manufacturing | RYO Papers",
     description: "Explore our custom printing services for rolling papers and contract manufacturing solutions tailored for the tobacco industry.",
-    url: "https://ryopapers.com/custom-printing",
+    url: "https://ryopapers.com/custom-rolling-papers",
   },
   twitter: {
     card: "summary_large_image",
@@ -30,9 +30,24 @@ export const metadata: Metadata = {
   },
 };
 
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://ryopapers.com/custom-rolling-papers/#webpage",
+  "url": "https://ryopapers.com/custom-rolling-papers",
+  "name": "Custom Printing & Contract Manufacturing | RYO Papers",
+  "description": "Explore our custom printing services for rolling papers and contract manufacturing solutions tailored for the tobacco industry.",
+  "publisher": { "@id": "https://ryopapers.com/#organization" }
+};
+
 function CustomPrintingPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-4 bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+
       <div className="p-1 text-center">
         <div className="relative py-20 px-4 overflow-hidden min-h-[400px]">
           {/* Background Image */}
@@ -40,7 +55,7 @@ function CustomPrintingPage() {
             src="/customize.jpeg" // <-- Replace with your actual image path
             alt="Custom Rolling Papers Printing Services"
             layout="fill"
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             sizes="100vw"
             className="transition-opacity duration-1000 ease-in-out z-[0] "
             priority={true}

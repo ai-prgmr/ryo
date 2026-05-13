@@ -24,8 +24,8 @@ function ProductCard({ product, index }: ProductCardProps) {
         href={`/products/${product.categorySlug}/${product.slug}`}
         className="block"
       >
-        <div className="max-w-[300px] overflow-hidden bg-[#F6F6F6] rounded-lg p-4 mx-auto">
-          <div className=" relative max-w-sm bg-white h-48 flex items-center justify-center overflow-hidden mx-auto mt-2 rounded-lg">
+        <div className="max-w-[300px] overflow-hidden bg-cream-200 rounded-lg p-4 mx-auto">
+          <div className=" relative max-w-sm bg-surface h-48 flex items-center justify-center overflow-hidden mx-auto mt-2 rounded-lg">
             {" "}
             {/* Fixed height for consistency */}
             <Image
@@ -37,14 +37,14 @@ function ProductCard({ product, index }: ProductCardProps) {
             />
           </div>
           <div className="p-4">
-            <h3 className="text-xl font-semibold text-gray-700 mb-2 truncate text-center">
+            <h3 className="text-xl font-bold text-ink mb-2 truncate text-center">
               {product.name}
             </h3>
-            <p className="text-[#09192f] text-md leading-relaxed line-clamp-2 text-center">
+            <p className="text-muted text-md leading-relaxed line-clamp-2 text-center">
               {product.description}
             </p>
             <div className="mt-4">
-              <button className="bg-black text-white uppercase py-2 px-4 rounded-lg w-full shadow-md text-center justify-center flex items-center mx-auto">
+              <button className="btn btn-primary w-full justify-center">
                 View Details
               </button>
             </div>
