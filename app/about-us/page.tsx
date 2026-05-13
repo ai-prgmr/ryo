@@ -49,7 +49,7 @@ const webPageSchema = {
 export default function AboutUs() {
   const textColor = "text-text";
   return (
-    <div className=" font-sans mt-2">
+    <div className=" font-sans">
       <Script
         id="about-us-schema"
         type="application/ld+json"
@@ -60,7 +60,7 @@ export default function AboutUs() {
         {/* Main Heading & Introduction */}
         <div className="max-w-5xl mx-auto px-12 lg:px-8">
           {/* Main Heading & Introduction */}
-          <div className="text-ink py-16 md:py-24 mb-12 mx-auto overflow-hidden relative bg-[radial-gradient(circle_at_top_right,rgba(162,210,46,0.08),transparent_50%)] rounded-[3rem]">
+          <div className="text-ink py-10 md:py-16 mb-12 mx-auto overflow-hidden relative bg-[radial-gradient(circle_at_top_right,rgba(162,210,46,0.08),transparent_50%)] rounded-[3rem]">
             <div className="relative z-10 text-center px-4">
               <h1 className="font-display text-[clamp(28px,4.5vw,56px)] leading-[1.1] tracking-tight text-ink mb-10">
                 <span className="text-[clamp(40px,7vw,88px)] uppercase font-black text-ink block mt-2">

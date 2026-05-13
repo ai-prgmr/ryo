@@ -42,14 +42,14 @@ const webPageSchema = {
 
 function CustomPrintingPage() {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-4 bg-white">
+    <div className="max-w-5xl mx-auto px-4 py-4">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
 
-      <div className="p-1 text-center">
-        <div className="relative py-20 px-4 overflow-hidden min-h-[400px]">
+      <div className="py-16 text-center">
+        <div className="relative py-20 px-4 overflow-hidden max-h-[400px]">
           {/* Background Image */}
           <Image
             src="/customize.jpeg" // <-- Replace with your actual image path
