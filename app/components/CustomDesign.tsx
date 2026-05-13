@@ -41,7 +41,7 @@ export default function CustomDesign() {
               <h3 className="text-3xl font-bold text-brand mb-4">
                 Have Your Design Ready?
               </h3>
-              <p className="text-gray-700 mb-8 leading-relaxed">
+              <p className="text-gray-700 mb-8 md:h-25">
                 Already have print-ready artwork? Send it across through our quick submission form, and we&apos;ll move straight to production planning.
               </p>
               {/* Using <a> tag for external Google Form link */}
@@ -70,8 +70,8 @@ export default function CustomDesign() {
               <h3 className="text-3xl font-bold text-brand mb-4">
                 Need Design Assistance?
               </h3>
-              <p className="text-gray-700 mb-8 leading-relaxed">
-                No artwork yet? No problem. Our in-house creative team will build your brand from scratch — share your vision, mood, and target audience, and we&apos;ll handle the rest.
+              <p className="text-gray-700 mb-8 md:h-25">
+                No artwork yet? No problem. Our in-house creative team will build your brand from scratch - share your vision, mood, and target audience, and we&apos;ll handle the rest.
               </p>
               <a
                 href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} // Can be the same form, or a different form/section within it for design requests

@@ -17,7 +17,7 @@ const StatsSection = () => {
         </span>
 
         <h2 id="stats-heading" className="font-display text-[clamp(34px,4.5vw,56px)] font-normal text-forest-600 leading-[1.05] tracking-tight mb-5 max-w-[920px]">
-          A <em className="italic font-medium text-ryo-600"> $1.36 billion</em> industry — <br />
+          A <em className="italic font-medium text-ryo-600"> $1.36 billion</em> industry<sup className="text-[0.4em] ml-1.5 opacity-40 hover:opacity-100 transition-opacity"><Link href="https://www.polarismarketresearch.com/industry-analysis/cigarette-paper-market" target="_blank" className="hover:text-ryo-600"> [1]</Link></sup> — <br />
           and the brands building into it.
         </h2>
 
@@ -26,6 +26,7 @@ const StatsSection = () => {
           institutional growth across cannabis, RYO tobacco, and pre-roll segments —
           and the brands launching today are building into one of the fastest-moving
           consumer paper markets in the world.
+          <span className="block mt-4 text-[11px] font-mono text-ryo-400 uppercase tracking-tight">Source: Polaris Market Research 2025-2034 Analysis</span>
         </p>
 
         {/* HERO STAT */}
