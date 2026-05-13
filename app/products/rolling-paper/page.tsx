@@ -2,6 +2,7 @@ import { products, Product } from "@/app/lib/data";
 import ProductCard from "@/app/components/ProductCard";
 import { Metadata } from "next";
 import Script from "next/script";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Premium Rolling Papers | RYO Papers",
@@ -101,8 +102,22 @@ function RollingPaperCategoryPage() {
     }
   }));
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ryopapers.com" },
+      { "@type": "ListItem", "position": 2, "name": "Rolling Paper", "item": "https://ryopapers.com/products/rolling-paper" }
+    ]
+  };
+
   return (
     <>
+      <Script
+        id="category-breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Script
         id="category-webpage-schema"
         type="application/ld+json"
@@ -122,6 +137,13 @@ function RollingPaperCategoryPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
+      {/* ── BREADCRUMB ── */}
+      <nav className="bg-bg border-b border-border py-3.5 px-[clamp(20px,5vw,80px)] text-[12px] text-muted flex gap-2 items-center" aria-label="breadcrumb">
+        <Link href="/" className="text-brand-deep hover:underline">Home</Link>
+        <span className="text-[rgba(26,22,18,0.1)]" aria-hidden="true">›</span>
+        <span>Rolling Paper</span>
+      </nav>
+
       <div className="max-w-5xl mx-auto px-4 py-16">
         <h1 className="text-3xl mb-10 text-black text-center uppercase">
           Premium <br />

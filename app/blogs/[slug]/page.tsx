@@ -77,6 +77,7 @@ export default async function BlogPost({ params }: Props) {
     publisher: {
       '@id': 'https://ryopapers.com/#organization'
     },
+    datePublished: post.metadata.last_updated,
     dateModified: post.metadata.last_updated,
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -85,8 +86,23 @@ export default async function BlogPost({ params }: Props) {
   };
 
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ryopapers.com" },
+      { "@type": "ListItem", "position": 2, "name": "Blogs", "item": "https://ryopapers.com/blogs" },
+      { "@type": "ListItem", "position": 3, "name": post.metadata.title, "item": `https://ryopapers.com/blogs/${slug}` }
+    ]
+  };
+
   return (
     <>
+      <Script
+        id={`breadcrumb-schema-${slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Script
         id={`blog-schema-${slug}`}
         type="application/ld+json"
@@ -99,6 +115,15 @@ export default async function BlogPost({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(post.faqSchema) }}
         />
       )}
+      {/* ── BREADCRUMB ── */}
+      <nav className="bg-bg border-b border-border py-3.5 px-[clamp(20px,5vw,80px)] text-[12px] text-muted flex gap-2 items-center" aria-label="breadcrumb">
+        <Link href="/" className="text-brand-deep hover:underline">Home</Link>
+        <span className="text-[rgba(26,22,18,0.1)]" aria-hidden="true">›</span>
+        <Link href="/blogs" className="text-brand-deep hover:underline">Blogs</Link>
+        <span className="text-[rgba(26,22,18,0.1)]" aria-hidden="true">›</span>
+        <span>{post.metadata.title}</span>
+      </nav>
+
       <div className="bg-bg min-h-screen pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
