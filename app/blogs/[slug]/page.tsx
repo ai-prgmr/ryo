@@ -6,7 +6,6 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
 
 type Props = {
   params: Promise<{ slug: string }>;
