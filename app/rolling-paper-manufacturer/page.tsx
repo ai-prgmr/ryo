@@ -91,7 +91,7 @@ export default function RollingPaperManufacturerPage() {
 
 
       {/* ── BREADCRUMB ── */}
-      <nav className="bg-bg border-b border-border py-3.5 px-[clamp(20px,5vw,80px)] text-[12px] text-muted flex gap-2 items-center" aria-label="breadcrumb">
+      <nav className="bg-bg border-b border-border py-3.5 px-[clamp(20px,5vw,80px)] text-[16px] text-muted flex gap-2 items-center" aria-label="breadcrumb">
         <Link href="/" className="text-brand-deep hover:underline">Home</Link>
         <span className="text-[rgba(26,22,18,0.1)]" aria-hidden="true">›</span>
         <span>Rolling Paper Manufacturer</span>

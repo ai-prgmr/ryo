@@ -142,7 +142,7 @@ export default function CelluloseRollingPaperPage() {
 
 
       {/* ── BREADCRUMB ── */}
-      <nav className="bg-bg border-b border-border py-3.5 px-[clamp(20px,5vw,80px)] text-[12px] text-muted flex gap-2 items-center" aria-label="breadcrumb">
+      <nav className="bg-bg border-b border-border py-3.5 px-[clamp(20px,5vw,80px)] text-[16px] text-muted flex gap-2 items-center" aria-label="breadcrumb">
         <Link href="/" className="text-brand-deep hover:underline">Home</Link>
         <span className="text-[rgba(26,22,18,0.1)]" aria-hidden="true">›</span>
         <Link href="/rolling-paper-manufacturer" className="text-brand-deep hover:underline">Manufacturer</Link>
@@ -152,7 +152,7 @@ export default function CelluloseRollingPaperPage() {
 
       {/* ── HERO ── */}
       <section className="min-h-[80vh] grid grid-cols-1 md:grid-cols-[1.2fr_1fr] items-center py-20 px-[clamp(20px,5vw,80px)] gap-[60px] relative overflow-hidden" aria-label="Hero">
-        <div className="absolute inset-0 pointer-events-none" 
+        <div className="absolute inset-0 pointer-events-none"
           style={{
             background: `
               radial-gradient(ellipse 60% 50% at 70% 50%, rgba(59,94,58,0.06) 0%, transparent 70%),
@@ -161,7 +161,7 @@ export default function CelluloseRollingPaperPage() {
             `
           }}
         />
-        
+
         <div className="relative z-10">
           <FadeUp delay={0}>
             <span className="inline-flex items-center gap-[10px] text-[11px] font-medium tracking-[0.12em] uppercase text-brand-deep bg-brand-light py-1.5 px-3.5 rounded-sm mb-6 before:content-[''] before:w-5 before:h-px before:bg-[#3B5E3A]">
@@ -205,7 +205,7 @@ export default function CelluloseRollingPaperPage() {
             </div>
           </FadeUp>
         </div>
-        
+
         <FadeUp delay={0.5} className="hero-visual">
           <div className="bg-surface border border-[rgba(26,22,18,0.1)] rounded-lg shadow-[0_30px_60px_rgba(26,22,18,0.10)] p-[60px_40px] w-full max-w-[360px] text-center relative">
             <span className="text-[96px] mb-5 block">💎</span>
@@ -270,7 +270,7 @@ export default function CelluloseRollingPaperPage() {
       <section className="py-24 px-[clamp(20px,5vw,80px)] bg-[#FAFAF7]" id="specs">
         <span className="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-brand-deep mb-4">Technical Specifications</span>
         <h2 className="font-display text-[clamp(28px,3.6vw,44px)] font-black leading-[1.1] tracking-tight text-ink mb-8">Cellulose Paper <em className="italic text-brand font-bold">Manufacturing Specs.</em></h2>
-        
+
         <div className="max-w-[760px] border border-[rgba(26,22,18,0.1)] bg-surface">
           {[
             { label: "Standard Weight", value: "11–13 GSM" },
@@ -296,7 +296,7 @@ export default function CelluloseRollingPaperPage() {
         <p className="text-[17px] text-muted font-light max-w-[780px] leading-relaxed mb-12">
           Every format below is manufactured at our standard 500-pack minimum. Mix-and-match across sizes is supported on the same purchase order.
         </p>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { title: "King Size (110mm)", desc: "The luxury standard for novelty and premium gift-set brands." },
