@@ -90,7 +90,7 @@ export default function BlogsPage() {
         <span>Blogs</span>
       </nav>
 
-      <div className="bg-bg min-h-screen pt-32 pb-20">
+      <div className="bg-bg min-h-screen pt-16 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="font-display text-4xl md:text-6xl font-black text-ink mb-6">Our Blogs</h1>

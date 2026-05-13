@@ -116,7 +116,7 @@ export default async function BlogPost({ params }: Props) {
         />
       )}
       {/* ── BREADCRUMB ── */}
-      <nav className="bg-bg border-b border-border py-3.5 px-[clamp(20px,5vw,80px)] text-[12px] text-muted flex gap-2 items-center" aria-label="breadcrumb">
+      <nav className="bg-bg border-b border-border py-3.5 px-[clamp(20px,5vw,80px)] text-[16px] text-muted flex gap-2 items-center" aria-label="breadcrumb">
         <Link href="/" className="text-brand-deep hover:underline">Home</Link>
         <span className="text-[rgba(26,22,18,0.1)]" aria-hidden="true">›</span>
         <Link href="/blogs" className="text-brand-deep hover:underline">Blogs</Link>
@@ -124,14 +124,8 @@ export default async function BlogPost({ params }: Props) {
         <span>{post.metadata.title}</span>
       </nav>
 
-      <div className="bg-bg min-h-screen pt-32 pb-20">
+      <div className="bg-bg min-h-screen pt-16 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <Link href="/blogs" className="inline-flex items-center text-muted hover:text-brand mb-8 transition-colors font-medium">
-            <ArrowLeft className="mr-2" size={18} />
-            Back to Blogs
-          </Link>
-
           <div className="bg-surface rounded-3xl p-8 md:p-16 border border-border text-text shadow-xl">
             <h1 className="font-display text-4xl md:text-6xl font-black text-ink mb-8 leading-tight tracking-tight">{post.metadata.title}</h1>
             <div className="flex flex-wrap items-center text-muted mb-12 gap-6 border-b border-border pb-8">
