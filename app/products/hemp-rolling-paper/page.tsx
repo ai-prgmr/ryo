@@ -247,7 +247,7 @@ Wellness Segment</div>
             Hemp rolling paper is the preferred choice for wellness, organic, and eco-conscious brands. Manufactured from industrial hemp stalks, it provides a slightly more textured feel compared to rice paper, making it easier to roll for both beginners and experienced users.
           </p>
           <p>
-            At RYO Papers, we source industrial hemp from certified suppliers. Our hemp papers are available in their natural unbleached brown state — a strong visual cue for 'natural' products — or in a bleached white finish. Every sheet is processed to ensure a consistent, medium-slow burn and a subtle earthy character that complements natural blends.
+            At RYO Papers, we source industrial hemp from certified suppliers. Our hemp papers are available in their natural unbleached brown state — a strong visual cue for &apos;natural&apos; products — or in a bleached white finish. Every sheet is processed to ensure a consistent, medium-slow burn and a subtle earthy character that complements natural blends.
           </p>
         </div>
 

@@ -2,7 +2,6 @@
 "use client"; // This directive is necessary for client-side components in Next.js App Router
 
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation"; // Import useRouter for redirection
 import Image from "next/image";
 interface AgeVerificationModalProps {
   logoSrc: string; // Prop for your logo image source
@@ -15,7 +14,6 @@ const ConsentManager: React.FC<AgeVerificationModalProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVerified, setIsVerified] = useState(false); // State to track verification status
-  const router = useRouter(); // Initialize the useRouter hook
 
   useEffect(() => {
     // This effect runs only once when the component mounts on the client-side.

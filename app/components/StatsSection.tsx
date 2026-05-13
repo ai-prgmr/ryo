@@ -22,7 +22,7 @@ const StatsSection = () => {
         </h2>
 
         <p className="text-lg md:text-[17px] text-cream-700 leading-relaxed max-w-[720px] mb-14 font-light">
-          Rolling papers aren't a niche. They're a global manufacturing category with
+          Rolling papers aren&apos;t a niche. They&apos;re a global manufacturing category with
           institutional growth across cannabis, RYO tobacco, and pre-roll segments —
           and the brands launching today are building into one of the fastest-moving
           consumer paper markets in the world.

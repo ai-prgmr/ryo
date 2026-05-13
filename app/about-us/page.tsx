@@ -1,5 +1,4 @@
 import Image from "next/image";
-import HeroCard from "../components/HeroCard";
 import { Sprout, Home, Heart, HandHeart, Factory, Users, Target, Globe } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -16,7 +16,6 @@ import {
 } from "lucide-react"; // Import Menu and X icons
 import { useState } from "react"; // Import useState hook
 import { usePathname } from "next/navigation";
-import { faIndustry } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage mobile menu visibility
@@ -64,7 +63,7 @@ export default function Header() {
     top-0 left-0 w-full h-full sm:h-auto
     sm:bg-none sm:shadow-none
     pb-4 sm:pb-0 pt-2 sm:pt-0
-    shadow-lg
+    shadow-lg ${isMenuOpen ? "bg-forest-300" : ""}
     items-center sm:justify-end
     gap-x-4 gap-y-4 text-lg sm:text-base
     sm:flex
@@ -126,15 +125,12 @@ interface NavLinkProps {
   href: string;
   icon: React.ElementType;
   label: string;
-  textColor?: string;
-  hoverColor?: string;
   onClick?: () => void; // Add onClick prop
 }
 function NavLink({
   href,
   icon: Icon,
   label,
-  hoverColor = "hover:text-blue-600",
   onClick,
 }: NavLinkProps) {
   const pathname = usePathname();

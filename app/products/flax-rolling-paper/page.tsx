@@ -228,7 +228,7 @@ export default function FlaxRollingPaperPage() {
             Flax rolling paper is the historical standard for the European market. Manufactured from the same plant fiber used to make linen textiles, flax paper offers a unique combination of extreme durability and a smooth, predictable burn.
           </p>
           <p>
-            At RYO Papers, we utilize flax fibers that are refined into a high-tensile paper base. This ensures that the paper is resistant to tearing during the rolling process and maintains its integrity even in high-humidity environments. For brands targeting the UK, EU, or traditional North American smoke shop channels, flax provides an 'old-world' quality that users recognize and trust.
+            At RYO Papers, we utilize flax fibers that are refined into a high-tensile paper base. This ensures that the paper is resistant to tearing during the rolling process and maintains its integrity even in high-humidity environments. For brands targeting the UK, EU, or traditional North American smoke shop channels, flax provides an &apos;old-world&apos; quality that users recognize and trust.
           </p>
         </div>
 
@@ -241,7 +241,7 @@ export default function FlaxRollingPaperPage() {
           <div className="p-8 bg-surface border border-[rgba(26,22,18,0.1)] border-l-[3px] border-l-[#3B5E3A]">
             <span className="font-display text-[28px] font-black text-brand-deep mb-3 block">02</span>
             <h3 className="text-[19px] font-bold text-ink mb-2">Predictable Burn</h3>
-            <p className="text-[14.5px] text-[#7A6F65] leading-relaxed">The uniform fiber distribution in flax paper prevents 'canoeing' and ensures a steady, even burn from start to finish.</p>
+            <p className="text-[14.5px] text-[#7A6F65] leading-relaxed">The uniform fiber distribution in flax paper prevents &apos;canoeing&apos; and ensures a steady, even burn from start to finish.</p>
           </div>
           <div className="p-8 bg-surface border border-[rgba(26,22,18,0.1)] border-l-[3px] border-l-[#3B5E3A]">
             <span className="font-display text-[28px] font-black text-brand-deep mb-3 block">03</span>

@@ -243,7 +243,7 @@ export default function WoodPulpRollingPaperPage() {
             Wood pulp rolling paper is the classic, original rolling paper material — manufactured from refined wood pulp fiber. It is the most cost-efficient rolling paper material available and the easiest to scale to high-volume production.
           </p>
           <p>
-            At RYO Papers, we manufacture wood pulp rolling paper that meets strict international quality standards. Available in bleached white for a clean look or unbleached natural-brown for an 'eco' aesthetic, our wood pulp line provides a reliable, steady burn. For private-label programs and value-tier brands, wood pulp remains the correct choice for maximizing margins without sacrificing consistency.
+            At RYO Papers, we manufacture wood pulp rolling paper that meets strict international quality standards. Available in bleached white for a clean look or unbleached natural-brown for an &apos;eco&apos; aesthetic, our wood pulp line provides a reliable, steady burn. For private-label programs and value-tier brands, wood pulp remains the correct choice for maximizing margins without sacrificing consistency.
           </p>
         </div>
 

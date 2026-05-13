@@ -53,7 +53,7 @@ export default function RootLayout({
         />
         <link rel="llms-txt" type="text/markdown" href="https://ryopapers.com/llms.txt" />
 
-        {/* <Script
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-CVK6P2R76J"
           strategy="afterInteractive"
         />
@@ -65,7 +65,7 @@ export default function RootLayout({
 
             gtag('config', 'G-CVK6P2R76J');
           `}
-        </Script> */}
+        </Script>
       </head>
       <body className="antialiased font-sans">
         <Header />
@@ -77,7 +77,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton /> {/* WhatsApp button added here */}
         {/* Splash Section */}
-        {/* <SplashCursor /> */}
+        <SplashCursor />
       </body>
     </html>
   );

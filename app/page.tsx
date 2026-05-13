@@ -235,15 +235,15 @@ export default function Home() {
                 <p
                   className={`${textColor} dark:text-ink text-lg md:text-xl leading-relaxed text-center mb-6 mx-auto`}
                 >
-                  From standard requests to complex challenges, we've got you covered. Working with RYO Papers feels more like a dedicated collaboration than a one-off transaction.
+                  From standard requests to complex challenges, we&apos;ve got you covered. Working with RYO Papers feels more like a dedicated collaboration than a one-off transaction.
                 </p>
 
                 <p
                   className={`${textColor} text-lg md:text-xl leading-relaxed mb-8 mx-auto text-center`}
                 >
-                  We know what it’s like to have an idea and not know where to
-                  start. That’s why we’ve made the process simple, flexible, and
-                  friendly. Whether you want 500 packs or 50,000 — we’ve got you.
+                  We know what it&apos;s like to have an idea and not know where to
+                  start. That&apos;s why we&apos;ve made the process simple, flexible, and
+                  friendly. Whether you want 500 packs or 50,000 — we&apos;ve got you.
                 </p>
 
                 {/* New Grid for Benefits */}
