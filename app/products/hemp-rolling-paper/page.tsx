@@ -54,8 +54,10 @@ export default function HempRollingPaperPage() {
     "manufacturer": { "@type": "Organization", "name": "RYO Papers", "url": "https://ryopapers.com" },
     "offers": {
       "@type": "Offer",
-      "availability": "https://schema.org/InStock",
+      "price": "0.75",
       "priceCurrency": "USD",
+      "priceValidUntil": "2030-12-31",
+      "availability": "https://schema.org/InStock",
       "eligibleQuantity": { "@type": "QuantitativeValue", "minValue": 500, "unitText": "packs" }
     }
   };

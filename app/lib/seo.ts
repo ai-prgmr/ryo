@@ -3,7 +3,7 @@ import { Product } from "@/app/lib/data";
 const cleanDescription = (text: string) => text.replace(/"/g, "'");
 
 export const generateProductSchema = (product: Product, baseUrl: string) => {
-    const price = "5.00";
+    const price = "0.75";
     const currency = "USD";
     const availabilityStatus = "InStock";
     const productSchema = {
@@ -31,7 +31,7 @@ export const generateProductSchema = (product: Product, baseUrl: string) => {
                 "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
                 "merchantReturnDays": "30",
                 "returnMethod": "https://schema.org/ReturnByMail",
-                "returnFees": "https://schema.org/RestockingFees",
+                "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility",
                 "restockingFee": {
                     "@type": "MonetaryAmount",
                     "value": "50.00",

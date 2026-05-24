@@ -3,6 +3,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 export default function CustomDesign() {
   const googleFormLink =
     "https://docs.google.com/forms/d/e/1FAIpQLScmqEWZn3wrgT8ARpoNphSO1CnD_QN7in0fIga6pa2pqBVvOw/viewform?usp=header";
@@ -21,9 +23,9 @@ export default function CustomDesign() {
         <p className="text-lg md:text-xl text-text mb-12 max-w-3xl mx-auto">
           Whether you arrive with a finished design or just a spark of an idea, we take it from concept to carton.
         </p>
-        <h4 className="inline-flex items-center justify-center px-16 py-4 bg-ink text-cream-50 font-display font-bold text-2xl mb-16">
+        <Link href="/products/rolling-paper" className="inline-flex items-center justify-center px-16 py-4 bg-ink text-cream-50 font-display font-bold text-2xl mb-16">
           Explore our product range{" "}
-        </h4>
+        </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Option 1: Provide Your Design */}

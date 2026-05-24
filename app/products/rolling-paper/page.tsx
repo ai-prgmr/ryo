@@ -71,7 +71,9 @@ function RollingPaperCategoryPage() {
         },
         "offers": {
           "@type": "Offer",
+          "price": "0.75",
           "priceCurrency": "USD",
+          "priceValidUntil": "2030-12-31",
           "availability": "https://schema.org/InStock"
         }
       }
@@ -93,7 +95,9 @@ function RollingPaperCategoryPage() {
     "offers": {
       "@type": "Offer",
       "url": `https://ryopapers.com/products/rolling-paper/${product.slug}`,
+      "price": "0.75",
       "priceCurrency": "USD",
+      "priceValidUntil": "2030-12-31",
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
