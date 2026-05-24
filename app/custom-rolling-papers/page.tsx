@@ -22,11 +22,23 @@ export const metadata: Metadata = {
     title: "Custom Printing & Contract Manufacturing | RYO Papers",
     description: "Explore our custom printing services for rolling papers and contract manufacturing solutions tailored for the tobacco industry.",
     url: "https://ryopapers.com/custom-rolling-papers",
+    type: "website",
+    images: [
+      {
+        url: "https://ryopapers.com/images/ryopapers-final-logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Custom Printing & Contract Manufacturing | RYO Papers",
     description: "Explore our custom printing services for rolling papers and contract manufacturing solutions tailored for the tobacco industry.",
+    site: "https://ryopapers.com",
+    images: [
+      "https://ryopapers.com/images/ryopapers-final-logo.png",
+    ],
   },
 };
 

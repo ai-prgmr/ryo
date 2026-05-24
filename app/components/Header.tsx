@@ -31,12 +31,12 @@ export default function Header() {
           href="/"
           className="flex items-center space-x-2 text-2xl font-bold transition-colors duration-200 p-2 rounded-2xl"
           onClick={closeMenu} // Close menu if logo is clicked
-          aria-label="RYOPAPERS logo"
-          title="RYOPAPERS logo"
+          aria-label="RYOPAPERS"
+          title="RYOPAPERS"
         >
           <Image
             src="/images/ryopapers-final-logo.png"
-            alt="RYO Papers Logo"
+            alt="RYOPAPERS"
             width={100}
             height={100}
             priority

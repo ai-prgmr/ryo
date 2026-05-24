@@ -1,5 +1,5 @@
 ---
-title: "How Are Rolling Papers Manufactured? (Complete Factory Process Explained)"
+title: "How Are Rolling Papers Manufactured?"
 meta_description: "How rolling papers are manufactured — fiber pulping, sheet forming, watermarking, gumming & booklet assembly. Inside a real RYO Papers factory."
 primary_keyword: "how rolling papers are manufactured"
 secondary_keywords: "rolling papers, custom rolling papers, ryopapers, rolling paper manufacturing process, GSM in rolling papers, hemp rolling paper, rice rolling paper"

@@ -6,7 +6,7 @@ import FaqSection from "./FaqSection";
 import FadeUp from "@/app/components/FadeUp";
 
 export const metadata: Metadata = {
-  title: "Rolling Paper Manufacturer — Custom, OEM & White Label Since 2017 | RYO Papers",
+  title: "Rolling Paper Manufacturer Since 2017 | RYO Papers",
   description:
     "RYO Papers is a leading rolling paper manufacturer based in Indore, India. OEM, white-label and contract manufacturing of rice, hemp, flax, wood pulp & cellulose papers. Low MOQ (500 packs), 3–5 week lead time, 30+ countries served since 2017.",
   keywords: [

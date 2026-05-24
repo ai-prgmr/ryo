@@ -1,5 +1,5 @@
 ---
-title: "How to Start Your Own Rolling Paper Brand (Step-by-Step Guide 2026)"
+title: "How to Start Your Own Rolling Paper Brand"
 meta_description: "Step-by-step guide to start a rolling paper brand — manufacturer selection, materials, packaging, compliance, costs & launch. From RYO Papers India."
 primary_keyword: "start a rolling paper brand"
 secondary_keywords: "rolling papers, custom rolling papers, ryopapers, private label rolling papers, rolling paper manufacturer, OEM rolling papers, how to start rolling paper business"

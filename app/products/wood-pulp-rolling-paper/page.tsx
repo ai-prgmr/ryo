@@ -4,7 +4,7 @@ import Script from "next/script";
 import FadeUp from "@/app/components/FadeUp";
 
 export const metadata: Metadata = {
-  title: "Wood Pulp Rolling Paper Manufacturer — Cost-Efficient at Scale | RYO Papers",
+  title: "Wood Pulp Rolling Paper Manufacturer | RYO Papers",
   description: "Wood pulp rolling paper manufacturer. Classic 14–25 GSM, bleached or unbleached, best price-quality ratio. OEM & white-label from 500 packs. Made in India.",
   keywords: [
     "wood pulp rolling paper manufacturer",

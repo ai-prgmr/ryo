@@ -29,7 +29,7 @@ function Footer() {
             <Link href="/" className="inline-block">
               <Image
                 src="/images/ryopapers-final-logo.png"
-                alt="RYO Papers Logo"
+                alt="RYO Papers"
                 width={140}
                 height={140}
                 className="transform transition-transform duration-300 hover:scale-105"

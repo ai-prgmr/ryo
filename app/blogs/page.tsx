@@ -5,14 +5,14 @@ import { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Blogs | RYO Papers',
-  description: 'Read our latest blogs on rolling papers, customization, and materials.',
+  title: 'Rolling Papers Blogs | RYO Papers',
+  description: 'Read our latest blogs on rolling papers, customization, and materials. Launch your own rolling papers brand.',
   alternates: {
     canonical: "https://ryopapers.com/blogs",
   },
   openGraph: {
-    title: "Roll your Own - Custom Rolling Papers & Contract/OEM Manufacturing",
-    description: "Explore our premium rolling papers, custom rolling papers printing services, and contract rolling papers manufacturing solutions for your brand",
+    title: "Rolling Papers Blogs | RYO Papers",
+    description: "Read our latest blogs on rolling papers, customization, and materials. Read and Launch your own rolling papers brand.",
     url: "https://ryopapers.com/blogs",
     type: "website",
     images: [

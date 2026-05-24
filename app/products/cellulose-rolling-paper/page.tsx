@@ -4,7 +4,7 @@ import Script from "next/script";
 import FadeUp from "@/app/components/FadeUp";
 
 export const metadata: Metadata = {
-  title: "Cellulose Rolling Paper Manufacturer — Transparent Premium | RYO Papers",
+  title: "Cellulose Rolling Paper Manufacturer | RYO Papers",
   description: "Cellulose rolling paper manufacturer. Fully transparent 11–13 GSM, ultra-slow burn, no taste. Premium niche for luxury and gift-set brands. OEM from 500 packs.",
   keywords: [
     "cellulose rolling paper manufacturer",

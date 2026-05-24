@@ -1,5 +1,5 @@
 ---
-title: "Rolling Paper Materials Guide: Hemp, Rice, Flax & Wood Pulp Compared (2026)"
+title: "Rolling Paper Materials Guide"
 meta_description: "Hemp, rice, flax & wood pulp rolling papers compared — burn rate, GSM, taste, sustainability, cost. The B2B sourcing reference from RYO Papers."
 primary_keyword: "rolling paper materials"
 secondary_keywords: "rolling papers, custom rolling papers, ryopapers, hemp rolling paper, rice rolling paper, flax rolling paper, wood pulp rolling paper, best rolling paper material"

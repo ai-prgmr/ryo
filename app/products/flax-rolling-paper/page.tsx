@@ -4,8 +4,8 @@ import Script from "next/script";
 import FadeUp from "@/app/components/FadeUp";
 
 export const metadata: Metadata = {
-  title: "Flax Rolling Paper Manufacturer — European Standard | RYO Papers",
-  description: "Flax rolling paper manufacturer. Traditional European 13–16 GSM, smooth burn, high tensile strength. OEM & white-label from 500 packs. Made in India for global brands.",
+  title: "Flax Rolling Paper Manufacturer | RYO Papers",
+  description: "Flax rolling paper manufacturer. Traditional European 13–16 GSM, smooth burn, high tensile strength. OEM & white-label from 500 packs. Made for Global brands.",
   keywords: [
     "flax rolling paper manufacturer",
     "european flax paper",

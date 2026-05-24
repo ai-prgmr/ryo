@@ -4,8 +4,8 @@ import Script from "next/script";
 import FadeUp from "@/app/components/FadeUp";
 
 export const metadata: Metadata = {
-  title: "Hemp Rolling Paper Manufacturer — Natural, FSC-Certified | RYO Papers",
-  description: "Hemp rolling paper manufacturer. Natural 14–18 GSM hemp fiber, FSC-certified options, slightly textured, easy to roll. OEM & white-label from 500 packs. Made in India.",
+  title: "Hemp Rolling Paper Manufacturer | RYO Papers",
+  description: "Hemp rolling paper manufacturer. Natural 14–18 GSM hemp fiber, FSC-certified options, slightly textured, easy to roll. OEM & white-label from 500 packs.",
   keywords: [
     "hemp rolling paper manufacturer",
     "organic hemp rolling paper",
