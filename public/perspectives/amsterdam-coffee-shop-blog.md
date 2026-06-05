@@ -181,8 +181,4 @@ That rainbow on the first morning felt like a good omen. The 24 coffee shops tha
 
 **AJ** is the founder of RYO Papers, manufacturers of rolling papers under the RYO Papers brand. RYO Papers produces King Size, 1¼, and custom-specification rolling papers across a 12 to 38 GSM range, available for private label, OEM, and wholesale export worldwide.
 
-**For inquiries:** Connect on LinkedIn or WhatsApp for samples and pricing.
-
----
-
-*Keywords: Amsterdam coffee shops, rolling papers Amsterdam, King Size rolling papers wholesale, custom rolling papers manufacturer, 1¼ rolling papers bulk, rolling paper OEM supplier, branded rolling papers coffee shop, Mascotte alternative wholesale, rolling paper exporter, best coffee shops Amsterdam locals, hidden coffee shops Amsterdam 2025*
+**For inquiries:** Connect on [LinkedIn](https://www.linkedin.com/company/ryopapers/) or [WhatsApp](https://wa.me/919009111088) for samples and pricing.
