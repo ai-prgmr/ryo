@@ -131,7 +131,12 @@ function Footer() {
               <li><Link href="/blogs/rolling-paper-materials-guide" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Materials Guide</Link></li>
               <li><Link href="/blogs/how-rolling-papers-are-manufactured" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> Manufacturing Process</Link></li>
             </ul>
+            <h3 className="text-white font-semibold text-sm md:text-lg my-6 tracking-wide uppercase">Perspectives</h3>
+            <ul className="space-y-3 text-sm">
+              <li><Link href="/perspectives/amsterdam-coffee-shop-blog" className="text-cream-200 hover:text-ryo-400 transition-colors flex items-center group"><span className="mr-2 text-white/20 group-hover:text-ryo-400 transition-colors">›</span> A visit to Amsterdam</Link></li>
+            </ul>
           </div>
+
 
         </div>
 

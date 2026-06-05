@@ -12,7 +12,8 @@ import {
   Leaf,
   AlignRightIcon,
   PenToolIcon,
-  Factory
+  Factory,
+  LetterTextIcon
 } from "lucide-react"; // Import Menu and X icons
 import { useState } from "react"; // Import useState hook
 import { usePathname } from "next/navigation";
@@ -101,6 +102,12 @@ export default function Header() {
             href="/blogs"
             icon={PenToolIcon}
             label="Blogs"
+            onClick={closeMenu}
+          />
+          <NavLink
+            href="/perspectives"
+            icon={LetterTextIcon}
+            label="Perspectives"
             onClick={closeMenu}
           />
           <NavLink

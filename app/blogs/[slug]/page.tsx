@@ -151,6 +151,8 @@ export default async function BlogPost({ params }: Props) {
                   table: ({ ...props }) => <div className="overflow-x-auto my-12 rounded-xl border border-border"><table className="w-full text-left border-collapse" {...props} /></div>,
                   th: ({ ...props }) => <th className="border-b-2 border-border p-5 font-display text-base font-bold text-ink bg-bg" {...props} />,
                   td: ({ ...props }) => <td className="border-b border-border/50 p-5 text-text" {...props} />,
+                  // eslint-disable-next-line @next/next/no-img-element
+                  img: ({ src, alt, ...props }) => <img src={src} alt={alt || ""} className="rounded-2xl border border-border my-8 w-full object-cover max-h-[500px] shadow-md" {...props} />,
                   code: ({ className, children, ...props }) => {
                     const match = /language-(\w+)/.exec(className || '')
                     return match ? (

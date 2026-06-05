@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { products } from "@/app/lib/data";
 import { getAllBlogs } from "@/app/lib/blogs";
+import { getAllPerspectives } from "@/app/lib/perspectives";
 
 export const dynamic = "force-static";
 
@@ -13,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "/contact",
         "/custom-rolling-papers",
         "/blogs",
+        "/perspectives",
         "/rolling-paper-manufacturer",
         "/products/rolling-paper",
         "/products/cellulose-rolling-paper",
@@ -36,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const blogs = getAllBlogs();
 
-    const parseBlogDate = (dateStr: string) => {
+    const parseDate = (dateStr: string) => {
         if (!dateStr) return new Date();
         // Remove st, nd, rd, th and clean up commas to make it parseable by Date
         const cleanDate = dateStr.replace(/(\d+)(st|nd|rd|th)/, '$1').replace(/,/g, ' ');
@@ -46,9 +48,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const blogRoutes: MetadataRoute.Sitemap = blogs.map((blog) => ({
         url: `${baseUrl}/blogs/${blog.slug}`,
-        lastModified: parseBlogDate(blog.last_updated),
+        lastModified: parseDate(blog.last_updated),
         changeFrequency: "weekly" as const,
         priority: 0.7,
     }));
-    return [...staticRoutes, ...productRoutes, ...blogRoutes];
+
+    const perspectives = getAllPerspectives();
+
+    const perspectiveRoutes: MetadataRoute.Sitemap = perspectives.map((p) => ({
+        url: `${baseUrl}/perspectives/${p.slug}`,
+        lastModified: parseDate(p.last_updated),
+        changeFrequency: "weekly" as const,
+        priority: 0.7,
+    }));
+
+    return [...staticRoutes, ...productRoutes, ...blogRoutes, ...perspectiveRoutes];
 }
