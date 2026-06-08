@@ -8,7 +8,7 @@ page_type: "Perspective Article"
 schema_type: "BlogPosting"
 location: "Amsterdam, Netherlands"
 manufacturer: "RYO Papers"
-last_updated: "1 June, 2025"
+last_updated: "1 June, 2026"
 author: "AJ"
 ---
 
