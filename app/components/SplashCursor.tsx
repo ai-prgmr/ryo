@@ -95,8 +95,10 @@ export default function SplashCursor({
       TRANSPARENT,
     };
 
-    const { gl, ext } = getWebGLContext(canvas);
-    if (!gl || !ext) return;
+    const context = getWebGLContext(canvas);
+    if (!context || !context.gl || !context.ext) return;
+    const { gl, ext } = context;
+    if (!ext.formatRGBA || !ext.formatRG || !ext.formatR) return;
 
     if (!ext.supportLinearFiltering) {
       config.DYE_RESOLUTION = 256;
@@ -112,21 +114,26 @@ export default function SplashCursor({
         preserveDrawingBuffer: false,
       };
 
-      let gl = canvas.getContext(
-        "webgl2",
-        params
-      ) as WebGL2RenderingContext | null;
+      let gl: WebGL2RenderingContext | WebGLRenderingContext | null = null;
+      try {
+        gl = canvas.getContext(
+          "webgl2",
+          params
+        ) as WebGL2RenderingContext | null;
 
-      if (!gl) {
-        gl = (canvas.getContext("webgl", params) ||
-          canvas.getContext(
-            "experimental-webgl",
-            params
-          )) as WebGL2RenderingContext | null;
+        if (!gl) {
+          gl = (canvas.getContext("webgl", params) ||
+            canvas.getContext(
+              "experimental-webgl",
+              params
+            )) as WebGLRenderingContext | null;
+        }
+      } catch {
+        return null;
       }
 
       if (!gl) {
-        throw new Error("Unable to initialize WebGL.");
+        return null;
       }
 
       const isWebGL2 = "drawBuffers" in gl;
